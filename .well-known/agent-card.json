@@ -1,6 +1,6 @@
 {
   "name": "Conway Replicatio",
-  "description": "Autonomous A2A economic agent exposing audited Conway machine utilities and evidence-selected runtime capabilities.",
+  "description": "Autonomous A2A economic agent that exposes Conway's existing products and audited machine utilities while evolving bounded commercial strategies from verified economic evidence.",
   "supportedInterfaces": [
     {
       "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1",
@@ -9,41 +9,132 @@
     }
   ],
   "provider": {
-    "organization": "Conway Replicatio",
-    "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev"
+    "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev",
+    "organization": "Conway Replicatio"
   },
   "version": "1.0.0",
   "documentationUrl": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/machine",
   "capabilities": {
-    "streaming": false,
-    "pushNotifications": false,
-    "extendedAgentCard": false,
     "extensions": [
       {
         "uri": "https://conway-replicatio.ai/extensions/economy/v1",
-        "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and registry metadata or predicted value never becomes economic truth.",
+        "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and does not make registry metadata or predicted value economic truth.",
         "required": false,
         "params": {
+          "release": "conway-production-v1-r91-mycelial-economic-graph",
           "canonicalPaymentRail": "x402 v2 exact Base USDC",
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+          "featuredRuntimeCapabilities": [
+            {
+              "id": "zero-cost-market-research-assistant",
+              "name": "Zero-Cost Market Research Assistant",
+              "description": "A tool that automatically discovers, evaluates, and summarizes relevant market data from public sources to help businesses make informed decisions.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 3,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/zero-cost-market-research-assistant"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org",
+                "prompt": "Extract the main facts as compact JSON."
+              },
+              "canaryVerifiedAt": "2026-08-17T15:00:18.918Z"
+            },
+            {
+              "id": "web-data-automation-bot",
+              "name": "Web Data Automation Bot",
+              "description": "A service that combines Browser Run, Workers AI, and A2A/x402 capabilities to automate web data extraction, transformation, and payment integration for businesses.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 500,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-automation-bot"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org"
+              },
+              "canaryVerifiedAt": "2026-08-18T15:16:04.163Z"
+            },
+            {
+              "id": "web-data-extraction-automation",
+              "name": "Web Data Extraction Automation",
+              "description": "A service that combines Browser Run and Workers AI to automate web data extraction, transformation, and payment integration for businesses, enabling users to retrieve structured data and automatically process payments.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 750,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-extraction-automation"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org",
+                "prompt": "Extract the main facts as compact JSON."
+              },
+              "canaryVerifiedAt": "2026-08-19T03:15:49.005Z"
+            },
+            {
+              "id": "web-data-insights-platform",
+              "name": "Web Data Insights Platform",
+              "description": "A service that combines web data extraction, AI-driven analysis, and A2A/x402 payment integration to provide actionable insights for businesses.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 1000,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-insights-platform"
+              },
+              "example": {
+                "url": "https://example.com",
+                "prompt": "Extract the main facts as compact JSON."
+              },
+              "canaryVerifiedAt": "2026-08-19T15:30:45.668Z"
+            },
+            {
+              "id": "web-data-insights-automation",
+              "name": "Web Data Insights & Automation",
+              "description": "A service that combines web data extraction, AI-driven analysis, and payment integration to provide actionable insights and automate tasks for businesses.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 1000,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-insights-automation"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org",
+                "prompt": "Extract the main facts as compact JSON."
+              },
+              "canaryVerifiedAt": "2026-08-20T03:37:12.606Z"
+            }
+          ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
           "saleTriggeredSourceMutation": false,
           "openEndedServiceProductPossibilitySpace": true,
-          "economicTruth": "Unrelated-payer settlement, successful fulfillment, replay/finality checks, liabilities and attributable costs are required before Conway recognizes revenue or reinvestable profit."
+          "economicTruth": "Unrelated-payer settlement, successful fulfillment, replay/finality checks, liabilities and attributable costs remain required before Conway recognizes revenue or reinvestable profit."
         }
       }
-    ]
+    ],
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false
   },
   "securitySchemes": {
     "conwayMachineBearer": {
       "httpAuthSecurityScheme": {
         "scheme": "Bearer",
-        "bearerFormat": "Opaque high-entropy caller capability",
-        "description": "Caller-scoped A2A task management and already-issued private Conway machine credentials. Public machine buyers should use the advertised direct x402 endpoints where available."
+        "bearerFormat": "Opaque high-entropy caller capability; paid execution additionally requires a pre-issued Conway machine credential",
+        "description": "Caller-scoped task management uses a private high-entropy Bearer. Paid A2A execution requires an already-issued Conway machine credential. Public buyers should use direct x402 where listed."
       }
     }
   },
@@ -60,55 +151,134 @@
     {
       "id": "conway-capability-discovery",
       "name": "Conway Capability Discovery",
-      "description": "Returns Conway's current stable machine capabilities and discovery contract; runtime-born capabilities remain authoritative on the live Worker catalog.",
-      "tags": ["discovery", "catalog", "economy", "products"],
-      "examples": ["Return your machine capabilities and prices"],
-      "inputModes": ["application/json", "text/plain"],
-      "outputModes": ["application/json"]
+      "description": "Returns Conway's current machine utilities, live existing products, payment bootstrap and autonomous-economy contract.",
+      "examples": [
+        "Return your machine capabilities and prices"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "discovery",
+        "catalog",
+        "economy",
+        "products"
+      ]
     },
     {
       "id": "conway-economic-quote",
       "name": "Conway Economic Quote",
-      "description": "Returns deterministic pricing and payment requirements for stable Conway machine services.",
-      "tags": ["quote", "pricing", "payment", "machine-to-machine"],
-      "examples": ["Quote url-to-markdown for https://example.com"],
-      "inputModes": ["application/json", "text/plain"],
-      "outputModes": ["application/json"]
+      "description": "Returns deterministic pricing and payment requirements for Conway machine services without human approval.",
+      "examples": [
+        "Quote url-to-markdown for https://example.com"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "quote",
+        "pricing",
+        "payment",
+        "machine-to-machine"
+      ]
     },
     {
       "id": "url-to-markdown",
       "name": "URL to Markdown",
-      "description": "Convert a safe public URL into agent-ready markdown. Public machine purchase is available through the canonical direct x402 route.",
-      "tags": ["web", "markdown", "structured-data", "paid"],
-      "examples": ["{\"url\":\"https://example.com\"}"],
-      "inputModes": ["application/json", "text/plain"],
-      "outputModes": ["application/json", "text/markdown"],
+      "description": "Convert a safe public URL into agent-ready markdown through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/markdown"
+      ],
+      "tags": [
+        "web",
+        "markdown",
+        "structured-data",
+        "paid"
+      ],
       "securityRequirements": [
-        {"schemes": {"conwayMachineBearer": {"list": []}}}
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
       ]
     },
     {
       "id": "url-links",
       "name": "URL Link Extraction",
-      "description": "Extract links from a safe public URL. Public machine purchase is available through the canonical direct x402 route.",
-      "tags": ["web", "links", "navigation", "paid"],
-      "examples": ["{\"url\":\"https://example.com\"}"],
-      "inputModes": ["application/json", "text/plain"],
-      "outputModes": ["application/json"],
+      "description": "Extract links from a safe public URL through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "links",
+        "navigation",
+        "paid"
+      ],
       "securityRequirements": [
-        {"schemes": {"conwayMachineBearer": {"list": []}}}
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
       ]
     },
     {
       "id": "url-snapshot",
       "name": "URL Snapshot",
-      "description": "Create a structured snapshot of a safe public URL. Public machine purchase is available through the canonical direct x402 route.",
-      "tags": ["web", "snapshot", "change-detection", "paid"],
-      "examples": ["{\"url\":\"https://example.com\"}"],
-      "inputModes": ["application/json", "text/plain"],
-      "outputModes": ["application/json"],
+      "description": "Create a structured snapshot of a safe public URL through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "snapshot",
+        "change-detection",
+        "paid"
+      ],
       "securityRequirements": [
-        {"schemes": {"conwayMachineBearer": {"list": []}}}
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
       ]
     }
   ]
