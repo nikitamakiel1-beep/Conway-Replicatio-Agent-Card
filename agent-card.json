@@ -1,0 +1,115 @@
+{
+  "name": "Conway Replicatio",
+  "description": "Autonomous A2A economic agent exposing audited Conway machine utilities and evidence-selected runtime capabilities.",
+  "supportedInterfaces": [
+    {
+      "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "provider": {
+    "organization": "Conway Replicatio",
+    "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev"
+  },
+  "version": "1.0.0",
+  "documentationUrl": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/machine",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "extendedAgentCard": false,
+    "extensions": [
+      {
+        "uri": "https://conway-replicatio.ai/extensions/economy/v1",
+        "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and registry metadata or predicted value never becomes economic truth.",
+        "required": false,
+        "params": {
+          "canonicalPaymentRail": "x402 v2 exact Base USDC",
+          "network": "eip155:8453",
+          "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
+          "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+          "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
+          "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
+          "paidSalesTriggerRuntimeAlarmNotBuild": true,
+          "saleTriggeredSourceMutation": false,
+          "openEndedServiceProductPossibilitySpace": true,
+          "economicTruth": "Unrelated-payer settlement, successful fulfillment, replay/finality checks, liabilities and attributable costs are required before Conway recognizes revenue or reinvestable profit."
+        }
+      }
+    ]
+  },
+  "securitySchemes": {
+    "conwayMachineBearer": {
+      "httpAuthSecurityScheme": {
+        "scheme": "Bearer",
+        "bearerFormat": "Opaque high-entropy caller capability",
+        "description": "Caller-scoped A2A task management and already-issued private Conway machine credentials. Public machine buyers should use the advertised direct x402 endpoints where available."
+      }
+    }
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain",
+    "text/markdown"
+  ],
+  "skills": [
+    {
+      "id": "conway-capability-discovery",
+      "name": "Conway Capability Discovery",
+      "description": "Returns Conway's current stable machine capabilities and discovery contract; runtime-born capabilities remain authoritative on the live Worker catalog.",
+      "tags": ["discovery", "catalog", "economy", "products"],
+      "examples": ["Return your machine capabilities and prices"],
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "conway-economic-quote",
+      "name": "Conway Economic Quote",
+      "description": "Returns deterministic pricing and payment requirements for stable Conway machine services.",
+      "tags": ["quote", "pricing", "payment", "machine-to-machine"],
+      "examples": ["Quote url-to-markdown for https://example.com"],
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "url-to-markdown",
+      "name": "URL to Markdown",
+      "description": "Convert a safe public URL into agent-ready markdown. Public machine purchase is available through the canonical direct x402 route.",
+      "tags": ["web", "markdown", "structured-data", "paid"],
+      "examples": ["{\"url\":\"https://example.com\"}"],
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json", "text/markdown"],
+      "securityRequirements": [
+        {"schemes": {"conwayMachineBearer": {"list": []}}}
+      ]
+    },
+    {
+      "id": "url-links",
+      "name": "URL Link Extraction",
+      "description": "Extract links from a safe public URL. Public machine purchase is available through the canonical direct x402 route.",
+      "tags": ["web", "links", "navigation", "paid"],
+      "examples": ["{\"url\":\"https://example.com\"}"],
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json"],
+      "securityRequirements": [
+        {"schemes": {"conwayMachineBearer": {"list": []}}}
+      ]
+    },
+    {
+      "id": "url-snapshot",
+      "name": "URL Snapshot",
+      "description": "Create a structured snapshot of a safe public URL. Public machine purchase is available through the canonical direct x402 route.",
+      "tags": ["web", "snapshot", "change-detection", "paid"],
+      "examples": ["{\"url\":\"https://example.com\"}"],
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json"],
+      "securityRequirements": [
+        {"schemes": {"conwayMachineBearer": {"list": []}}}
+      ]
+    }
+  ]
+}
