@@ -121,7 +121,13 @@
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
           "saleTriggeredSourceMutation": false,
           "openEndedServiceProductPossibilitySpace": true,
-          "economicTruth": "Unrelated-payer settlement, successful fulfillment, replay/finality checks, liabilities and attributable costs remain required before Conway recognizes revenue or reinvestable profit."
+          "economicTruth": "Unrelated-payer settlement, successful fulfillment, replay/finality checks, liabilities and attributable costs remain required before Conway recognizes revenue or reinvestable profit.",
+          "marketGenomeCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+          "marketGenomeConfiguredSeeds": 144,
+          "marketGenomeExternalPriorsAreNotRevenue": true,
+          "marketGenomeProductsRequireExecutionCanaryBeforePaidDiscovery": true,
+          "a2aMarketGenomeSkill": "conway-market-genome",
+          "a2aX402ExtensionClaimed": false
         }
       }
     ],
@@ -279,6 +285,29 @@
             }
           }
         }
+      ]
+    },
+    {
+      "id": "conway-market-genome",
+      "name": "Conway Market Genome Discovery",
+      "description": "Discover Conway's canary-verified market-genome services and their direct x402 routes. This A2A skill is a machine-commerce handoff; payment and fulfillment remain on the canonical direct-x402 route until Conway implements and proves the separate A2A-x402 extension state machine exactly.",
+      "examples": [
+        "Return the current verified market-genome catalog",
+        "Return the x402 route for mg-x402-ready-audit"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "a2a",
+        "x402",
+        "market-genome",
+        "discovery",
+        "machine-commerce"
       ]
     }
   ]
