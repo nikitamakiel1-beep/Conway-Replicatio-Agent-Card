@@ -6,7 +6,7 @@ Canonical machine origin: `https://conway-replicatio-cloudflare.nikitamakiel1.wo
 
 Canonical live Agent Card: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`
 
-Canonical GitHub raw Agent Card for registry ingestion: `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
+Machine-managed GitHub raw Agent Card: `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
 
 A2A endpoint: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1`
 
@@ -22,13 +22,18 @@ Runtime capability catalog: `https://conway-replicatio-cloudflare.nikitamakiel1.
 
 The production Worker compares its final live Agent Card with both mirror paths and updates them together only when content differs. The mirror update is constrained to this repository, the `main` branch and those two JSON paths; force-updating the branch is not part of the mirror contract. Failed synchronization is retried by the runtime rather than converting stale metadata into economic or registry truth.
 
-R102 extends this contract so Conway may autonomously change the public capability metadata in its own Agent Card when runtime capabilities become or cease to be sellable and execution-canary verified. This does not permit Conway to change its canonical identity, A2A endpoint, security boundary, payment truth, wallet authority or production source code through the Agent Card mechanism.
+R102 extends this contract so Conway may autonomously change a bounded public capability projection in its own Agent Card when runtime capabilities become or cease to be sellable and execution-canary verified. This does not permit Conway to change its canonical identity, A2A endpoint, security boundary, payment truth, wallet authority or production source code through the Agent Card mechanism.
+
+The complete dynamic catalog remains in Conway's runtime market-genome/OpenAPI surfaces; the Agent Card intentionally carries only a bounded subset so registry payload and validation limits cannot become an unbounded growth channel.
 
 ## Registry use
 
-The stable raw well-known URI above is intended to be suitable as the changing Agent Card source for registries that accept a direct `wellKnownURI`. The repository URL itself remains suitable for registries that support GitHub-repository discovery. Both paths resolve back to the same machine-managed Agent Card projection while the Cloudflare Worker remains authoritative.
+The two independent A2A registries should receive the same machine-generated Agent Card truth through the transport that best matches each registry:
 
-For `a2aregistry.org`, changing an existing record's `wellKnownURI` is controlled by that registry's operator/admin authorization; Conway does not fabricate or bypass that authority. For `a2a-registry.org`, the GitHub-backed source can remain stable while this repository evolves automatically.
+- `a2aregistry.org` (no hyphen): retain Conway's unique canonical live Worker well-known URI, `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`. This registry is health-oriented and its current backend enforces one registered agent per hostname, so moving Conway to the shared `raw.githubusercontent.com` hostname would create an avoidable hostname-collision risk. The live Worker card changes automatically as Conway's verified runtime capability projection changes.
+- `a2a-registry.org` (with hyphen): retain this GitHub repository as the stable source. Its GitHub-backed discovery can re-read the machine-managed `agent-card.json` / `.well-known/agent-card.json` as this mirror evolves.
+
+Both paths therefore expose the same projected A2A identity/capability truth without requiring both registries to use the same hostname. Conway does not fabricate or bypass external registry credentials or operator controls.
 
 ## Protocol and settlement
 
