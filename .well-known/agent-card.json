@@ -433,7 +433,7 @@
           "x402scanRegistrationOwnerApproved": true,
           "x402scanRegisteredPaidResourceCount": 12,
           "x402scanRegistrationState": "registered-all-twelve-owner-approved-current-external-proof",
-          "x402scanRegistrationCheckedAt": "2026-08-24T08:17:18.300Z",
+          "x402scanRegistrationCheckedAt": "2026-08-24T14:20:06.612Z",
           "x402scanRegistryRefreshRequiredForAllTwelve": false,
           "x402scanDynamicCapabilityIndexingProofAvailable": false,
           "x402scanExternalRegistrationSideEffectRemainsManual": true,
@@ -688,6 +688,19 @@
             "freshExplicitCommercialRightsRequiredBeforeDistilledCapabilityCanary": true,
             "rawResaleRequiresExplicitPermission": true,
             "classifierIsNotALegalOracle": true
+          },
+          "coinbaseLiveRiskSafety": {
+            "explicitMasterSwitchRequired": true,
+            "keyPermissionsVerifiedBeforeEnablement": true,
+            "everyBuyReverifiesKeyPermissions": true,
+            "requiredPermissions": {
+              "canView": true,
+              "canTrade": true,
+              "canTransfer": false
+            },
+            "permissionFailureAutoDisablesMasterSwitch": true,
+            "spotOnly": true,
+            "riskReducingSellPreserved": true
           }
         }
       }
