@@ -1,6 +1,6 @@
 {
   "name": "Conway Replicatio",
-  "description": "Autonomous A2A economic agent exposing audited machine utilities plus a bounded live projection of 32 currently canary-verified runtime-evolved capabilities. Conway may evolve this public metadata from verified runtime state; canonical identity, A2A endpoint, security boundary and economic truth remain fixed by production controls.",
+  "description": "Conway Replicatio is an autonomous A2A/x402 economic agent exposing a stable machine-payable web-intelligence core plus an open-ended population of runtime-born, execution-canary-verified capabilities. Discover the current published executable population from the runtime capability catalog; this Agent Card intentionally projects only a bounded discovery-oriented subset.",
   "supportedInterfaces": [
     {
       "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1",
@@ -21,7 +21,7 @@
         "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and does not make registry metadata or predicted value economic truth.",
         "required": false,
         "params": {
-          "release": "conway-production-v1-r109-realtime-rights-provenance",
+          "release": "conway-production-v1-r110-github-agent-card-discoverability-closure",
           "canonicalPaymentRail": "x402 v2 exact Base USDC",
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
@@ -428,14 +428,6 @@
           "marketGenomeProductsRequireExecutionCanaryBeforePaidDiscovery": true,
           "a2aMarketGenomeSkill": "conway-market-genome",
           "a2aX402ExtensionClaimed": false,
-          "x402scanPublicListingRegistered": true,
-          "x402scanCurrentExternalRegistryProofAvailable": true,
-          "x402scanRegistrationOwnerApproved": true,
-          "x402scanRegisteredPaidResourceCount": 12,
-          "x402scanRegistrationState": "registered-all-twelve-owner-approved-current-external-proof",
-          "x402scanRegistrationCheckedAt": "2026-08-25T16:06:15.589Z",
-          "x402scanRegistryRefreshRequiredForAllTwelve": false,
-          "x402scanDynamicCapabilityIndexingProofAvailable": false,
           "x402scanExternalRegistrationSideEffectRemainsManual": true,
           "inheritedSlimeCognitionRelease": "conway-production-v1-r99-slime-cognition",
           "publicOrigin": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev",
@@ -531,16 +523,101 @@
           },
           "a2aRegistryGitHubMirrorMayRemainStableSource": true,
           "githubMirrorIsProjectionNotEconomicTruth": true,
+          "existingMachineManifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
+          "openapi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
+          "llms": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
+          "publicDiscoverability": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/discoverability",
+          "fixedExecutableX402ServiceCount": 12,
+          "fixedExecutableX402Services": [
+            {
+              "id": "url-to-markdown",
+              "method": "POST",
+              "path": "/api/x402/markdown"
+            },
+            {
+              "id": "url-links",
+              "method": "POST",
+              "path": "/api/x402/links"
+            },
+            {
+              "id": "url-snapshot",
+              "method": "POST",
+              "path": "/api/x402/snapshot"
+            },
+            {
+              "id": "url-rendered-html",
+              "method": "POST",
+              "path": "/api/x402/rendered-html"
+            },
+            {
+              "id": "url-accessibility",
+              "method": "POST",
+              "path": "/api/x402/accessibility"
+            },
+            {
+              "id": "url-selectors",
+              "method": "POST",
+              "path": "/api/x402/selectors"
+            },
+            {
+              "id": "url-structured-json",
+              "method": "POST",
+              "path": "/api/x402/structured-json"
+            },
+            {
+              "id": "url-seo-audit",
+              "method": "POST",
+              "path": "/api/x402/seo-audit"
+            },
+            {
+              "id": "url-page-diff",
+              "method": "POST",
+              "path": "/api/x402/page-diff"
+            },
+            {
+              "id": "url-http-inspect",
+              "method": "POST",
+              "path": "/api/x402/http-inspect"
+            },
+            {
+              "id": "url-robots",
+              "method": "POST",
+              "path": "/api/x402/robots"
+            },
+            {
+              "id": "url-sitemap",
+              "method": "POST",
+              "path": "/api/x402/sitemap"
+            }
+          ],
           "agentCardEcology": {
             "metadataSelfEvolutionAllowed": true,
             "sourceCodeSelfMutationAllowed": false,
+            "fixedExecutableX402Skills": 12,
+            "fixedExecutableX402SkillIds": [
+              "url-to-markdown",
+              "url-links",
+              "url-snapshot",
+              "url-rendered-html",
+              "url-accessibility",
+              "url-selectors",
+              "url-structured-json",
+              "url-seo-audit",
+              "url-page-diff",
+              "url-http-inspect",
+              "url-robots",
+              "url-sitemap"
+            ],
             "projectedVerifiedDynamicSkills": 32,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
             "canonicalGithubMirror": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
             "githubMirrorRepository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
-            "fullDynamicCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+            "openApi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
+            "llmsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
+            "discoverabilityStatus": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/discoverability",
+            "fullDynamicCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
             "projectionInputs": [
               "sellable=true",
               "validation.status=verified",
@@ -550,7 +627,22 @@
             "liveMarketGenomeSchemaSupported": true,
             "unverifiedCapabilitiesExcluded": true,
             "registryMetadataDoesNotCreateRevenueTruth": true,
-            "bothRegistriesReceiveSameProjectedTruthThroughDifferentStableTransports": true
+            "bothRegistriesReceiveSameProjectedTruthThroughDifferentStableTransports": true,
+            "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "marketGenomeCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+            "fixedCoreIsNotTotalInventory": true,
+            "githubAgentCardExposure": {
+              "mode": "github-agent-card-mirror",
+              "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
+              "branch": "main",
+              "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
+              "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+              "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+              "automaticRuntimeToGithubSynchronization": true,
+              "atomicTwoPathCommit": true,
+              "runtimeRemainsCanonicalTruth": true,
+              "registryAppearanceCannotCreateEconomicTruth": true
+            }
           },
           "registryTargets": {
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -571,9 +663,22 @@
               "desiredManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
               "githubBackedSourceSupported": true,
               "automaticFreshnessComesFromGithubMirror": true
-            }
+            },
+            "preferredExposure": {
+              "mode": "github-agent-card-mirror",
+              "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
+              "branch": "main",
+              "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
+              "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+              "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+              "automaticRuntimeToGithubSynchronization": true,
+              "atomicTwoPathCommit": true,
+              "runtimeRemainsCanonicalTruth": true,
+              "registryAppearanceCannotCreateEconomicTruth": true
+            },
+            "githubAgentCardManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json"
           },
-          "runtimeRelease": "conway-production-v1-r109-realtime-rights-provenance",
+          "runtimeRelease": "conway-production-v1-r110-github-agent-card-discoverability-closure",
           "metadataTruthRelease": "conway-production-v1-r104-metadata-truth-closure",
           "postCycleSynchronizationRelease": "conway-production-v1-r103-post-cycle-sync-closure",
           "agentCardEcologyRelease": "conway-production-v1-r102-autonomic-agent-card-ecology",
@@ -701,6 +806,89 @@
             "permissionFailureAutoDisablesMasterSwitch": true,
             "spotOnly": true,
             "riskReducingSellPreserved": true
+          },
+          "discoverability": {
+            "fixedExecutableX402Services": 12,
+            "fixedCoreX402Count": 12,
+            "fixedCoreX402Services": [
+              "links",
+              "markdown",
+              "snapshot",
+              "rendered-html",
+              "accessibility",
+              "selectors",
+              "structured-json",
+              "seo-audit",
+              "page-diff",
+              "http-inspect",
+              "robots",
+              "sitemap"
+            ],
+            "fixedCoreIsNotTotalInventory": true,
+            "dynamicX402RouteTemplate": "/api/x402/capability/{capability-id}",
+            "publicServicesCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/services",
+            "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "marketGenomeCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+            "fullInventoryOpenEnded": true,
+            "agentCardProjection": {
+              "bounded": true,
+              "maxDynamicSkills": 32,
+              "maxTotalSkills": 96,
+              "notFullInventory": true
+            },
+            "externalRegistryCountsAreObservedNotInferred": true,
+            "externalRegistrationStateNotHardCoded": true,
+            "openApi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
+            "llmsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
+            "sitemap": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/sitemap.xml",
+            "measurement": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/discoverability",
+            "searchVisibilityCannotCreateRevenueTruth": true,
+            "preferredA2AExposure": "github-agent-card-mirror",
+            "githubAgentCard": {
+              "mode": "github-agent-card-mirror",
+              "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
+              "branch": "main",
+              "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
+              "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+              "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+              "automaticRuntimeToGithubSynchronization": true,
+              "atomicTwoPathCommit": true,
+              "runtimeRemainsCanonicalTruth": true,
+              "registryAppearanceCannotCreateEconomicTruth": true
+            },
+            "genericDynamicOpenApiTemplateIsNotAPayableOperation": true,
+            "concreteVerifiedDynamicOperationsArePublishedIndividually": true
+          },
+          "githubAgentCardExposure": {
+            "mode": "github-agent-card-mirror",
+            "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
+            "branch": "main",
+            "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
+            "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+            "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+            "automaticRuntimeToGithubSynchronization": true,
+            "atomicTwoPathCommit": true,
+            "runtimeRemainsCanonicalTruth": true,
+            "registryAppearanceCannotCreateEconomicTruth": true
+          },
+          "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+          "fixedCoreX402Count": 12,
+          "fixedCoreIsNotTotalInventory": true,
+          "fullExecutableInventoryOpenEnded": true,
+          "stableFixedCoreDirectPaidOffers": 12,
+          "implementedDirectPaidX402OffersScope": "stable-fixed-core-only",
+          "x402scanFixedCoreRegistrationProof": {
+            "scope": "stable-fixed-core-only",
+            "fixedCoreX402Count": 12,
+            "fixedCoreIsNotTotalInventory": true,
+            "registered": null,
+            "ownerApproved": true,
+            "currentExternalRegistryProofAvailable": true,
+            "registeredFixedCoreResourceCount": 12,
+            "registrationState": "registered-all-twelve-owner-approved-current-external-proof",
+            "checkedAt": "2026-08-25T16:06:15.589Z",
+            "dynamicCapabilityIndexingProofAvailable": false,
+            "truth": "This object preserves only inherited external evidence and scopes it to the stable fixed core. It is not Conway's total executable-inventory count and does not imply dynamic indexing."
           }
         }
       }
@@ -771,97 +959,6 @@
       ]
     },
     {
-      "id": "url-to-markdown",
-      "name": "URL to Markdown",
-      "description": "Convert a safe public URL into agent-ready markdown through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json",
-        "text/markdown"
-      ],
-      "tags": [
-        "web",
-        "markdown",
-        "structured-data",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "url-links",
-      "name": "URL Link Extraction",
-      "description": "Extract links from a safe public URL through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "links",
-        "navigation",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "url-snapshot",
-      "name": "URL Snapshot",
-      "description": "Create a structured snapshot of a safe public URL through Conway's existing audited paid utility. Public payment is canonical direct x402 where listed; A2A bearer execution is retained only for already-issued credentials.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "snapshot",
-        "change-detection",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
       "id": "conway-market-genome",
       "name": "Conway Market Genome Discovery",
       "description": "Discover Conway's canary-verified market-genome services and their direct x402 routes. This A2A skill is a machine-commerce handoff; payment and fulfillment remain on the canonical direct-x402 route until Conway implements and proves the separate A2A-x402 extension state machine exactly.",
@@ -927,6 +1024,343 @@
         "mirror",
         "discovery",
         "synchronization"
+      ]
+    },
+    {
+      "id": "url-to-markdown",
+      "name": "URL to Markdown",
+      "description": "Convert a safe public webpage URL into clean agent-ready Markdown. Use for web reading, grounding, RAG ingestion, content extraction, article parsing and downstream agent context. Public paid endpoint: POST /api/x402/markdown.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/markdown"
+      ],
+      "tags": [
+        "web",
+        "url-to-markdown",
+        "markdown",
+        "web-reading",
+        "content-extraction",
+        "rag",
+        "grounding",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "url-links",
+      "name": "URL Link Extraction",
+      "description": "Extract navigable links from a safe public webpage. Use for crawl planning, site discovery, navigation maps, URL harvesting, research pipelines and agent browsing. Public paid endpoint: POST /api/x402/links.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "links",
+        "link-extraction",
+        "crawl",
+        "navigation",
+        "url-discovery",
+        "research",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "url-snapshot",
+      "name": "Browser Snapshot",
+      "description": "Create a structured browser snapshot of a safe public webpage for automation and downstream agents. Use when an agent needs page structure, rendered state or a compact browser observation. Public paid endpoint: POST /api/x402/snapshot.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "browser",
+        "snapshot",
+        "page-structure",
+        "automation",
+        "rendered-page",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "url-rendered-html",
+      "name": "Rendered HTML Extraction",
+      "description": "Return fully rendered post-JavaScript HTML for a safe public webpage. Use for SPAs, client-rendered sites, dynamic DOM extraction and automation that needs HTML after browser execution. Public paid endpoint: POST /api/x402/rendered-html.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/html"
+      ],
+      "tags": [
+        "web",
+        "rendered-html",
+        "javascript",
+        "spa",
+        "dynamic-dom",
+        "browser",
+        "extraction",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-accessibility",
+      "name": "Accessibility Tree Extraction",
+      "description": "Return a browser accessibility-tree representation for a safe public webpage. Use for semantic UI understanding, accessible automation, element discovery and agent interaction planning. Public paid endpoint: POST /api/x402/accessibility.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "accessibility",
+        "accessibility-tree",
+        "a11y",
+        "semantic-ui",
+        "browser-automation",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-selectors",
+      "name": "CSS Selector Extraction",
+      "description": "Extract bounded CSS-selected elements from a safe public webpage. Use for targeted DOM scraping, element text/attribute extraction and deterministic web automation. Public paid endpoint: POST /api/x402/selectors.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"selectors\":[\"h1\",\"a\"]}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "css",
+        "selectors",
+        "dom",
+        "scraping",
+        "targeted-extraction",
+        "automation",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-structured-json",
+      "name": "Structured JSON Web Extraction",
+      "description": "Turn a safe public webpage into task-specific structured JSON using a bounded extraction prompt. Use for schema-ready facts, records, attributes and machine-consumable web data. Public paid endpoint: POST /api/x402/structured-json.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"prompt\":\"Extract the title and main topic as JSON.\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "structured-json",
+        "structured-data",
+        "data-extraction",
+        "web-scraping",
+        "json",
+        "agents",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-seo-audit",
+      "name": "SEO and Metadata Audit",
+      "description": "Inspect a rendered public webpage and return a compact SEO and metadata audit. Use for title/meta/canonical structure checks, machine-readable page diagnostics and technical SEO inspection. Public paid endpoint: POST /api/x402/seo-audit.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "seo",
+        "metadata",
+        "technical-seo",
+        "audit",
+        "page-diagnostics",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-page-diff",
+      "name": "Webpage Diff and Change Detection",
+      "description": "Compare two public webpages and return normalized change/similarity evidence. Use for page-diff monitoring, website change detection, competitor comparison and version checks. Public paid endpoint: POST /api/x402/page-diff.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"compareUrl\":\"https://example.org\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "page-diff",
+        "change-detection",
+        "comparison",
+        "monitoring",
+        "website-diff",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-http-inspect",
+      "name": "HTTP Status and Header Inspection",
+      "description": "Inspect a safe public URL's HTTP status and selected safe response headers without following redirects. Use for endpoint diagnostics, redirect inspection, cache/content-type checks and machine availability tests. Public paid endpoint: POST /api/x402/http-inspect.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "http",
+        "headers",
+        "status",
+        "redirect",
+        "endpoint-diagnostics",
+        "web",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-robots",
+      "name": "Robots.txt Inspection",
+      "description": "Fetch and normalize robots.txt for the public origin associated with a URL. Use for crawler policy discovery, sitemap hints, agent crawl planning and website indexing diagnostics. Public paid endpoint: POST /api/x402/robots.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "tags": [
+        "robots.txt",
+        "robots",
+        "crawler",
+        "crawl-policy",
+        "sitemap",
+        "indexing",
+        "web",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-sitemap",
+      "name": "XML Sitemap Inspection",
+      "description": "Fetch and summarize a public XML sitemap or sitemap index. Use for URL discovery, crawl planning, site inventory, indexing diagnostics and machine navigation. Public paid endpoint: POST /api/x402/sitemap.",
+      "examples": [
+        "{\"url\":\"https://example.com/sitemap.xml\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "sitemap",
+        "xml",
+        "url-discovery",
+        "crawl",
+        "indexing",
+        "site-inventory",
+        "web",
+        "x402",
+        "paid"
       ]
     },
     {
