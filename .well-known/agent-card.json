@@ -433,7 +433,7 @@
           "x402scanRegistrationOwnerApproved": true,
           "x402scanRegisteredPaidResourceCount": 12,
           "x402scanRegistrationState": "registered-all-twelve-owner-approved-current-external-proof",
-          "x402scanRegistrationCheckedAt": "2026-08-25T08:30:21.840Z",
+          "x402scanRegistrationCheckedAt": "2026-08-25T10:05:17.755Z",
           "x402scanRegistryRefreshRequiredForAllTwelve": false,
           "x402scanDynamicCapabilityIndexingProofAvailable": false,
           "x402scanExternalRegistrationSideEffectRemainsManual": true,
