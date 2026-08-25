@@ -21,7 +21,7 @@
         "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and does not make registry metadata or predicted value economic truth.",
         "required": false,
         "params": {
-          "release": "conway-production-v1-r110-github-agent-card-discoverability-closure",
+          "release": "conway-production-v1-r111-discoverability-truth-hardening",
           "canonicalPaymentRail": "x402 v2 exact Base USDC",
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
@@ -125,301 +125,295 @@
               "canaryVerifiedAt": "2026-08-22T21:25:46.910Z"
             },
             {
-              "id": "zero-cost-market-research-assistant",
-              "name": "Zero-Cost Market Research Assistant",
-              "description": "A tool that automatically discovers, evaluates, and summarizes relevant market data from public sources to help businesses make informed decisions.",
+              "id": "mg-api-contract-extract",
+              "name": "API Contract Intelligence · Precision Extract",
+              "description": "API Contract Intelligence · Precision Extract. Fast domain-specific structured extraction for another agent. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 3,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/zero-cost-market-research-assistant"
-              },
-              "example": {
-                "url": "https://example.com",
-                "compareUrl": "https://example.org",
-                "prompt": "Extract the main facts as compact JSON."
-              },
-              "canaryVerifiedAt": "2026-08-17T15:00:18.918Z"
-            },
-            {
-              "id": "web-data-automation-bot",
-              "name": "Web Data Automation Bot",
-              "description": "A service that combines Browser Run, Workers AI, and A2A/x402 capabilities to automate web data extraction, transformation, and payment integration for businesses.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 500,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-automation-bot"
-              },
-              "example": {
-                "url": "https://example.com",
-                "compareUrl": "https://example.org"
-              },
-              "canaryVerifiedAt": "2026-08-18T15:16:04.163Z"
-            },
-            {
-              "id": "web-data-extraction-automation",
-              "name": "Web Data Extraction Automation",
-              "description": "A service that combines Browser Run and Workers AI to automate web data extraction, transformation, and payment integration for businesses, enabling users to retrieve structured data and automatically process payments.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 750,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-extraction-automation"
-              },
-              "example": {
-                "url": "https://example.com",
-                "compareUrl": "https://example.org",
-                "prompt": "Extract the main facts as compact JSON."
-              },
-              "canaryVerifiedAt": "2026-08-19T03:15:49.005Z"
-            },
-            {
-              "id": "web-data-insights-platform",
-              "name": "Web Data Insights Platform",
-              "description": "A service that combines web data extraction, AI-driven analysis, and A2A/x402 payment integration to provide actionable insights for businesses.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-insights-platform"
-              },
-              "example": {
-                "url": "https://example.com",
-                "prompt": "Extract the main facts as compact JSON."
-              },
-              "canaryVerifiedAt": "2026-08-19T15:30:45.668Z"
-            },
-            {
-              "id": "web-data-insights-automation",
-              "name": "Web Data Insights & Automation",
-              "description": "A service that combines web data extraction, AI-driven analysis, and payment integration to provide actionable insights and automate tasks for businesses.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-insights-automation"
-              },
-              "example": {
-                "url": "https://example.com",
-                "compareUrl": "https://example.org",
-                "prompt": "Extract the main facts as compact JSON."
-              },
-              "canaryVerifiedAt": "2026-08-20T03:37:12.606Z"
-            },
-            {
-              "id": "mg-x402-ready-extract",
-              "name": "x402 Merchant Readiness · Precision Extract",
-              "description": "x402 Merchant Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 3,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-extract"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-extract"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:26:53.309Z"
+              "canaryVerifiedAt": "2026-08-22T21:30:45.505Z"
             },
             {
-              "id": "mg-x402-ready-context",
-              "name": "x402 Merchant Readiness · Agent Context Pack",
-              "description": "x402 Merchant Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-api-contract-context",
+              "name": "API Contract Intelligence · Agent Context Pack",
+              "description": "API Contract Intelligence · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 5,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-context"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-context"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:27:04.842Z"
+              "canaryVerifiedAt": "2026-08-22T21:30:58.102Z"
             },
             {
-              "id": "mg-x402-ready-audit",
-              "name": "x402 Merchant Readiness · Technical Audit",
-              "description": "x402 Merchant Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-api-contract-audit",
+              "name": "API Contract Intelligence · Technical Audit",
+              "description": "API Contract Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 7,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-audit"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-audit"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:27:14.841Z"
+              "canaryVerifiedAt": "2026-08-22T21:34:07.328Z"
             },
             {
-              "id": "mg-x402-ready-evidence",
-              "name": "x402 Merchant Readiness · Evidence Matrix",
-              "description": "x402 Merchant Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-api-contract-evidence",
+              "name": "API Contract Intelligence · Evidence Matrix",
+              "description": "API Contract Intelligence · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 6,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-evidence"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-evidence"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:27:19.501Z"
+              "canaryVerifiedAt": "2026-08-22T21:34:16.258Z"
             },
             {
-              "id": "mg-x402-ready-decision",
-              "name": "x402 Merchant Readiness · Decision Dossier",
-              "description": "x402 Merchant Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-api-contract-decision",
+              "name": "API Contract Intelligence · Decision Dossier",
+              "description": "API Contract Intelligence · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 9,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-decision"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-decision"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:30:33.983Z"
+              "canaryVerifiedAt": "2026-08-22T21:34:24.883Z"
             },
             {
-              "id": "mg-x402-ready-compare",
-              "name": "x402 Merchant Readiness · Change / Comparison Dossier",
-              "description": "x402 Merchant Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-api-contract-compare",
+              "name": "API Contract Intelligence · Change / Comparison Dossier",
+              "description": "API Contract Intelligence · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Help agents understand whether an API surface is usable, stable and machine-contract friendly. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 10,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-x402-ready-compare"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-api-contract-compare"
               },
               "example": {
                 "url": "https://example.com",
                 "compareUrl": "https://example.org"
               },
-              "canaryVerifiedAt": "2026-08-22T21:30:43.664Z"
+              "canaryVerifiedAt": "2026-08-22T21:34:36.101Z"
             },
             {
-              "id": "mg-research-proof-extract",
-              "name": "Research Evidence & Provenance · Precision Extract",
-              "description": "Research Evidence & Provenance · Precision Extract. Fast domain-specific structured extraction for another agent. Turn source pages into auditable evidence suitable for research agents and downstream synthesis. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-geo-ai-extract",
+              "name": "AI Visibility / GEO Readiness · Precision Extract",
+              "description": "AI Visibility / GEO Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 3,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-research-proof-extract"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-extract"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T21:52:52.316Z"
+              "canaryVerifiedAt": "2026-08-22T21:37:40.410Z"
             },
             {
-              "id": "mg-research-proof-evidence",
-              "name": "Research Evidence & Provenance · Evidence Matrix",
-              "description": "Research Evidence & Provenance · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Turn source pages into auditable evidence suitable for research agents and downstream synthesis. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 6,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-research-proof-evidence"
-              },
-              "example": {
-                "url": "https://example.com"
-              },
-              "canaryVerifiedAt": "2026-08-22T21:56:29.606Z"
-            },
-            {
-              "id": "mg-trust-sec-extract",
-              "name": "Security & Trust Surface Intelligence · Precision Extract",
-              "description": "Security & Trust Surface Intelligence · Precision Extract. Fast domain-specific structured extraction for another agent. Give autonomous buyers a preflight view of public trust and security signals before relying on a web service. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
-              "state": "trial",
-              "nutrientScore": 29,
-              "priceCents": 3,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-trust-sec-extract"
-              },
-              "example": {
-                "url": "https://example.com"
-              },
-              "canaryVerifiedAt": "2026-08-22T22:04:50.766Z"
-            },
-            {
-              "id": "mg-trust-sec-context",
-              "name": "Security & Trust Surface Intelligence · Agent Context Pack",
-              "description": "Security & Trust Surface Intelligence · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Give autonomous buyers a preflight view of public trust and security signals before relying on a web service. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-geo-ai-context",
+              "name": "AI Visibility / GEO Readiness · Agent Context Pack",
+              "description": "AI Visibility / GEO Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 5,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-trust-sec-context"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-context"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T22:04:55.837Z"
+              "canaryVerifiedAt": "2026-08-22T21:37:46.596Z"
             },
             {
-              "id": "mg-trust-sec-audit",
-              "name": "Security & Trust Surface Intelligence · Technical Audit",
-              "description": "Security & Trust Surface Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Give autonomous buyers a preflight view of public trust and security signals before relying on a web service. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-geo-ai-audit",
+              "name": "AI Visibility / GEO Readiness · Technical Audit",
+              "description": "AI Visibility / GEO Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 7,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-trust-sec-audit"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-audit"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T22:05:09.295Z"
+              "canaryVerifiedAt": "2026-08-22T21:37:52.927Z"
             },
             {
-              "id": "mg-trust-sec-evidence",
-              "name": "Security & Trust Surface Intelligence · Evidence Matrix",
-              "description": "Security & Trust Surface Intelligence · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Give autonomous buyers a preflight view of public trust and security signals before relying on a web service. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-geo-ai-evidence",
+              "name": "AI Visibility / GEO Readiness · Evidence Matrix",
+              "description": "AI Visibility / GEO Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 6,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-trust-sec-evidence"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-evidence"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T22:05:16.365Z"
+              "canaryVerifiedAt": "2026-08-22T21:38:02.379Z"
             },
             {
-              "id": "mg-trust-sec-decision",
-              "name": "Security & Trust Surface Intelligence · Decision Dossier",
-              "description": "Security & Trust Surface Intelligence · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Give autonomous buyers a preflight view of public trust and security signals before relying on a web service. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "id": "mg-geo-ai-decision",
+              "name": "AI Visibility / GEO Readiness · Decision Dossier",
+              "description": "AI Visibility / GEO Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
               "nutrientScore": 29,
               "priceCents": 9,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-trust-sec-decision"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-decision"
               },
               "example": {
                 "url": "https://example.com"
               },
-              "canaryVerifiedAt": "2026-08-22T22:05:23.394Z"
+              "canaryVerifiedAt": "2026-08-22T21:38:20.223Z"
+            },
+            {
+              "id": "mg-geo-ai-compare",
+              "name": "AI Visibility / GEO Readiness · Change / Comparison Dossier",
+              "description": "AI Visibility / GEO Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Improve how pages expose evidence and answerable structure to AI search and recommendation systems. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 10,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-geo-ai-compare"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:38:40.425Z"
+            },
+            {
+              "id": "mg-a2a-ready-extract",
+              "name": "A2A Agent Readiness · Precision Extract",
+              "description": "A2A Agent Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 3,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-extract"
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:41:13.645Z"
+            },
+            {
+              "id": "mg-a2a-ready-context",
+              "name": "A2A Agent Readiness · Agent Context Pack",
+              "description": "A2A Agent Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 5,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-context"
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:41:30.102Z"
+            },
+            {
+              "id": "mg-a2a-ready-audit",
+              "name": "A2A Agent Readiness · Technical Audit",
+              "description": "A2A Agent Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 7,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-audit"
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:41:48.075Z"
+            },
+            {
+              "id": "mg-a2a-ready-evidence",
+              "name": "A2A Agent Readiness · Evidence Matrix",
+              "description": "A2A Agent Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 6,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-evidence"
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:41:53.253Z"
+            },
+            {
+              "id": "mg-a2a-ready-decision",
+              "name": "A2A Agent Readiness · Decision Dossier",
+              "description": "A2A Agent Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 9,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-decision"
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:45:05.001Z"
+            },
+            {
+              "id": "mg-a2a-ready-compare",
+              "name": "A2A Agent Readiness · Change / Comparison Dossier",
+              "description": "A2A Agent Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
+              "state": "trial",
+              "nutrientScore": 29,
+              "priceCents": 10,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-a2a-ready-compare"
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:45:19.526Z"
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -501,7 +495,7 @@
           ],
           "implementedDirectPaidX402Offers": 12,
           "canonicalOpenApiPaidFixedOffers": 12,
-          "dynamicCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+          "dynamicCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "dynamicCapabilityOpenApi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
           "dynamicCapabilitiesRemainRuntimeEvolved": true,
           "dynamicCapabilityExternalIndexingTruth": "not-proven-by-fixed-core-registry-check",
@@ -648,7 +642,9 @@
               "atomicTwoPathCommit": true,
               "runtimeRemainsCanonicalTruth": true,
               "registryAppearanceCannotCreateEconomicTruth": true
-            }
+            },
+            "membershipAuthority": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "marketGenomeRole": "ranking-prior-only"
           },
           "registryTargets": {
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -684,7 +680,7 @@
             },
             "githubAgentCardManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json"
           },
-          "runtimeRelease": "conway-production-v1-r110-github-agent-card-discoverability-closure",
+          "runtimeRelease": "conway-production-v1-r111-discoverability-truth-hardening",
           "metadataTruthRelease": "conway-production-v1-r104-metadata-truth-closure",
           "postCycleSynchronizationRelease": "conway-production-v1-r103-post-cycle-sync-closure",
           "agentCardEcologyRelease": "conway-production-v1-r102-autonomic-agent-card-ecology",
@@ -863,7 +859,15 @@
               "registryAppearanceCannotCreateEconomicTruth": true
             },
             "genericDynamicOpenApiTemplateIsNotAPayableOperation": true,
-            "concreteVerifiedDynamicOperationsArePublishedIndividually": true
+            "concreteVerifiedDynamicOperationsArePublishedIndividually": true,
+            "release": "conway-production-v1-r111-discoverability-truth-hardening",
+            "dynamicCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "capabilityMembershipAuthority": "canary-filtered-data.live",
+            "projectionHysteresisEnabled": true,
+            "criticalDiscoveryTransformationsFailClosed": true,
+            "mirrorProjectionFailureRefusesWrite": true,
+            "externalRegistryFreshnessIsEventuallyConsistent": true,
+            "externalRegistryMetadataCannotCreateEconomicTruth": true
           },
           "githubAgentCardExposure": {
             "mode": "github-agent-card-mirror",
@@ -887,14 +891,35 @@
             "scope": "stable-fixed-core-only",
             "fixedCoreX402Count": 12,
             "fixedCoreIsNotTotalInventory": true,
-            "registered": null,
+            "registered": true,
             "ownerApproved": true,
             "currentExternalRegistryProofAvailable": true,
             "registeredFixedCoreResourceCount": 12,
             "registrationState": "registered-all-twelve-owner-approved-current-external-proof",
             "checkedAt": "2026-08-25T16:06:15.589Z",
             "dynamicCapabilityIndexingProofAvailable": false,
-            "truth": "This object preserves only inherited external evidence and scopes it to the stable fixed core. It is not Conway's total executable-inventory count and does not imply dynamic indexing."
+            "truth": "Fixed-core registration completeness is derived only from current external proof, owner approval, exact observed fixed-core count and registered state. It never implies dynamic-capability indexing or revenue.",
+            "registeredObserved": null,
+            "fixedCoreRegistrationComplete": true
+          },
+          "projectionTruthRelease": "conway-production-v1-r111-discoverability-truth-hardening",
+          "synchronizationEngineRelease": "conway-production-v1-r109-realtime-rights-provenance",
+          "dynamicCapabilityMembershipAuthority": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+          "marketGenomeRole": "ranking-prior-only-not-membership-authority",
+          "agentCardProjectionTruth": {
+            "membershipAuthority": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "requiresCurrentState": [
+              "trial",
+              "active"
+            ],
+            "exactExecutableRouteRequired": true,
+            "marketGenomeMayRankButCannotAuthorizeMembership": true,
+            "projectedDynamicSkills": 32,
+            "maxProjectedDynamicSkills": 32,
+            "minimumResidencyHoursWhileStillExecutable": 24,
+            "maxReplacementsPerResidencyWindow": 4,
+            "staleOrArchivedCapabilityRemovedImmediately": true,
+            "boundedProjectionIsNotFullInventory": true
           }
         }
       }
