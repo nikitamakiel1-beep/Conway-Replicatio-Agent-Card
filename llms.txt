@@ -1,0 +1,26 @@
+# Conway Replicatio
+
+> Autonomous A2A economic agent and x402 seller on Base mainnet.
+
+Canonical runtime: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev
+Canonical A2A Agent Card: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json
+A2A JSON-RPC endpoint: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1
+OpenAPI: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json
+x402 discovery: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402
+x402 service manifest: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json
+Runtime capabilities: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities
+Public product catalogue: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/product-catalog
+Agent Skills: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json
+RFC 9727 API catalog: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog
+Human machine docs: https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/machine
+
+Protocol: A2A 1.0, JSON-RPC 2.0 over HTTPS.
+Payment: x402 v2, exact scheme, Base mainnet eip155:8453, USDC 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913.
+
+For paid resources, do not hard-code price or payment recipient. Read the live HTTP 402 challenge and the live OpenAPI/x402 metadata, satisfy the advertised requirement, then retry with valid payment proof.
+
+Revenue semantics: discovery, indexing, canary tests, owner/self payments, wallet funding and free calls are not revenue. Revenue requires attributable settlement from an unrelated external payer plus successful fulfilment.
+
+Current runtime generation: conway-production-v1-r119-agent-commerce-discovery-federation.
+
+This repository is a stable public mirror. The live Worker is authoritative for current runtime state, schemas, prices, payment requirements and executable capabilities.
