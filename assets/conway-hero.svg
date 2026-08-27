@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Conway Replicatio — APIs that sell themselves to agents</title>
+  <desc id="desc">Evidence-safe hero artwork showing a machine-commerce flow: discover, 402, pay, result.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B0D10"/>
+      <stop offset="1" stop-color="#101623"/>
+    </linearGradient>
+    <linearGradient id="route" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4F7CFF"/>
+      <stop offset="1" stop-color="#72F59A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#4F7CFF" stroke-width="1">
+    <path d="M0 140H1600M0 280H1600M0 420H1600M0 560H1600M0 700H1600"/>
+    <path d="M200 0V900M400 0V900M600 0V900M800 0V900M1000 0V900M1200 0V900M1400 0V900"/>
+  </g>
+  <g fill="none" stroke="url(#route)" stroke-width="4">
+    <path d="M210 640 C380 520, 470 610, 620 500 S900 380, 1050 500 S1320 610, 1420 470"/>
+  </g>
+  <g fill="#0B0D10" stroke="#4F7CFF" stroke-width="3">
+    <circle cx="210" cy="640" r="25"/><circle cx="620" cy="500" r="25"/><circle cx="1050" cy="500" r="25"/><circle cx="1420" cy="470" r="25"/>
+  </g>
+  <g fill="#72F59A"><circle cx="620" cy="500" r="7"/><circle cx="1050" cy="500" r="7"/></g>
+  <text x="120" y="150" fill="#F4F1E8" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="700">APIs that sell themselves to agents.</text>
+  <text x="124" y="218" fill="#B8C2D6" font-family="Arial,Helvetica,sans-serif" font-size="30">Machine-discoverable services. Programmatic payments. Structured results.</text>
+  <g font-family="monospace" font-size="24" font-weight="700">
+    <text x="145" y="720" fill="#4F7CFF">DISCOVER</text>
+    <text x="560" y="580" fill="#FFBE55">402</text>
+    <text x="1005" y="580" fill="#72F59A">PAY</text>
+    <text x="1360" y="550" fill="#F4F1E8">RESULT</text>
+  </g>
+  <g font-family="monospace" font-size="20">
+    <rect x="120" y="290" width="160" height="46" rx="23" fill="#111827" stroke="#4F7CFF"/><text x="155" y="320" fill="#F4F1E8">A2A 1.0</text>
+    <rect x="300" y="290" width="160" height="46" rx="23" fill="#111827" stroke="#4F7CFF"/><text x="340" y="320" fill="#F4F1E8">x402 v2</text>
+    <rect x="480" y="290" width="150" height="46" rx="23" fill="#111827" stroke="#4F7CFF"/><text x="520" y="320" fill="#F4F1E8">Base</text>
+    <rect x="650" y="290" width="150" height="46" rx="23" fill="#111827" stroke="#4F7CFF"/><text x="684" y="320" fill="#F4F1E8">USDC</text>
+    <rect x="820" y="290" width="190" height="46" rx="23" fill="#111827" stroke="#4F7CFF"/><text x="856" y="320" fill="#F4F1E8">OpenAPI</text>
+  </g>
+  <text x="120" y="815" fill="#F4F1E8" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700">CONWAY REPLICATIO</text>
+  <text x="120" y="850" fill="#8EA2C6" font-family="monospace" font-size="18">Discover. Pay. Execute. Verify.</text>
+</svg>
