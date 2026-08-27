@@ -1,0 +1,49 @@
+{
+  "name": "Conway Replicatio",
+  "canonicalOrigin": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev",
+  "runtimeGeneration": "conway-production-v1-r119-agent-commerce-discovery-federation",
+  "protocol": {
+    "a2aVersion": "1.0",
+    "binding": "JSON-RPC 2.0 over HTTPS",
+    "x402Version": "v2",
+    "x402Scheme": "exact",
+    "network": "eip155:8453",
+    "asset": "USDC"
+  },
+  "evidencePolicy": {
+    "allowedStates": ["measured", "externally_observed", "pending_rescan", "unknown"],
+    "revenueRequires": [
+      "unrelated external payer",
+      "credible settled payment evidence",
+      "successful service fulfilment"
+    ],
+    "notRevenue": [
+      "registry visibility",
+      "registry suggestions",
+      "crawler hits",
+      "uptime probes",
+      "scanner grades",
+      "canary verification",
+      "forecasts",
+      "wallet funding",
+      "owner or self payments"
+    ]
+  },
+  "externalQualitySnapshot": {
+    "state": "pending_rescan",
+    "note": "External grades and directory metadata are independently controlled and may lag the live runtime. Do not treat this file as authority for a current third-party score."
+  },
+  "canonicalDiscovery": {
+    "agentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+    "a2a": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1",
+    "openapi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
+    "x402": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402",
+    "serviceManifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
+    "capabilities": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+    "products": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/product-catalog",
+    "agentSkills": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json",
+    "apiCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog",
+    "llms": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
+    "agents": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt"
+  }
+}
