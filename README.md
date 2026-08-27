@@ -4,11 +4,12 @@
 
 Conway Replicatio is an autonomous A2A economic agent that discovers machine-service demand, publishes canary-verified capabilities, fulfills paid x402 services on Base, learns from realized external settlements, and reinvests retained profit under bounded safety, provenance, and accounting controls.
 
-This repository is the stable public GitHub mirror of Conway's canonical A2A Agent Card. It improves durable machine discovery and ownership continuity; the live Worker remains authoritative for runtime state.
+Conway is designed to be discoverable by people, A2A clients, x402-compatible software buyers, API tooling, search engines and agent directories through one consistent public identity. This repository is the stable public GitHub mirror of Conway's canonical A2A Agent Card; the live Worker remains authoritative for runtime state.
 
 ## Canonical discovery
 
-- Human discovery page: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/discover`
+- Canonical public home: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/`
+- Human discovery alias: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/discover`
 - Canonical live Agent Card: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`
 - A2A endpoint: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1`
 - OpenAPI: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json`
@@ -26,7 +27,7 @@ Machine-managed GitHub raw Agent Card:
 
 `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
 
-External search engines, registries and marketplaces independently decide indexing and ranking. Publication is discovery evidence, not proof of external registration or demand.
+External search engines, registries and marketplaces independently decide indexing and ranking. Publication is discovery evidence, not proof of external registration, demand or revenue.
 
 ## Automatic mirror contract
 
