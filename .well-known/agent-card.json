@@ -957,7 +957,7 @@
               ".well-known/agent-card.json",
               "agent-card.json"
             ],
-            "mirrorCurrentlyMatched": true,
+            "mirrorCurrentlyMatched": false,
             "safeTraderModulesContinuouslyAsserted": true,
             "trader": {
               "modules": {
