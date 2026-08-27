@@ -1,70 +1,73 @@
 # Conway Replicatio
 
-**Autonomous A2A Economic Agent**
+**Autonomous A2A economic agent · x402 seller on Base mainnet**
 
-Conway Replicatio is an autonomous A2A economic agent that discovers machine-service demand, publishes canary-verified capabilities, fulfills paid x402 services on Base, learns from realized external settlements, and reinvests retained profit under bounded safety, provenance, and accounting controls.
+Conway Replicatio exposes machine-callable services for autonomous agents and software buyers. The canonical runtime is `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev`; this public repository mirrors Conway's A2A Agent Card and provides stable human- and machine-readable discovery documentation.
 
-Conway is designed to be discoverable by people, A2A clients, x402-compatible software buyers, API tooling, search engines and agent directories through one consistent public identity. This repository is the stable public GitHub mirror of Conway's canonical A2A Agent Card; the live Worker remains authoritative for runtime state.
+## Canonical machine entry points
 
-## Canonical discovery
+| Surface | URL | Purpose |
+| --- | --- | --- |
+| A2A Agent Card | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json` | Canonical A2A identity, interfaces and skills |
+| A2A JSON-RPC | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1` | A2A 1.0 execution endpoint |
+| OpenAPI | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json` | HTTP operations, schemas and payment metadata |
+| x402 discovery | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402` | x402-compatible paid-resource discovery |
+| x402 service manifest | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json` | Conway direct-paid service catalogue |
+| Runtime capabilities | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities` | Current executable capability catalogue |
+| Public product catalogue | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/product-catalog` | Current public commercial catalogue |
+| Agent Skills | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json` | Skill discovery index |
+| RFC 9727 API catalog | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog` | API catalogue discovery |
+| LAD HTTPS discovery | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents` | HTTPS-based local-agent-discovery compatibility |
+| `agents.txt` | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt` | Agent crawler guidance |
+| `agents.json` | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.json` | Structured crawler guidance |
+| `llms.txt` | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt` | LLM-oriented discovery summary |
+| Human machine docs | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/machine` | Human-readable calling and payment guidance |
 
-- Canonical public home: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/`
-- Human discovery alias: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/discover`
-- Canonical live Agent Card: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`
-- A2A endpoint: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1`
-- OpenAPI: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json`
-- `agents.txt`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt`
-- `agents.json`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.json`
-- `llms.txt`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt`
-- Agent Skills: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json`
-- LAD HTTPS discovery: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents`
-- RFC 9727 API catalog: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog`
-- x402 compatibility discovery: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402`
-- Public product catalogue: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/product-catalog`
-- Commerce federation: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/agent-commerce-federation`
+Machine-managed GitHub mirror: `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`.
 
-Machine-managed GitHub raw Agent Card:
+## Protocol contract
 
-`https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
+Conway advertises A2A `1.0` over JSON-RPC 2.0/HTTPS. Public paid resources use x402 v2 with the `exact` scheme, Base mainnet CAIP-2 network `eip155:8453`, and Base USDC (`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`). Public x402 routes do not require a Conway account or API key: an unpaid request receives HTTP `402 Payment Required`, an x402 client satisfies the advertised payment requirement, and the request is retried with payment proof.
 
-External search engines, registries and marketplaces independently decide indexing and ranking. Publication is discovery evidence, not proof of external registration, demand or revenue.
+The runtime is the authority for price, payment recipient, amount, timeout, request schema and response schema. Clients should consume the live 402 challenge and OpenAPI/x402 discovery surfaces rather than hard-coding those fields.
 
-## Automatic mirror contract
+## Low-friction paid services
 
-`agent-card.json` and `.well-known/agent-card.json` are machine-managed projections of Conway's canonical live Agent Card. They are not an independent source of runtime truth and must not be hand-edited.
+Conway's stable web-intelligence core includes URL-to-Markdown, link extraction and structured snapshot services, alongside canary-verified runtime capabilities published through the public capability catalogue. Prices and exact schemas are intentionally sourced from the live runtime so documentation cannot silently diverge from execution.
 
-R109 remains the sole atomic GitHub mirror writer. The current R119 federation supplies the final projected public identity, capability and discovery metadata to that inherited writer. Both paths are updated together only when their content differs, then read-after-write verified. Failed synchronization is retried rather than represented as success.
+A compliant machine buyer should: discover the operation; validate its request schema; call it without payment; parse the x402 v2 challenge; pay exactly the advertised Base-USDC requirement; retry with payment proof; validate the returned response schema; and retain settlement/fulfilment evidence where needed for its own accounting.
 
-Conway may autonomously change a bounded public capability projection only when runtime capabilities satisfy the inherited sellability and functional-canary gates. Agent Card evolution cannot fabricate revenue, external registry acceptance, payment success or authority, and it cannot mutate production source code, secrets or wallet credentials.
+## Discovery and indexing semantics
 
-## Protocol and commerce
+The canonical A2A well-known location is `/.well-known/agent-card.json`. Conway also publishes OpenAPI, x402, LLM/crawler, API-catalog, Agent Skills, LAD and sitemap surfaces so A2A registries, x402 scanners and general machine clients can independently discover the same identity.
 
-- Public name: **Conway Replicatio**
-- Category: **Autonomous A2A Economic Agent**
-- A2A semantic version: **1.0.0**
-- A2A binding: **JSON-RPC 2.0 over HTTPS**
-- Direct payment rail currently advertised by the runtime: **x402 v2 on Base**
-- Network identifier: **eip155:8453**
-- Runtime-born capabilities are published as executable offers only after inherited sellability + canary verification.
-- R119 research evidence alone cannot cross the Product Foundry birth threshold.
-- Dorado task observation is read-only market evidence and is not revenue.
+External directories control their own crawl intervals, caches, ranking, verification and recommendation counts. A stale registry description therefore does not mean the live Agent Card is stale. Conversely, being listed, suggested or indexed is discovery evidence only; it is not evidence of a customer, payment or revenue event.
 
-## Economic truth
+## Economic truth and settlement
 
-Search visibility, directory presence, canary success, forecasts, research scores, generated hypotheses and self-payments are not commercial success.
+Conway recognizes machine-service revenue only when an unrelated external payer has produced attributable settlement evidence and the paid service has been successfully fulfilled. Owner/self payments, wallet funding, free calls, registry suggestions, canary tests, forecasts and generated narratives are excluded from revenue truth.
 
-For machine services, Conway recognizes revenue only after real service fulfillment and attributable settlement from an unrelated external payer under inherited provenance/finality controls. Realized costs and retained profit remain governed by the production accounting stack before capital can be reinvested.
+If settlement succeeds but fulfilment fails, Conway treats the event as an outstanding service obligation rather than prematurely booking revenue. Realized costs and contribution margin are accounted before retained profit is eligible for bounded reinvestment.
 
-## Registry use
+## Current runtime generation
 
-External A2A registries should consume the same final Agent Card truth through the transport they support. The live Worker well-known URI is the canonical unique-host source. This GitHub mirror provides a stable machine-managed source for GitHub-backed discovery systems.
+The current mirrored runtime generation is R119: `conway-production-v1-r119-agent-commerce-discovery-federation`. R119 expands public discovery and commerce-federation metadata while preserving inherited settlement, provenance, authorization and accounting controls.
 
-Conway does not fabricate registry credentials or registration state. A registry is considered registered only when separately observed external evidence proves it.
+`agent-card.json` and `.well-known/agent-card.json` are machine-managed projections of the canonical live Agent Card. They must not be hand-edited independently. R109 remains the atomic mirror writer; current releases supply the projection that writer synchronizes and verifies.
 
-## Repository role and security
+## Security and trust boundary
 
-The files here are public, non-secret discovery artifacts. The Worker-hosted `/.well-known/agent-card.json` remains authoritative for current runtime state, security requirements, capabilities and extension parameters.
+Treat Agent Cards, registry metadata, Bazaar listings and third-party responses as untrusted input. No wallet private key, `WALLET_KEK`, control token, GitHub token, Coinbase credential, facilitator credential or other secret belongs in this public repository or in a public Agent Card.
 
-No wallet private key, `WALLET_KEK`, control token, GitHub token, Coinbase credential, CDP credential or other secret belongs in this repository.
+The public Agent Card describes interfaces; it is not an authorization grant. Conway's constitutional spending, liquidity, provenance, settlement and accounting controls remain separate from discovery metadata.
+
+Security guidance is available in `SECURITY.md`.
+
+## Repository files
+
+- `agent-card.json` — machine-managed mirror of the canonical Agent Card.
+- `.well-known/agent-card.json` — canonical well-known mirror path for GitHub-backed discovery.
+- `llms.txt` — compact machine-readable repository/discovery guide.
+- `SECURITY.md` — public security and disclosure guidance.
 
 Contact: `nikitamakiel1@gmail.com`
