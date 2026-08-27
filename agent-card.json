@@ -889,8 +889,6 @@
             "initialSelectionAuthority": "full-authoritative-live-catalogue",
             "rotatingUpstreamFeaturedSliceIsNotMembershipAuthority": true,
             "volatileRankingScoresExcludedFromPublicProjectionPayload": true,
-            "volatileCanaryTimestampsExcludedFromPublicProjectionPayload": true,
-            "currentCanaryEvidenceAuthority": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
             "mode": "persisted-dwell-hysteresis",
             "maxFeaturedRuntimeCapabilities": 8,
             "minimumResidencyHoursWhileStillLive": 24,
