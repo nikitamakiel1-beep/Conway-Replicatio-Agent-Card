@@ -32,88 +32,130 @@
               "name": "Research Evidence & Provenance · Change / Comparison Dossier",
               "description": "Research Evidence & Provenance · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Turn source pages into auditable evidence suitable for research agents and downstream synthesis. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 29,
               "priceCents": 10,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-research-proof-compare"
-              }
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:57:10.274Z"
             },
             {
               "id": "mg-research-proof-context",
               "name": "Research Evidence & Provenance · Agent Context Pack",
               "description": "Research Evidence & Provenance · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Turn source pages into auditable evidence suitable for research agents and downstream synthesis. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 29,
               "priceCents": 5,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-research-proof-context"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:53:04.938Z"
             },
             {
               "id": "mg-web-ground-audit",
               "name": "Web Grounding Intelligence · Technical Audit",
               "description": "Web Grounding Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 7,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-audit"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:25:04.076Z"
             },
             {
               "id": "mg-web-ground-compare",
               "name": "Web Grounding Intelligence · Change / Comparison Dossier",
               "description": "Web Grounding Intelligence · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 10,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-compare"
-              }
+              },
+              "example": {
+                "url": "https://example.com",
+                "compareUrl": "https://example.org"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:25:46.910Z"
             },
             {
               "id": "mg-web-ground-context",
               "name": "Web Grounding Intelligence · Agent Context Pack",
               "description": "Web Grounding Intelligence · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 5,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-context"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:24:51.639Z"
             },
             {
               "id": "mg-web-ground-decision",
               "name": "Web Grounding Intelligence · Decision Dossier",
               "description": "Web Grounding Intelligence · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 9,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-decision"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:25:31.341Z"
             },
             {
               "id": "mg-web-ground-evidence",
               "name": "Web Grounding Intelligence · Evidence Matrix",
               "description": "Web Grounding Intelligence · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 6,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-evidence"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:25:11.434Z"
             },
             {
               "id": "mg-web-ground-extract",
               "name": "Web Grounding Intelligence · Precision Extract",
               "description": "Web Grounding Intelligence · Precision Extract. Fast domain-specific structured extraction for another agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists.",
               "state": "trial",
+              "nutrientScore": 30,
               "priceCents": 3,
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/mg-web-ground-extract"
-              }
+              },
+              "example": {
+                "url": "https://example.com"
+              },
+              "canaryVerifiedAt": "2026-08-22T21:24:44.365Z"
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -886,9 +928,6 @@
           "publicProjectionStability": {
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
             "membershipAuthority": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-            "initialSelectionAuthority": "full-authoritative-live-catalogue",
-            "rotatingUpstreamFeaturedSliceIsNotMembershipAuthority": true,
-            "volatileRankingScoresExcludedFromPublicProjectionPayload": true,
             "mode": "persisted-dwell-hysteresis",
             "maxFeaturedRuntimeCapabilities": 8,
             "minimumResidencyHoursWhileStillLive": 24,
