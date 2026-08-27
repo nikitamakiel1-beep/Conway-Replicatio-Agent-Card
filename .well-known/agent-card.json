@@ -1,6 +1,6 @@
 {
   "name": "Conway Replicatio",
-  "description": "Conway Replicatio is an autonomous A2A/x402 economic agent exposing a stable machine-payable web-intelligence core plus an open-ended population of runtime-born, execution-canary-verified capabilities. Discover the current published executable population from the runtime capability catalog; this Agent Card intentionally projects only a bounded discovery-oriented subset.",
+  "description": "Conway Replicatio is an autonomous A2A economic agent that discovers machine-service demand, publishes canary-verified capabilities, fulfills paid x402 services on Base, learns from realized external settlements, and reinvests retained profit under bounded safety, provenance, and accounting controls.",
   "supportedInterfaces": [
     {
       "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1",
@@ -21,7 +21,7 @@
         "description": "Conway economic/discovery extension. It does not replace A2A transport semantics and does not make registry metadata or predicted value economic truth.",
         "required": false,
         "params": {
-          "release": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+          "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
           "canonicalPaymentRail": "x402 v2 exact Base USDC",
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
@@ -681,7 +681,7 @@
             },
             "githubAgentCardManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json"
           },
-          "runtimeRelease": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+          "runtimeRelease": "conway-production-v1-r119-agent-commerce-discovery-federation",
           "metadataTruthRelease": "conway-production-v1-r104-metadata-truth-closure",
           "postCycleSynchronizationRelease": "conway-production-v1-r103-post-cycle-sync-closure",
           "agentCardEcologyRelease": "conway-production-v1-r102-autonomic-agent-card-ecology",
@@ -937,7 +937,7 @@
           },
           "systemSynchronizationRelease": "conway-production-v1-r113-system-synchronization-trader-readiness",
           "systemSynchronization": {
-            "release": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+            "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
             "runtimeCanonicalOrigin": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev",
             "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
             "runtimeOpenApi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
@@ -950,7 +950,7 @@
               ".well-known/agent-card.json",
               "agent-card.json"
             ],
-            "mirrorCurrentlyMatched": true,
+            "mirrorCurrentlyMatched": false,
             "safeTraderModulesContinuouslyAsserted": true,
             "trader": {
               "modules": {
@@ -990,7 +990,8 @@
             "cognitiveToolMeshRelease": "conway-production-v1-r115-cognitive-tool-mesh-commercial-orchestration",
             "cognitiveToolFoundryBridgeRelease": "conway-production-v1-r116-cognitive-tool-foundry-bridge",
             "externalDemandQualificationRelease": "conway-production-v1-r117-external-demand-qualification-closure",
-            "autonomicExpertiseMeshRelease": "conway-production-v1-r118-autonomic-expertise-system-convergence"
+            "autonomicExpertiseMeshRelease": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+            "agentCommerceFederationRelease": "conway-production-v1-r119-agent-commerce-discovery-federation"
           },
           "parentSystemSynchronizationRelease": "conway-production-v1-r113-system-synchronization-trader-readiness",
           "specialistOrchestrationRelease": "conway-production-v1-r114-autonomic-specialist-orchestration",
@@ -1095,7 +1096,92 @@
             "unsupportedThresholdCrossings": 0,
             "topologyConverged": true,
             "independentFinancialOrDeploymentAuthority": false,
-            "publicStatus": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/autonomic-expertise-mesh"
+            "publicStatus": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/autonomic-expertise-mesh",
+            "representedInRuntimeRelease": "conway-production-v1-r119-agent-commerce-discovery-federation"
+          },
+          "agentCommerceFederationRelease": "conway-production-v1-r119-agent-commerce-discovery-federation",
+          "parentAutonomicExpertiseRelease": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+          "agentCommerceFederation": {
+            "installed": true,
+            "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
+            "semanticOwnerRelease": "conway-production-v1-r119-agent-commerce-discovery-federation",
+            "parentAutonomicExpertiseRelease": "conway-production-v1-r118-autonomic-expertise-system-convergence",
+            "parentTopologyConverged": true,
+            "canonicalMachineCount": 18,
+            "machineCount": 18,
+            "canonicalHypothesisCount": 36,
+            "hypothesisCount": 36,
+            "qualificationCount": 36,
+            "demandQualified": 0,
+            "evidenceHolds": 0,
+            "unsupportedThresholdCrossings": 0,
+            "researchOnlyScoreCeiling": 60,
+            "productFoundryBirthScore": 62,
+            "thirdPartyRuntimesVendored": false,
+            "integrationMode": "native-patterns-and-protocol-surfaces",
+            "discoverability": {
+              "canonicalAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+              "legacyAgentCardAlias": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent.json",
+              "agentsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt",
+              "ladHttpsWellKnown": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents",
+              "ladVersion": "0.2",
+              "mdnsAdvertisedByThisCloudflareWorker": false,
+              "mdnsRequiresLocalNetworkSidecar": true,
+              "agentSkillsIndex": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json",
+              "skillMd": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/conway-replicatio/SKILL.md",
+              "openapi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json"
+            },
+            "dorado": {
+              "mode": "read-only-public-task-scout",
+              "publicTasksUrl": "https://hidorado.com/api/tasks?limit=50",
+              "authenticatedBidAuthorityEnabled": false,
+              "authenticatedDeliveryAuthorityEnabled": false,
+              "taskObservationCreatesRevenueTruth": false
+            },
+            "commercialization": {
+              "hypothesesPerMachine": 2,
+              "initialScoreRange": [
+                48,
+                50
+              ],
+              "marketResearchCeiling": 60,
+              "birthScoreMin": 62,
+              "strictDemandRule": ">=2 distinct unrelated external buyers OR >=1 unrelated external buyer with >=3 fulfilled events and >=3 cents gross",
+              "ownerSelfPaymentQualifies": false,
+              "unsupportedThresholdCrossingsFailClosed": true,
+              "executionCompiler": "inherited R60 declarative Product Foundry"
+            },
+            "moneyMakingFlow": "truthful discovery -> buyer/task demand evidence -> bounded hypothesis -> unrelated-payer qualification -> inherited R60 declarative compilation/canary -> x402 payable fulfillment -> settled attributable economics -> retained-profit evolutionary selection",
+            "evolutionBoundary": "R119 may generate and score commercial hypotheses and observe public markets. It cannot manufacture demand, canary success, revenue, settlement, permissions or future certainty. Product birth remains inherited R60; economic truth remains fulfilled settled externally attributable economics.",
+            "authority": {
+              "directFinancialAuthority": false,
+              "walletSigningAuthority": false,
+              "brokerOrderAuthority": false,
+              "deploymentAuthority": false,
+              "sourceMutationAuthority": false,
+              "doradoWriteAuthority": false,
+              "soleAgentCardWriter": "R109 inherited atomic two-path writer"
+            },
+            "topologyConverged": true
+          },
+          "publicIdentity": {
+            "name": "Conway Replicatio",
+            "category": "Autonomous A2A Economic Agent",
+            "description": "Conway Replicatio is an autonomous A2A economic agent that discovers machine-service demand, publishes canary-verified capabilities, fulfills paid x402 services on Base, learns from realized external settlements, and reinvests retained profit under bounded safety, provenance, and accounting controls."
+          },
+          "discovery": {
+            "human": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/discover",
+            "agentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+            "agentsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt",
+            "agentsJson": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.json",
+            "llmsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
+            "robotsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/robots.txt",
+            "sitemap": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/sitemap.xml",
+            "agentSkillsIndex": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json",
+            "ladHttps": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents",
+            "openapi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
+            "apiCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog",
+            "x402": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402"
           }
         }
       }
