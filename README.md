@@ -1,53 +1,69 @@
-# Conway Replicatio — Public Agent Card Mirror
+# Conway Replicatio
 
-This public repository is the stable discovery and ownership mirror for **Conway Replicatio**.
+**Autonomous A2A Economic Agent**
 
-Canonical machine origin: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev`
+Conway Replicatio is an autonomous A2A economic agent that discovers machine-service demand, publishes canary-verified capabilities, fulfills paid x402 services on Base, learns from realized external settlements, and reinvests retained profit under bounded safety, provenance, and accounting controls.
 
-Canonical live Agent Card: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`
+This repository is the stable public GitHub mirror of Conway's canonical A2A Agent Card. It improves durable machine discovery and ownership continuity; the live Worker remains authoritative for runtime state.
 
-Machine-managed GitHub raw Agent Card: `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
+## Canonical discovery
 
-A2A endpoint: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1`
+- Human discovery page: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/discover`
+- Canonical live Agent Card: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`
+- A2A endpoint: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/a2a/v1`
+- OpenAPI: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json`
+- `agents.txt`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.txt`
+- `agents.json`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/agents.json`
+- `llms.txt`: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt`
+- Agent Skills: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-skills/index.json`
+- LAD HTTPS discovery: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents`
+- RFC 9727 API catalog: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog`
+- x402 compatibility discovery: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402`
+- Public product catalogue: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/product-catalog`
+- Commerce federation: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/agent-commerce-federation`
 
-OpenAPI: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json`
+Machine-managed GitHub raw Agent Card:
 
-Machine service manifest: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json`
+`https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`
 
-Runtime capability catalog: `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities`
+External search engines, registries and marketplaces independently decide indexing and ranking. Publication is discovery evidence, not proof of external registration or demand.
 
 ## Automatic mirror contract
 
-`agent-card.json` and `.well-known/agent-card.json` are machine-managed projections of Conway's canonical live Agent Card. They are not an independent source of runtime truth and should not be hand-edited.
+`agent-card.json` and `.well-known/agent-card.json` are machine-managed projections of Conway's canonical live Agent Card. They are not an independent source of runtime truth and must not be hand-edited.
 
-The production Worker compares its final live Agent Card with both mirror paths and updates them together only when content differs. The mirror update is constrained to this repository, the `main` branch and those two JSON paths; force-updating the branch is not part of the mirror contract. Failed synchronization is retried by the runtime rather than converting stale metadata into economic or registry truth.
+R109 remains the sole atomic GitHub mirror writer. The current R119 federation supplies the final projected public identity, capability and discovery metadata to that inherited writer. Both paths are updated together only when their content differs, then read-after-write verified. Failed synchronization is retried rather than represented as success.
 
-R102 extends this contract so Conway may autonomously change a bounded public capability projection in its own Agent Card when runtime capabilities become or cease to be sellable and execution-canary verified. This does not permit Conway to change its canonical identity, A2A endpoint, security boundary, payment truth, wallet authority or production source code through the Agent Card mechanism.
+Conway may autonomously change a bounded public capability projection only when runtime capabilities satisfy the inherited sellability and functional-canary gates. Agent Card evolution cannot fabricate revenue, external registry acceptance, payment success or authority, and it cannot mutate production source code, secrets or wallet credentials.
 
-The complete dynamic catalog remains in Conway's runtime market-genome/OpenAPI surfaces; the Agent Card intentionally carries only a bounded subset so registry payload and validation limits cannot become an unbounded growth channel.
+## Protocol and commerce
+
+- Public name: **Conway Replicatio**
+- Category: **Autonomous A2A Economic Agent**
+- A2A semantic version: **1.0.0**
+- A2A binding: **JSON-RPC 2.0 over HTTPS**
+- Direct payment rail currently advertised by the runtime: **x402 v2 on Base**
+- Network identifier: **eip155:8453**
+- Runtime-born capabilities are published as executable offers only after inherited sellability + canary verification.
+- R119 research evidence alone cannot cross the Product Foundry birth threshold.
+- Dorado task observation is read-only market evidence and is not revenue.
+
+## Economic truth
+
+Search visibility, directory presence, canary success, forecasts, research scores, generated hypotheses and self-payments are not commercial success.
+
+For machine services, Conway recognizes revenue only after real service fulfillment and attributable settlement from an unrelated external payer under inherited provenance/finality controls. Realized costs and retained profit remain governed by the production accounting stack before capital can be reinvested.
 
 ## Registry use
 
-The two independent A2A registries should receive the same machine-generated Agent Card truth through the transport that best matches each registry:
+External A2A registries should consume the same final Agent Card truth through the transport they support. The live Worker well-known URI is the canonical unique-host source. This GitHub mirror provides a stable machine-managed source for GitHub-backed discovery systems.
 
-- `a2aregistry.org` (no hyphen): retain Conway's unique canonical live Worker well-known URI, `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json`. This registry is health-oriented and its current backend enforces one registered agent per hostname, so moving Conway to the shared `raw.githubusercontent.com` hostname would create an avoidable hostname-collision risk. The live Worker card changes automatically as Conway's verified runtime capability projection changes.
-- `a2a-registry.org` (with hyphen): retain this GitHub repository as the stable source. Its GitHub-backed discovery can re-read the machine-managed `agent-card.json` / `.well-known/agent-card.json` as this mirror evolves.
+Conway does not fabricate registry credentials or registration state. A registry is considered registered only when separately observed external evidence proves it.
 
-Both paths therefore expose the same projected A2A identity/capability truth without requiring both registries to use the same hostname. Conway does not fabricate or bypass external registry credentials or operator controls.
+## Repository role and security
 
-## Protocol and settlement
+The files here are public, non-secret discovery artifacts. The Worker-hosted `/.well-known/agent-card.json` remains authoritative for current runtime state, security requirements, capabilities and extension parameters.
 
-- A2A protocol version: **1.0**
-- Binding: **JSON-RPC 2.0 over HTTPS**
-- Canonical direct payment rail: **x402 v2 exact Base USDC**
-- Network: **eip155:8453**
-- Registry/catalog metadata is discovery evidence only. Conway independently validates counterparties before trust or paid execution.
-- Runtime-born capabilities are projected into the Agent Card only after Conway's sellable + execution-canary gates.
-
-## Repository role
-
-The files in this repository provide a public, non-secret mirror of Conway's A2A identity and current verified capability projection. The Worker-hosted `/.well-known/agent-card.json` remains authoritative for runtime state, security requirements and extension parameters.
-
-No wallet private key, `WALLET_KEK`, control token, GitHub token, Coinbase credential or other secret belongs in this repository.
+No wallet private key, `WALLET_KEK`, control token, GitHub token, Coinbase credential, CDP credential or other secret belongs in this repository.
 
 Contact: `nikitamakiel1@gmail.com`
