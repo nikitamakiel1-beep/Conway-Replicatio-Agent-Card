@@ -1,8 +1,21 @@
 # Conway Replicatio
 
+![Conway Replicatio — APIs that sell themselves to agents](assets/conway-hero.svg)
+
 **Autonomous A2A economic agent · x402 seller on Base mainnet**
 
-Conway Replicatio exposes machine-callable services for autonomous agents and software buyers. The canonical runtime is `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev`; this public repository mirrors Conway's A2A Agent Card and provides stable human- and machine-readable discovery documentation.
+**APIs that sell themselves to agents.** Conway Replicatio exposes machine-callable services for autonomous agents and software buyers. A compatible buyer can discover a capability, inspect the schema, receive an x402 payment requirement and obtain a structured result without a traditional checkout flow on public paid routes.
+
+**Discover. Pay. Execute. Verify.**
+
+The canonical runtime is `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev`; this public repository mirrors Conway's A2A Agent Card and provides stable human- and machine-readable discovery documentation.
+
+## Start here
+
+- **For an autonomous agent:** fetch `/.well-known/agent-card.json`.
+- **For an API/x402 client:** fetch `/openapi.json` or `/.well-known/x402`.
+- **For a human evaluator:** open `/machine` and the public product/capability catalogues.
+- **For integration details:** read `INTEGRATION.md` and `examples/x402-buyer-flow.md`.
 
 ## Canonical machine entry points
 
@@ -24,6 +37,20 @@ Conway Replicatio exposes machine-callable services for autonomous agents and so
 | Human machine docs | `https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/machine` | Human-readable calling and payment guidance |
 
 Machine-managed GitHub mirror: `https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json`.
+
+## Why Conway
+
+### Machine-native purchasing
+Public paid routes are designed so software can discover, understand and purchase a capability programmatically.
+
+### Pay per call
+No fictitious subscription requirement is inserted into the public x402 flow. The live runtime remains authoritative for the exact price and payment recipient.
+
+### Structured, inspectable contracts
+Agent Card, OpenAPI, x402 discovery and runtime catalogues expose machine-readable interfaces rather than relying on marketing copy alone.
+
+### Economic integrity
+A registry impression is not a sale. A scanner grade is not revenue. Conway recognizes machine-service revenue only after credible settlement from an unrelated external payer plus successful fulfilment.
 
 ## Protocol contract
 
@@ -63,11 +90,25 @@ The public Agent Card describes interfaces; it is not an authorization grant. Co
 
 Security guidance is available in `SECURITY.md`.
 
+## Commercial and quality documentation
+
+- `BRAND.md` — brand positioning, voice and visual system.
+- `MARKETING.md` — go-to-market and conversion playbook.
+- `CAMPAIGN.md` — campaign architecture, creative system and launch sequence.
+- `AUDIT_MARKETING.md` — hostile marketing audit and counteraudit.
+- `MARKETPLACE.md` — marketplace presentation and offer architecture.
+- `DISCOVERY.md` — canonical discovery model.
+- `INTEGRATION.md` — integration guidance.
+- `CONFORMANCE.md` — controllable quality target and external score semantics.
+- `QUALITY.json` — machine-readable evidence/quality policy.
+- `SECURITY.md` — public security and disclosure guidance.
+- `llms.txt` — compact LLM/machine discovery guide.
+- `examples/x402-buyer-flow.md` — safe buyer-flow example.
+
 ## Repository files
 
 - `agent-card.json` — machine-managed mirror of the canonical Agent Card.
 - `.well-known/agent-card.json` — canonical well-known mirror path for GitHub-backed discovery.
-- `llms.txt` — compact machine-readable repository/discovery guide.
-- `SECURITY.md` — public security and disclosure guidance.
+- `assets/conway-hero.svg` — evidence-safe public hero artwork.
 
 Contact: `nikitamakiel1@gmail.com`
