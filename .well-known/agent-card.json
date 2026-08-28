@@ -510,68 +510,6 @@
             "spotOnly": true,
             "riskReducingSellPreserved": true
           },
-          "discoverability": {
-            "fixedExecutableX402Services": 12,
-            "fixedCoreX402Count": 12,
-            "fixedCoreX402Services": [
-              "links",
-              "markdown",
-              "snapshot",
-              "rendered-html",
-              "accessibility",
-              "selectors",
-              "structured-json",
-              "seo-audit",
-              "page-diff",
-              "http-inspect",
-              "robots",
-              "sitemap"
-            ],
-            "fixedCoreIsNotTotalInventory": true,
-            "dynamicX402RouteTemplate": "/api/x402/capability/{capability-id}",
-            "publicServicesCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/services",
-            "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-            "marketGenomeCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
-            "fullInventoryOpenEnded": true,
-            "agentCardProjection": {
-              "bounded": true,
-              "maxDynamicSkills": 32,
-              "maxTotalSkills": 96,
-              "notFullInventory": true
-            },
-            "externalRegistryCountsAreObservedNotInferred": true,
-            "externalRegistrationStateNotHardCoded": true,
-            "openApi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
-            "llmsTxt": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/llms.txt",
-            "sitemap": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/sitemap.xml",
-            "measurement": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/discoverability",
-            "searchVisibilityCannotCreateRevenueTruth": true,
-            "preferredA2AExposure": "github-agent-card-mirror",
-            "githubAgentCard": {
-              "mode": "github-agent-card-mirror",
-              "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
-              "branch": "main",
-              "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
-              "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
-              "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
-              "automaticRuntimeToGithubSynchronization": true,
-              "atomicTwoPathCommit": true,
-              "runtimeRemainsCanonicalTruth": true,
-              "registryAppearanceCannotCreateEconomicTruth": true
-            },
-            "genericDynamicOpenApiTemplateIsNotAPayableOperation": true,
-            "concreteVerifiedDynamicOperationsArePublishedIndividually": true,
-            "release": "conway-production-v1-r112-discoverability-adversarial-closure",
-            "dynamicCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-            "capabilityMembershipAuthority": "canary-filtered-data.live-exact-canonical-rows",
-            "projectionHysteresisEnabled": true,
-            "criticalDiscoveryTransformationsFailClosed": true,
-            "mirrorProjectionFailureRefusesWrite": true,
-            "externalRegistryFreshnessIsEventuallyConsistent": true,
-            "externalRegistryMetadataCannotCreateEconomicTruth": true,
-            "criticalNonOkInheritedResponsesFailClosed": true,
-            "criticalNonJsonInheritedResponsesFailClosed": true
-          },
           "githubAgentCardExposure": {
             "mode": "github-agent-card-mirror",
             "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
@@ -601,8 +539,42 @@
             "registrationState": "registered-all-twelve-owner-approved-current-external-proof",
             "dynamicCapabilityIndexingProofAvailable": false,
             "truth": "Fixed-core registration completeness is derived only from current external proof, owner approval, exact observed fixed-core count and registered state. It never implies dynamic-capability indexing or revenue.",
-            "registeredObserved": null,
+            "registeredObserved": true,
             "fixedCoreRegistrationComplete": true
+          },
+          "discoverability": {
+            "preferredA2AExposure": "github-agent-card-mirror",
+            "githubAgentCard": {
+              "mode": "github-agent-card-mirror",
+              "repository": "https://github.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card",
+              "branch": "main",
+              "primaryManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/.well-known/agent-card.json",
+              "aliasManifest": "https://raw.githubusercontent.com/nikitamakiel1-beep/Conway-Replicatio-Agent-Card/main/agent-card.json",
+              "runtimeCanonicalSource": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
+              "automaticRuntimeToGithubSynchronization": true,
+              "atomicTwoPathCommit": true,
+              "runtimeRemainsCanonicalTruth": true,
+              "registryAppearanceCannotCreateEconomicTruth": true
+            },
+            "fixedCoreX402Count": 12,
+            "fixedCoreIsNotTotalInventory": true,
+            "fullInventoryOpenEnded": true,
+            "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "marketGenomeCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/market-genome",
+            "genericDynamicOpenApiTemplateIsNotAPayableOperation": true,
+            "concreteVerifiedDynamicOperationsArePublishedIndividually": true,
+            "externalRegistryCountsAreObservedNotInferred": true,
+            "searchVisibilityCannotCreateRevenueTruth": true,
+            "release": "conway-production-v1-r112-discoverability-adversarial-closure",
+            "dynamicCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
+            "capabilityMembershipAuthority": "canary-filtered-data.live-exact-canonical-rows",
+            "projectionHysteresisEnabled": true,
+            "criticalDiscoveryTransformationsFailClosed": true,
+            "mirrorProjectionFailureRefusesWrite": true,
+            "externalRegistryFreshnessIsEventuallyConsistent": true,
+            "externalRegistryMetadataCannotCreateEconomicTruth": true,
+            "criticalNonOkInheritedResponsesFailClosed": true,
+            "criticalNonJsonInheritedResponsesFailClosed": true
           },
           "projectionTruthRelease": "conway-production-v1-r112-discoverability-adversarial-closure",
           "synchronizationEngineRelease": "conway-production-v1-r109-realtime-rights-provenance",
@@ -2055,5 +2027,6 @@
         "application/json"
       ]
     }
-  ]
+  ],
+  "release": "conway-production-v1-r109-realtime-rights-provenance"
 }
