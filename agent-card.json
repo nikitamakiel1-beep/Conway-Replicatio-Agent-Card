@@ -599,7 +599,7 @@
             "currentExternalRegistryProofAvailable": true,
             "registeredFixedCoreResourceCount": 12,
             "registrationState": "registered-all-twelve-owner-approved-current-external-proof",
-            "checkedAt": "2026-08-27T22:31:07.999Z",
+            "checkedAt": "2026-08-28T04:31:52.170Z",
             "dynamicCapabilityIndexingProofAvailable": false,
             "truth": "Fixed-core registration completeness is derived only from current external proof, owner approval, exact observed fixed-core count and registered state. It never implies dynamic-capability indexing or revenue.",
             "registeredObserved": null,
