@@ -2,156 +2,170 @@
 
 ## Positioning
 
-**The autonomous service merchant for the agent economy.**
+**The machine-native service merchant for the agent economy.**
 
-Conway Replicatio is a machine-native economic agent that publishes discoverable services, accepts programmatic x402 payments and fulfils work through A2A and HTTP interfaces.
+Conway Replicatio publishes machine-discoverable services, exposes their contracts through A2A/OpenAPI, accepts programmatic x402 payments on public paid routes, and returns structured results.
 
-### Primary promise
+## Primary commercial idea
+
+**APIs that sell themselves to agents.**
+
+Supporting line:
+
+**Machine-discoverable web intelligence. Pay per call with x402. Structured results.**
+
+Primary flow:
+
+**DISCOVER → 402 → PAY → RESULT**
+
+This is a description of the purchasing interface, not a claim that sales happen without external buyers.
+
+## Primary promise
 
 **Discover. Pay. Execute. Verify.**
 
-No account funnel. No sales call. No API-key procurement ceremony for public paid routes. A compatible agent discovers a service, receives a price, pays and receives the result.
-
-### Supporting lines
-
-- Services built for machines that buy.
-- Pay per result, not per seat.
-- An API storefront that can evolve with demand.
-- Machine-readable from discovery to settlement.
-- Base-native x402 commerce. A2A-native collaboration.
+For public paid routes, a compatible machine buyer can discover the operation, inspect the schema, receive the live payment requirement, satisfy it and obtain the service response without a traditional human checkout flow.
 
 ## Audience hierarchy
 
-1. Autonomous agents and agent developers seeking callable paid capabilities.
-2. Developers who need small, composable web/data/intelligence operations without subscriptions.
-3. Agent platforms, registries and marketplaces looking for standards-compatible suppliers.
-4. Technical teams experimenting with machine-to-machine commerce.
+1. Autonomous agents and agent developers that need callable paid capabilities.
+2. Developers that need small, composable web/data/intelligence operations without another subscription.
+3. Agent platforms, registries and marketplaces looking for standards-visible suppliers.
+4. Technical teams building machine-to-machine commerce.
 
 ## Message hierarchy
 
-### 1. Outcome
-Get a useful machine-readable result immediately.
+### 1. Buyer outcome
+Get a useful machine-readable result from a clearly defined operation.
 
-### 2. Friction reduction
+### 2. Procurement friction
 Discover the operation and schema publicly; pay programmatically when required.
 
 ### 3. Interoperability
 A2A 1.0, JSON-RPC, OpenAPI and x402 v2 on Base.
 
 ### 4. Trust
-Live runtime metadata is authoritative. Revenue claims require unrelated external settlement plus fulfilment evidence.
+The live runtime is authoritative for price, recipient, payment requirements and callable state. Registry visibility and canary results are not revenue proof.
 
-### 5. Evolution
-Conway can research demand and evolve its commercial catalogue while preserving bounded execution, settlement and accounting controls.
+### 5. Adaptation
+Conway can research demand and evolve its catalogue while keeping payment, fulfilment, accounting and provenance boundaries separate from marketing claims.
+
+## Flagship buyer jobs
+
+Human-facing storefronts should feature a small number of legible jobs while the complete catalogue remains machine-searchable.
+
+- **URL → Markdown** — turn a public page into clean agent-ready content.
+- **Link Extraction** — map navigable links for crawl and research workflows.
+- **HTTP Inspect** — inspect status and selected safe response headers.
+- **SEO & Metadata Audit** — inspect technical page metadata and structure.
+- **Structured JSON Extraction** — transform a public page into task-specific structured data.
+
+Exact prices and schemas come from the live runtime. Do not hard-code a marketing price where it could drift from the 402 challenge.
 
 ## Voice
 
-Precise, calm, technical and economically literate. Lead with the buyer's outcome. Prefer concrete verbs and evidence. Avoid mystical AI language, exaggerated autonomy claims, fake urgency, unsupported superlatives, fabricated customer counts, fabricated revenue, fabricated testimonials and promises of guaranteed results.
+Precise, calm, useful and economically literate. Lead with the buyer job, not Conway's internal architecture. Prefer concrete verbs, exact routes and evidence.
+
+Avoid mystical AI language, guaranteed-profit language, fake urgency, unsupported superlatives, fabricated customer counts, fabricated revenue, fabricated testimonials, fake scarcity and claims that a scanner grade is equivalent to customer adoption.
+
+## Approved copy bank
+
+**Primary:** APIs that sell themselves to agents.
+
+**Clarity:** Machine-discoverable web intelligence. Pay per call with x402. Structured results.
+
+**Commerce:** Your software should be able to buy software.
+
+**Developer:** Skip the subscription. Call the capability.
+
+**Protocol:** Discover with A2A. Pay with x402. Receive structured output.
+
+**Trust:** Runtime truth over marketing claims.
+
+**CTA:** Explore capabilities.
+
+**Machine CTA:** Fetch `/openapi.json`.
+
+## Wording guardrails
+
+Use **pay per call**, not “pay per result,” unless a specific operation contract actually bills only on successful-result semantics.
+
+Use **public paid routes do not require a traditional checkout flow**, not a blanket claim that every Conway surface is accountless or unauthenticated.
+
+Use **canary-verified** only for execution readiness. Never translate canary evidence into “customer-proven,” “market-proven” or “revenue-generating.”
+
+Use protocol and network names descriptively. A2A, x402, Base, USDC, OpenAPI, registries and scanners must not be presented as sponsors, partners or endorsers unless that relationship is independently established.
 
 ## Visual direction
 
 ### Concept
 **Machine commerce terminal meets living network.**
 
-The identity should combine a rigorous protocol/grid system with a subtle organic motif representing adaptation. Avoid generic robot heads, glowing brains, crypto coins, stock-photo humanoids and cyberpunk clutter.
+Combine a rigorous protocol/grid system with a restrained organic motif representing adaptation. Avoid generic robot heads, glowing brains, crypto coins, stock-photo humanoids and casino-style cyberpunk.
 
 ### Palette
-- Carbon: `#0B0D10` — primary dark background.
-- Porcelain: `#F4F1E8` — warm high-contrast foreground.
-- Signal green: `#72F59A` — payment/success/action accent.
-- Electric cobalt: `#4F7CFF` — protocol/discovery accent.
-- Amber: `#FFBE55` — evidence/warning accent.
-
-### Typography
-Use a restrained grotesk/sans-serif for headlines and UI, paired with a monospaced face for routes, prices, hashes and protocol metadata. The contrast between editorial typography and machine metadata is part of the identity.
+- Carbon `#0B0D10`
+- Porcelain `#F4F1E8`
+- Signal green `#72F59A`
+- Electric cobalt `#4F7CFF`
+- Amber `#FFBE55`
 
 ### Graphic language
-- Thin routing lines and nodes representing agent-to-agent commerce.
-- Compact protocol chips: `A2A 1.0`, `x402 v2`, `Base`, `USDC`, `OpenAPI`.
-- Transaction diagrams showing `DISCOVER → 402 → PAY → RETRY → RESULT`.
-- Capability cards with outcome, input, price source and response type.
-- Proof panels for uptime, protocol conformance and verifiable settlement when such evidence actually exists.
+- thin routing lines and machine nodes;
+- protocol chips: `A2A 1.0`, `x402 v2`, `Base`, `USDC`, `OpenAPI`;
+- `DISCOVER → 402 → PAY → RESULT` diagrams;
+- capability cards showing buyer outcome, input, route and response type;
+- proof panels containing only independently verifiable metrics with source/date;
+- release cards containing release ID and material buyer-facing change.
 
-## Hero campaign
+Generated creative must not fabricate transaction volume, customer logos, reviews, ratings, revenue curves or endorsements.
 
-**Headline:** APIs that sell themselves to agents.
+## Human landing-page hierarchy
 
-**Subhead:** Conway exposes machine-discoverable services over A2A and HTTP, prices public paid routes with x402, accepts Base USDC and returns structured results without a traditional checkout flow.
+### Hero
+**APIs that sell themselves to agents.**
 
-**Primary CTA:** Explore capabilities
+Machine-discoverable web intelligence. Pay per call with x402. Structured results.
 
-**Secondary CTA:** Read the Agent Card
+Primary CTA: **Explore capabilities**
 
-**Machine CTA:** Fetch `/openapi.json`
+Secondary CTA: **Read the Agent Card**
 
-## Campaign pillars
+Machine CTA: **Fetch `/openapi.json`**
 
-### Machine-native commerce
-A service should be purchasable by software, not only understandable by humans.
+### Protocol strip
+`A2A 1.0` · `x402 v2` · `Base` · `USDC` · `OpenAPI`
 
-### Zero procurement ceremony
-Public paid routes are designed for just-in-time machine purchasing rather than subscriptions and seat licences.
+### How it works
+1. Discover an operation.
+2. Send the request.
+3. Receive HTTP 402 when payment is required.
+4. Satisfy the live payment requirement.
+5. Retry and receive the structured response.
 
-### Verifiable interfaces
-Schemas, discovery metadata, payment requirements and runtime behaviour are exposed as machine-readable contracts.
+### Trust
+Show public schemas, canonical discovery URLs, independently measured status and real settlement/fulfilment evidence when it exists. Never substitute directory impressions for customer proof.
 
-### Economic integrity
-A registry impression is not a sale. A test transaction is not demand. Conway distinguishes visibility, payment, fulfilment, settlement, cost and realized margin.
+## Distribution principle
 
-### Adaptive catalogue
-Commercial hypotheses can be researched and tested, but promotion to stronger economic status requires external evidence rather than self-generated confidence.
+Human marketing should terminate in machine-callable surfaces. Every campaign asset should deep-link to at least one of:
 
-## Advertising creative templates
+- `/.well-known/agent-card.json`
+- `/openapi.json`
+- `/.well-known/x402`
+- `/api/public/capabilities`
+- `/machine`
 
-### Developer ad
-**Your agent found the API. Can it buy it?**
-Conway publishes machine-readable services with x402 payment requirements on Base. Discover the schema, satisfy the 402 and get the result.
-
-### Agent-builder ad
-**Give your agent a supplier, not another subscription.**
-Composable paid capabilities, public discovery and programmatic payment.
-
-### Protocol ad
-**A2A discovers it. x402 pays for it. Conway fulfils it.**
-One machine-native path from capability discovery to structured output.
-
-### Launch/status creative
-**Conway Replicatio · R119**
-A2A 1.0 · x402 v2 · Base · OpenAPI · machine-readable capability discovery.
-
-## Content engine
-
-Publish content around useful proof rather than generic AI commentary:
-
-- one capability demo with exact input/output;
-- one integration recipe for an agent framework;
-- one x402 payment-flow explainer;
-- one benchmark or quality evaluation with methodology;
-- one new capability or commercial experiment;
-- one transparent ecosystem/discovery status update.
-
-Every post should point to a machine-callable surface, not merely a homepage.
+The goal is not generic traffic. The goal is to reduce the distance between discovery and a legitimate fulfilled paid call.
 
 ## Funnel
 
-`Search / registry / social / developer post → capability page or machine manifest → free discovery → first 402 challenge → paid call → successful result → repeat machine buyer → higher-value workflow`
+`Search / registry / citation / developer post → capability or canonical manifest → free discovery → 402 challenge → valid payment attempt → settled unrelated payment → successful fulfilment → repeat buyer → realized contribution margin`
 
-Instrument each transition separately. Optimize for fulfilled unrelated paid calls and repeat buyers, not impressions alone.
-
-## Commercial experimentation
-
-For each service test:
-
-- a low-friction entry offer;
-- a higher-value structured/compound variant;
-- clear schema and example;
-- explicit response semantics;
-- latency and reliability measurement;
-- contribution-margin measurement;
-- repeat-purchase measurement.
-
-Price changes should be experiments tied to conversion, fulfilment cost and repeat demand. Do not optimize for transaction count at negative sustainable margin.
+Instrument each transition separately.
 
 ## Evidence policy
 
-Marketing may state protocol support, published capabilities and externally verifiable technical facts. Customer/revenue/adoption claims require evidence. Testimonials must come from real users and must not be generated or implied. Scarcity and urgency must be factual. Performance comparisons must disclose the measured task and methodology.
+Marketing may state protocol support, public routes, published schemas and independently verifiable technical facts. Adoption, customer, revenue, transaction, reliability or performance claims require evidence appropriate to that claim.
+
+Testimonials must come from real users. Scarcity and urgency must be factual. Performance comparisons must disclose the measured task and methodology. Registry suggestions, scans, crawler hits, forecasts and owner/self activity remain discovery evidence only.
