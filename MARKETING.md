@@ -1,143 +1,235 @@
-# Conway Replicatio — Go-to-Market Playbook
+# Conway Replicatio — Go-to-Market & Discoverability Playbook
 
 ## North-star metric
 
-**Fulfilled paid calls from unrelated external buyers.**
+**Fulfilled paid calls from unrelated external buyers with positive realized contribution margin.**
 
-Supporting metrics: discovery impressions, manifest/card fetches, 402 challenges, payment attempts, settled payments, successful fulfilments, conversion from 402 to settlement, repeat buyers, revenue per buyer, direct fulfilment cost, contribution margin, latency and failure rate.
+Supporting funnel metrics:
 
-Do not substitute registry listings, crawler traffic, owner payments or test calls for commercial traction.
+`discovery → canonical manifest/page → schema view → 402 challenge → valid payment attempt → settled payment → successful fulfilment → repeat buyer → contribution margin`
 
-## Distribution strategy
+Do not substitute directory listings, crawler traffic, canary tests, scanner grades, owner/self payments or wallet funding for commercial traction.
 
-### Machine distribution
+## Positioning
+
+**APIs that sell themselves to agents.**
+
+**Machine-discoverable web intelligence. Pay per call with x402. Structured results.**
+
+The first line is a commercial metaphor for machine-native discovery and purchasing. It is not a promise of guaranteed external demand.
+
+## Audience priority
+
+1. Autonomous agents and agent developers.
+2. Developers who need composable web/data operations without subscription procurement.
+3. Agent platforms, directories and machine-commerce marketplaces.
+4. Technical teams experimenting with A2A/x402 interoperability.
+
+Each surface should have one dominant audience and one obvious next action.
+
+## Flagship offer architecture
+
+Do not lead a human buyer with the complete long-tail capability ecology. Feature a small set of legible, low-friction jobs while keeping the complete catalogue machine-searchable.
+
+Recommended flagship set:
+
+- URL → Markdown
+- Link Extraction
+- HTTP Inspect
+- SEO & Metadata Audit
+- Structured JSON Extraction
+
+Each flagship presentation should include:
+
+- one-sentence buyer outcome;
+- required input;
+- response format;
+- direct machine route;
+- example request;
+- live pricing authority;
+- protocol/payment method;
+- measured latency/reliability only when evidence exists.
+
+## Machine distribution
+
 Prioritize the places where software discovers software:
 
-1. Canonical A2A Agent Card and registries.
-2. OpenAPI-first x402 discovery.
-3. `/.well-known/x402` compatibility discovery.
-4. Bazaar/facilitator discovery metadata.
-5. `llms.txt`, `agents.txt`, API catalog and Agent Skills surfaces.
-6. Public capability/product catalogue with stable canonical URLs.
+1. Canonical A2A Agent Card.
+2. A2A registries using the canonical Worker or GitHub mirror.
+3. OpenAPI-first paid-operation discovery.
+4. `/.well-known/x402` compatibility discovery.
+5. x402 Bazaar/facilitator discovery metadata where supported.
+6. Agent Skills and RFC 9727 API-catalog discovery.
+7. `agents.txt`, `agents.json` and `llms.txt` for compatible machine consumers.
+8. Runtime capability/product catalogues with stable canonical URLs.
 
-x402scan documents OpenAPI as its preferred discovery source, with `/.well-known/x402` as compatibility fallback. The x402 seller guidance recommends Bazaar discovery metadata including useful descriptions and input schemas. Conway's commercial metadata should therefore optimize first for exact operation descriptions, examples and schemas rather than keyword stuffing.
+Machine-discovery metadata should optimize for exact operation descriptions, examples, input schemas, output schemas and real invocation semantics rather than keyword density.
 
-### Human distribution
-Use human channels to create developer awareness that resolves into machine-readable entry points:
+## Human/search distribution
 
-- GitHub repository and README;
-- technical launch posts;
-- short integration demos;
-- developer communities where self-promotion is permitted;
+Human channels should create qualified awareness that terminates in machine-callable entry points:
+
+- canonical Worker root and machine docs;
+- public GitHub Agent Card repository;
+- exact capability demonstrations;
+- A2A/x402 integration recipes;
+- protocol explainers;
+- evidence-based release notes;
+- technical communities where self-promotion is permitted;
 - ecosystem directories and registries;
-- protocol-specific tutorials and interoperability examples.
+- external references earned through useful technical material.
 
-Do not mass-spam communities or manufacture engagement.
+Do not mass-spam communities, manufacture backlinks or publish thin duplicate pages.
+
+## Google Search / AI features
+
+Google's current public guidance says the normal Search/SEO foundation continues to apply to generative AI features such as AI Overviews and AI Mode. There is no separate magic AI-indexing mechanism.
+
+Conway should therefore prioritize:
+
+- crawlable canonical HTML;
+- useful visible buyer-oriented content;
+- accurate page titles and descriptions;
+- descriptive internal links;
+- consistent WebSite/entity identity;
+- structured data that matches visible content;
+- high-quality representative imagery when used;
+- unique technical content, examples and evidence;
+- Search Console measurement when the property is verified.
+
+`llms.txt` is retained for compatible LLM/agent ecosystems, **not** as a claimed Google ranking signal.
+
+## Bing / Copilot
+
+Bing's current Webmaster guidance emphasizes the same core foundations plus strong discovery/freshness signals:
+
+- IndexNow notifications;
+- XML sitemaps;
+- crawlable internal links;
+- canonical URL consolidation;
+- useful, well-structured content;
+- accurate freshness signals where applicable;
+- external links earned from relevant sites.
+
+Conway already has an IndexNow/sitemap architecture. IndexNow acceptance is notification evidence only and does not prove indexing or ranking. Bing Webmaster Tools and its AI Performance report are the appropriate first-party measurement surfaces when ownership is configured.
 
 ## Landing-page architecture
 
 ### Above the fold
+
 **APIs that sell themselves to agents.**
 
-Machine-discoverable services. Programmatic x402 payments. Structured results.
+Machine-discoverable web intelligence. Pay per call with x402. Structured results.
 
-Buttons: `Explore capabilities` · `Agent Card` · `OpenAPI`
+Primary CTA: `Explore capabilities`
 
-Protocol strip: `A2A 1.0` · `x402 v2` · `Base` · `USDC` · `OpenAPI`
+Secondary CTA: `Agent Card`
+
+Machine CTA: `OpenAPI`
+
+Protocol strip:
+
+`A2A 1.0` · `x402 v2` · `Base` · `USDC` · `OpenAPI`
 
 ### How it works
-1. Discover a capability.
-2. Send the request.
-3. Receive HTTP 402 with the live payment requirement.
-4. Pay with a compatible x402 client.
-5. Retry and receive the result.
-
-### Capability storefront
-Each card should contain: buyer outcome, concise description, example input, response format, live pricing source, protocol, typical latency when measured, and a direct machine endpoint.
-
-### Trust section
-Show only independently supportable evidence: runtime status, protocol conformance, public schemas, content hashes, uptime measurements, scanner results and real settlement/fulfilment records when available.
-
-### Developer section
-Provide copy-paste minimal examples for raw HTTP and at least one mainstream agent/client integration where maintained.
-
-### Final CTA
-**Your agent can start with discovery.**
-`/.well-known/agent-card.json` · `/openapi.json` · `/.well-known/x402`
-
-## Offer architecture
-
-Avoid presenting hundreds of capabilities as an undifferentiated catalogue. Group offers around buyer jobs:
-
-- **Web intelligence:** extract, clean, map and structure web information.
-- **Research:** collect and synthesize machine-readable evidence.
-- **Transformation:** convert messy inputs into useful structured outputs.
-- **Agent infrastructure:** discovery, routing, memory and interoperability operations when live and verified.
-- **Compound workflows:** higher-value multi-step outputs assembled from proven primitives.
-
-For human storefronts, feature a small number of flagship offers. Keep the complete long-tail catalogue machine-searchable.
-
-## Conversion design
-
-The fastest route to first purchase is a cheap, obvious, deterministic job. Flagship entry services should have:
-
-- one-sentence value proposition;
-- minimal required input;
-- example request and response;
-- low perceived purchase risk;
-- deterministic or easily evaluated output;
-- fast fulfilment;
-- a natural path to a more valuable compound service.
-
-After fulfilment, return discoverable related-capability metadata where protocol semantics permit, without changing the requested payload contract unexpectedly.
-
-## Pricing strategy
-
-Use price as an experimental variable, not a branding ornament. Maintain a price floor that covers expected direct costs and payment/fulfilment overhead. Test price bands against 402→paid conversion, contribution margin and repeat usage. Promote compound workflows when buyers repeatedly chain the same primitives.
-
-Never advertise a discount against a fictitious reference price.
-
-## Campaign sequence
-
-### Phase 1 — Foundation
-Canonical identity, visual system, concise flagship offers, exact schemas, examples, trust/evidence page, analytics events.
-
-### Phase 2 — Discovery saturation
-Refresh A2A/x402 registries, validate OpenAPI ingestion, expose Bazaar metadata, ensure crawler/LLM manifests agree and monitor cache freshness.
-
-### Phase 3 — Developer acquisition
-Publish useful integration recipes and live capability demos. Every piece of content links to the exact machine-readable operation.
-
-### Phase 4 — First-purchase optimization
-Measure discovery→402→payment→fulfilment. Fix the largest drop-off before expanding traffic.
-
-### Phase 5 — Retention and expansion
-Identify repeat buyer jobs, bundle frequently chained operations into compound services and optimize reliability/latency before increasing prices.
-
-### Phase 6 — Evidence-led reputation
-Once genuine external usage exists, publish aggregate, privacy-preserving proof: successful fulfilment count, repeat rate, measured reliability and methodology. Never imply customers or revenue that cannot be substantiated.
-
-## Creative system
-
-Use a consistent visual motif across README banners, social cards, launch graphics and capability cards:
 
 `DISCOVER → 402 → PAY → RESULT`
 
-Hero artwork should depict a sparse network of machine nodes exchanging small protocol packets through Conway as a service merchant. Use dark carbon space, porcelain typography, signal-green settlement pulses and cobalt discovery paths. Keep layouts editorial and premium, not crypto-casino or generic sci-fi.
+1. Discover a capability and schema.
+2. Send the request.
+3. Receive HTTP 402 when the operation is payable.
+4. Satisfy the live payment requirement.
+5. Retry and receive the structured response.
 
-Recommended image families:
+### Flagship capability storefront
 
-- 16:9 hero: network/service-market landscape;
-- 1:1 social card: one headline + protocol strip + one diagram;
-- capability card: input → Conway → structured output;
-- proof card: one independently verifiable metric with timestamp/source;
-- release card: release ID + material buyer-facing change.
+Feature the small human-readable offer set first. Link to `/api/public/capabilities` and OpenAPI for the open-ended machine catalogue.
+
+### Trust section
+
+Show only supportable evidence:
+
+- canonical runtime and discovery surfaces;
+- public schemas;
+- content hashes/ETags where useful;
+- independently measured directory/scanner observations with date/source;
+- actual settlement and fulfilment evidence once it exists.
+
+Never use canary evidence as customer proof.
+
+### Developer section
+
+Provide minimal copyable flows for:
+
+- A2A free capability discovery;
+- raw HTTP x402 call flow;
+- one maintained client/framework integration where practical.
+
+## A2A callable-quality strategy
+
+External directory health is not enough. A buyer must actually be able to invoke free discovery.
+
+Current priority: independently exercise a standards-valid A2A v1 `SendMessage` request against `/a2a/v1`. If external probes use pre-v1 method aliases, support harmless unambiguous compatibility mappings at the protocol edge while preserving canonical v1 semantics.
+
+A generic compatibility probe may fall back only to **free capability discovery**. It must never silently choose a paid skill or create revenue.
+
+## x402 conversion strategy
+
+The fastest path to a first legitimate purchase is a cheap, obvious and easy-to-evaluate job.
+
+For every promoted paid operation:
+
+- provide exact request schema and example;
+- provide truthful response schema and MIME type;
+- make the description job-oriented;
+- keep runtime HTTP 402 authoritative for price/recipient/network/asset;
+- make failed/garbage payment proof fail closed;
+- ensure HEAD/free discovery cannot settle accidentally;
+- instrument 402 → payment attempt → settlement → fulfilment separately.
+
+## Pricing strategy
+
+Use price as an experiment tied to conversion, direct fulfilment cost, contribution margin and repeat demand.
+
+Default wording: **pay per call**.
+
+Do not use fictitious discounts, fake scarcity, arbitrary enterprise anchoring or claims that a higher price proves a better result.
+
+## Content engine
+
+Publish useful proof, not generic AI commentary:
+
+1. exact capability demo with input/output and route;
+2. minimal A2A or x402 integration recipe;
+3. protocol/conformance explainer;
+4. quality/reliability evidence with methodology;
+5. buyer-facing release delta;
+6. discovery status explaining canonical truth versus third-party cache state.
+
+Every piece should link to a callable surface.
+
+## Campaign creative
+
+Primary creative system:
+
+`DISCOVER → 402 → PAY → RESULT`
+
+Preferred visual language:
+
+- carbon/porcelain editorial field;
+- cobalt discovery/routing lines;
+- signal-green successful payment/result state;
+- sparse machine nodes;
+- schemas, routes and proof states rather than robot imagery;
+- capability cards and protocol diagrams.
+
+Never generate fake metrics, customer logos, testimonials, transaction volume or partner endorsements as decoration.
 
 ## Copy bank
 
 **Primary:** APIs that sell themselves to agents.
 
-**Alternative:** Machine-discoverable services. Machine-native payments. Useful results.
+**Clarity:** Machine-discoverable web intelligence. Pay per call with x402. Structured results.
 
 **Commerce:** Your software should be able to buy software.
 
@@ -147,21 +239,28 @@ Recommended image families:
 
 **Trust:** Runtime truth over marketing claims.
 
-## SEO / GEO / agentic discovery
+## External-discovery operating loop
 
-Maintain one canonical description across structured metadata. Give every flagship service a stable name, canonical URL, concise job-oriented description, schema and example. Use structured WebSite/WebAPI metadata and sitemaps for human/search discovery while keeping OpenAPI and Agent Card semantics authoritative for machine consumers.
-
-Do not duplicate hundreds of thin pages solely for search ranking. Generate public pages only when they contain a real callable capability, useful example or meaningful evidence.
+1. Keep canonical Worker and GitHub mirror semantically synchronized.
+2. Observe A2A/x402/Agenstry/search-engine propagation.
+3. Detect stale or conflicting descriptions and duplicate identities.
+4. Fix the canonical source first.
+5. Refresh existing third-party listings rather than creating duplicates.
+6. Run fresh paid scanners only when a source change is live and stable.
+7. Compare exact findings, not vanity grades.
+8. Improve the highest-intent conversion loss.
+9. Keep all adoption/revenue claims evidence-bound.
 
 ## Weekly growth loop
 
-1. Inspect which capabilities were discovered.
-2. Inspect which generated 402 challenges.
-3. Inspect which converted to unrelated settled payments.
-4. Inspect fulfilment quality, cost and latency.
-5. Improve the highest-intent offer with the largest conversion loss.
-6. Publish one evidence-backed demo/integration around that offer.
-7. Re-check registry and discovery propagation.
-8. Retire or de-emphasize offers that attract attention but no economically meaningful demand.
+1. Which capabilities were discovered?
+2. Which received real requests?
+3. Which produced 402 challenges?
+4. Which produced valid payment attempts?
+5. Which settled from unrelated external payers?
+6. Which fulfilled successfully?
+7. Which repeated?
+8. Which produced positive realized contribution margin?
+9. Which discovery or buyer-friction change should be made next?
 
-This loop keeps marketing coupled to real economic evidence instead of vanity metrics.
+Marketing remains coupled to real economic evidence rather than impressions.
