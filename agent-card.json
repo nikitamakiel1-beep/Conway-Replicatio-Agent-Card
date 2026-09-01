@@ -824,6 +824,11 @@
             "x402": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402"
           },
           "publicProjectionStability": {
+            "skillProjectionDigestVersion": 1,
+            "publicSkillCount": 49,
+            "publicSkillSetSha256": "2f3b67e5e43e2ed1f5384e27cb2437e76a9056b367621769f2be7187f3574ebc",
+            "publicSkillIdsDeterministicallySorted": true,
+            "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
             "projectionSchemaVersion": 2,
             "projectionClosure": "r119-sync-closure-v2",
@@ -877,6 +882,29 @@
   ],
   "skills": [
     {
+      "id": "conway-canonical-agent-card-mirror",
+      "name": "Conway Canonical Agent Card Mirror",
+      "description": "Keeps Conway's public GitHub Agent Card mirror synchronized from the final live runtime Agent Card so GitHub-backed A2A registries can retain a stable source without drifting behind production.",
+      "examples": [
+        "Return the canonical runtime and public mirror locations for Conway's current Agent Card"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "a2a",
+        "agent-card",
+        "github",
+        "mirror",
+        "discovery",
+        "synchronization"
+      ]
+    },
+    {
       "id": "conway-capability-discovery",
       "name": "Conway Capability Discovery",
       "description": "Returns Conway's current machine utilities, live existing products, payment bootstrap and autonomous-economy contract.",
@@ -895,6 +923,28 @@
         "catalog",
         "economy",
         "products"
+      ]
+    },
+    {
+      "id": "conway-discovery-truth",
+      "name": "Conway Discovery Truth",
+      "description": "Returns canonical OpenAPI and market-genome discovery pointers. External x402 registry proof is scoped to the fixed core resources and is never extrapolated to newly evolved dynamic capabilities.",
+      "examples": [
+        "Return the canonical current product and capability discovery surfaces"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "discovery",
+        "openapi",
+        "x402",
+        "market-genome",
+        "truth"
       ]
     },
     {
@@ -942,400 +992,18 @@
       ]
     },
     {
-      "id": "conway-discovery-truth",
-      "name": "Conway Discovery Truth",
-      "description": "Returns canonical OpenAPI and market-genome discovery pointers. External x402 registry proof is scoped to the fixed core resources and is never extrapolated to newly evolved dynamic capabilities.",
-      "examples": [
-        "Return the canonical current product and capability discovery surfaces"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "discovery",
-        "openapi",
-        "x402",
-        "market-genome",
-        "truth"
-      ]
-    },
-    {
-      "id": "conway-canonical-agent-card-mirror",
-      "name": "Conway Canonical Agent Card Mirror",
-      "description": "Keeps Conway's public GitHub Agent Card mirror synchronized from the final live runtime Agent Card so GitHub-backed A2A registries can retain a stable source without drifting behind production.",
-      "examples": [
-        "Return the canonical runtime and public mirror locations for Conway's current Agent Card"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "a2a",
-        "agent-card",
-        "github",
-        "mirror",
-        "discovery",
-        "synchronization"
-      ]
-    },
-    {
-      "id": "url-to-markdown",
-      "name": "URL to Markdown",
-      "description": "Convert a safe public webpage URL into clean agent-ready Markdown. Use for web reading, grounding, RAG ingestion, content extraction, article parsing and downstream agent context. Public paid endpoint: POST /api/x402/markdown.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json",
-        "text/markdown"
-      ],
-      "tags": [
-        "web",
-        "url-to-markdown",
-        "markdown",
-        "web-reading",
-        "content-extraction",
-        "rag",
-        "grounding",
-        "x402",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "url-links",
-      "name": "URL Link Extraction",
-      "description": "Extract navigable links from a safe public webpage. Use for crawl planning, site discovery, navigation maps, URL harvesting, research pipelines and agent browsing. Public paid endpoint: POST /api/x402/links.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "links",
-        "link-extraction",
-        "crawl",
-        "navigation",
-        "url-discovery",
-        "research",
-        "x402",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "url-snapshot",
-      "name": "Browser Snapshot",
-      "description": "Create a structured browser snapshot of a safe public webpage for automation and downstream agents. Use when an agent needs page structure, rendered state or a compact browser observation. Public paid endpoint: POST /api/x402/snapshot.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "browser",
-        "snapshot",
-        "page-structure",
-        "automation",
-        "rendered-page",
-        "x402",
-        "paid"
-      ],
-      "securityRequirements": [
-        {
-          "schemes": {
-            "conwayMachineBearer": {
-              "list": []
-            }
-          }
-        }
-      ]
-    },
-    {
-      "id": "url-rendered-html",
-      "name": "Rendered HTML Extraction",
-      "description": "Return fully rendered post-JavaScript HTML for a safe public webpage. Use for SPAs, client-rendered sites, dynamic DOM extraction and automation that needs HTML after browser execution. Public paid endpoint: POST /api/x402/rendered-html.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json",
-        "text/html"
-      ],
-      "tags": [
-        "web",
-        "rendered-html",
-        "javascript",
-        "spa",
-        "dynamic-dom",
-        "browser",
-        "extraction",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-accessibility",
-      "name": "Accessibility Tree Extraction",
-      "description": "Return a browser accessibility-tree representation for a safe public webpage. Use for semantic UI understanding, accessible automation, element discovery and agent interaction planning. Public paid endpoint: POST /api/x402/accessibility.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "accessibility",
-        "accessibility-tree",
-        "a11y",
-        "semantic-ui",
-        "browser-automation",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-selectors",
-      "name": "CSS Selector Extraction",
-      "description": "Extract bounded CSS-selected elements from a safe public webpage. Use for targeted DOM scraping, element text/attribute extraction and deterministic web automation. Public paid endpoint: POST /api/x402/selectors.",
-      "examples": [
-        "{\"url\":\"https://example.com\",\"selectors\":[\"h1\",\"a\"]}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "css",
-        "selectors",
-        "dom",
-        "scraping",
-        "targeted-extraction",
-        "automation",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-structured-json",
-      "name": "Structured JSON Web Extraction",
-      "description": "Turn a safe public webpage into task-specific structured JSON using a bounded extraction prompt. Use for schema-ready facts, records, attributes and machine-consumable web data. Public paid endpoint: POST /api/x402/structured-json.",
-      "examples": [
-        "{\"url\":\"https://example.com\",\"prompt\":\"Extract the title and main topic as JSON.\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "structured-json",
-        "structured-data",
-        "data-extraction",
-        "web-scraping",
-        "json",
-        "agents",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-seo-audit",
-      "name": "SEO and Metadata Audit",
-      "description": "Inspect a rendered public webpage and return a compact SEO and metadata audit. Use for title/meta/canonical structure checks, machine-readable page diagnostics and technical SEO inspection. Public paid endpoint: POST /api/x402/seo-audit.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "seo",
-        "metadata",
-        "technical-seo",
-        "audit",
-        "page-diagnostics",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-page-diff",
-      "name": "Webpage Diff and Change Detection",
-      "description": "Compare two public webpages and return normalized change/similarity evidence. Use for page-diff monitoring, website change detection, competitor comparison and version checks. Public paid endpoint: POST /api/x402/page-diff.",
-      "examples": [
-        "{\"url\":\"https://example.com\",\"compareUrl\":\"https://example.org\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "web",
-        "page-diff",
-        "change-detection",
-        "comparison",
-        "monitoring",
-        "website-diff",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-http-inspect",
-      "name": "HTTP Status and Header Inspection",
-      "description": "Inspect a safe public URL's HTTP status and selected safe response headers without following redirects. Use for endpoint diagnostics, redirect inspection, cache/content-type checks and machine availability tests. Public paid endpoint: POST /api/x402/http-inspect.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "http",
-        "headers",
-        "status",
-        "redirect",
-        "endpoint-diagnostics",
-        "web",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-robots",
-      "name": "Robots.txt Inspection",
-      "description": "Fetch and normalize robots.txt for the public origin associated with a URL. Use for crawler policy discovery, sitemap hints, agent crawl planning and website indexing diagnostics. Public paid endpoint: POST /api/x402/robots.",
-      "examples": [
-        "{\"url\":\"https://example.com\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "tags": [
-        "robots.txt",
-        "robots",
-        "crawler",
-        "crawl-policy",
-        "sitemap",
-        "indexing",
-        "web",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "url-sitemap",
-      "name": "XML Sitemap Inspection",
-      "description": "Fetch and summarize a public XML sitemap or sitemap index. Use for URL discovery, crawl planning, site inventory, indexing diagnostics and machine navigation. Public paid endpoint: POST /api/x402/sitemap.",
-      "examples": [
-        "{\"url\":\"https://example.com/sitemap.xml\"}"
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "sitemap",
-        "xml",
-        "url-discovery",
-        "crawl",
-        "indexing",
-        "site-inventory",
-        "web",
-        "x402",
-        "paid"
-      ]
-    },
-    {
-      "id": "dynamic-mg-web-ground-audit",
-      "name": "Web Grounding Intelligence · Technical Audit",
-      "description": "Web Grounding Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-audit",
+      "name": "A2A Agent Readiness · Technical Audit",
+      "description": "A2A Agent Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "technical-audit"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Technical Audit through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Technical Audit through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1346,18 +1014,18 @@
       ]
     },
     {
-      "id": "dynamic-mg-web-ground-compare",
-      "name": "Web Grounding Intelligence · Change / Comparison Dossier",
-      "description": "Web Grounding Intelligence · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-compare",
+      "name": "A2A Agent Readiness · Change / Comparison Dossier",
+      "description": "A2A Agent Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "change-comparison-dossier"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1368,18 +1036,18 @@
       ]
     },
     {
-      "id": "dynamic-mg-web-ground-context",
-      "name": "Web Grounding Intelligence · Agent Context Pack",
-      "description": "Web Grounding Intelligence · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-context",
+      "name": "A2A Agent Readiness · Agent Context Pack",
+      "description": "A2A Agent Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "agent-context-pack"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1390,18 +1058,18 @@
       ]
     },
     {
-      "id": "dynamic-mg-web-ground-decision",
-      "name": "Web Grounding Intelligence · Decision Dossier",
-      "description": "Web Grounding Intelligence · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-decision",
+      "name": "A2A Agent Readiness · Decision Dossier",
+      "description": "A2A Agent Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "decision-dossier"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1412,18 +1080,18 @@
       ]
     },
     {
-      "id": "dynamic-mg-web-ground-evidence",
-      "name": "Web Grounding Intelligence · Evidence Matrix",
-      "description": "Web Grounding Intelligence · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-evidence",
+      "name": "A2A Agent Readiness · Evidence Matrix",
+      "description": "A2A Agent Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "evidence-matrix"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1434,150 +1102,18 @@
       ]
     },
     {
-      "id": "dynamic-mg-web-ground-extract",
-      "name": "Web Grounding Intelligence · Precision Extract",
-      "description": "Web Grounding Intelligence · Precision Extract. Fast domain-specific structured extraction for another agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "id": "dynamic-mg-a2a-ready-extract",
+      "name": "A2A Agent Readiness · Precision Extract",
+      "description": "A2A Agent Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
       "tags": [
         "conway",
         "runtime-evolved",
         "canary-verified",
-        "web-grounding-intelligence",
+        "a2a-agent-readiness",
         "precision-extract"
       ],
       "examples": [
-        "Use Web Grounding Intelligence · Precision Extract through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-audit",
-      "name": "x402 Merchant Readiness · Technical Audit",
-      "description": "x402 Merchant Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "technical-audit"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Technical Audit through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-compare",
-      "name": "x402 Merchant Readiness · Change / Comparison Dossier",
-      "description": "x402 Merchant Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "change-comparison-dossier"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-context",
-      "name": "x402 Merchant Readiness · Agent Context Pack",
-      "description": "x402 Merchant Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "agent-context-pack"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-decision",
-      "name": "x402 Merchant Readiness · Decision Dossier",
-      "description": "x402 Merchant Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "decision-dossier"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-evidence",
-      "name": "x402 Merchant Readiness · Evidence Matrix",
-      "description": "x402 Merchant Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "evidence-matrix"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-x402-ready-extract",
-      "name": "x402 Merchant Readiness · Precision Extract",
-      "description": "x402 Merchant Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "x402-merchant-readiness",
-        "precision-extract"
-      ],
-      "examples": [
-        "Use x402 Merchant Readiness · Precision Extract through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Agent Readiness · Precision Extract through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1852,138 +1388,6 @@
       ]
     },
     {
-      "id": "dynamic-mg-a2a-ready-audit",
-      "name": "A2A Agent Readiness · Technical Audit",
-      "description": "A2A Agent Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "technical-audit"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Technical Audit through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-a2a-ready-compare",
-      "name": "A2A Agent Readiness · Change / Comparison Dossier",
-      "description": "A2A Agent Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "change-comparison-dossier"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-a2a-ready-context",
-      "name": "A2A Agent Readiness · Agent Context Pack",
-      "description": "A2A Agent Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "agent-context-pack"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-a2a-ready-decision",
-      "name": "A2A Agent Readiness · Decision Dossier",
-      "description": "A2A Agent Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "decision-dossier"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-a2a-ready-evidence",
-      "name": "A2A Agent Readiness · Evidence Matrix",
-      "description": "A2A Agent Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "evidence-matrix"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
-      "id": "dynamic-mg-a2a-ready-extract",
-      "name": "A2A Agent Readiness · Precision Extract",
-      "description": "A2A Agent Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess whether a service is easy for autonomous A2A peers to discover and use. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "a2a-agent-readiness",
-        "precision-extract"
-      ],
-      "examples": [
-        "Use A2A Agent Readiness · Precision Extract through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ]
-    },
-    {
       "id": "dynamic-mg-release-delta-audit",
       "name": "Release & Change Intelligence · Technical Audit",
       "description": "Release & Change Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Help agents detect meaningful product, policy and documentation changes rather than rereading entire surfaces. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
@@ -2026,6 +1430,608 @@
       "outputModes": [
         "application/json"
       ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-audit",
+      "name": "Web Grounding Intelligence · Technical Audit",
+      "description": "Web Grounding Intelligence · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "technical-audit"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Technical Audit through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-compare",
+      "name": "Web Grounding Intelligence · Change / Comparison Dossier",
+      "description": "Web Grounding Intelligence · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "change-comparison-dossier"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-context",
+      "name": "Web Grounding Intelligence · Agent Context Pack",
+      "description": "Web Grounding Intelligence · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "agent-context-pack"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-decision",
+      "name": "Web Grounding Intelligence · Decision Dossier",
+      "description": "Web Grounding Intelligence · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "decision-dossier"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-evidence",
+      "name": "Web Grounding Intelligence · Evidence Matrix",
+      "description": "Web Grounding Intelligence · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "evidence-matrix"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-web-ground-extract",
+      "name": "Web Grounding Intelligence · Precision Extract",
+      "description": "Web Grounding Intelligence · Precision Extract. Fast domain-specific structured extraction for another agent. Turn arbitrary public pages into compact grounded evidence for downstream agents. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "web-grounding-intelligence",
+        "precision-extract"
+      ],
+      "examples": [
+        "Use Web Grounding Intelligence · Precision Extract through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-audit",
+      "name": "x402 Merchant Readiness · Technical Audit",
+      "description": "x402 Merchant Readiness · Technical Audit. Prioritized audit grounded in content, metadata and HTTP evidence. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "technical-audit"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Technical Audit through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-compare",
+      "name": "x402 Merchant Readiness · Change / Comparison Dossier",
+      "description": "x402 Merchant Readiness · Change / Comparison Dossier. Compare two public surfaces and explain material differences. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "change-comparison-dossier"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Change / Comparison Dossier through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-context",
+      "name": "x402 Merchant Readiness · Agent Context Pack",
+      "description": "x402 Merchant Readiness · Agent Context Pack. Grounded context plus crawl/discovery structure for an autonomous agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "agent-context-pack"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Agent Context Pack through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-decision",
+      "name": "x402 Merchant Readiness · Decision Dossier",
+      "description": "x402 Merchant Readiness · Decision Dossier. Decision-oriented synthesis for autonomous buyers and orchestrators. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "decision-dossier"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Decision Dossier through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-evidence",
+      "name": "x402 Merchant Readiness · Evidence Matrix",
+      "description": "x402 Merchant Readiness · Evidence Matrix. Traceable facts, claims, gaps and confidence for downstream reasoning. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "evidence-matrix"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Evidence Matrix through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "dynamic-mg-x402-ready-extract",
+      "name": "x402 Merchant Readiness · Precision Extract",
+      "description": "x402 Merchant Readiness · Precision Extract. Fast domain-specific structured extraction for another agent. Assess machine-payment discoverability and buyer friction for x402 sellers. This is a market-prior seed; Conway demand, revenue and usefulness remain zero until strict external fulfillment evidence exists. Availability follows current execution-canary state; registry presence is discovery metadata, not revenue evidence.",
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "x402-merchant-readiness",
+        "precision-extract"
+      ],
+      "examples": [
+        "Use x402 Merchant Readiness · Precision Extract through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "url-accessibility",
+      "name": "Accessibility Tree Extraction",
+      "description": "Return a browser accessibility-tree representation for a safe public webpage. Use for semantic UI understanding, accessible automation, element discovery and agent interaction planning. Public paid endpoint: POST /api/x402/accessibility.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "accessibility",
+        "accessibility-tree",
+        "a11y",
+        "semantic-ui",
+        "browser-automation",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-http-inspect",
+      "name": "HTTP Status and Header Inspection",
+      "description": "Inspect a safe public URL's HTTP status and selected safe response headers without following redirects. Use for endpoint diagnostics, redirect inspection, cache/content-type checks and machine availability tests. Public paid endpoint: POST /api/x402/http-inspect.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "http",
+        "headers",
+        "status",
+        "redirect",
+        "endpoint-diagnostics",
+        "web",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-links",
+      "name": "URL Link Extraction",
+      "description": "Extract navigable links from a safe public webpage. Use for crawl planning, site discovery, navigation maps, URL harvesting, research pipelines and agent browsing. Public paid endpoint: POST /api/x402/links.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "links",
+        "link-extraction",
+        "crawl",
+        "navigation",
+        "url-discovery",
+        "research",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "url-page-diff",
+      "name": "Webpage Diff and Change Detection",
+      "description": "Compare two public webpages and return normalized change/similarity evidence. Use for page-diff monitoring, website change detection, competitor comparison and version checks. Public paid endpoint: POST /api/x402/page-diff.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"compareUrl\":\"https://example.org\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "page-diff",
+        "change-detection",
+        "comparison",
+        "monitoring",
+        "website-diff",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-rendered-html",
+      "name": "Rendered HTML Extraction",
+      "description": "Return fully rendered post-JavaScript HTML for a safe public webpage. Use for SPAs, client-rendered sites, dynamic DOM extraction and automation that needs HTML after browser execution. Public paid endpoint: POST /api/x402/rendered-html.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/html"
+      ],
+      "tags": [
+        "web",
+        "rendered-html",
+        "javascript",
+        "spa",
+        "dynamic-dom",
+        "browser",
+        "extraction",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-robots",
+      "name": "Robots.txt Inspection",
+      "description": "Fetch and normalize robots.txt for the public origin associated with a URL. Use for crawler policy discovery, sitemap hints, agent crawl planning and website indexing diagnostics. Public paid endpoint: POST /api/x402/robots.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "tags": [
+        "robots.txt",
+        "robots",
+        "crawler",
+        "crawl-policy",
+        "sitemap",
+        "indexing",
+        "web",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-selectors",
+      "name": "CSS Selector Extraction",
+      "description": "Extract bounded CSS-selected elements from a safe public webpage. Use for targeted DOM scraping, element text/attribute extraction and deterministic web automation. Public paid endpoint: POST /api/x402/selectors.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"selectors\":[\"h1\",\"a\"]}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "css",
+        "selectors",
+        "dom",
+        "scraping",
+        "targeted-extraction",
+        "automation",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-seo-audit",
+      "name": "SEO and Metadata Audit",
+      "description": "Inspect a rendered public webpage and return a compact SEO and metadata audit. Use for title/meta/canonical structure checks, machine-readable page diagnostics and technical SEO inspection. Public paid endpoint: POST /api/x402/seo-audit.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "seo",
+        "metadata",
+        "technical-seo",
+        "audit",
+        "page-diagnostics",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-sitemap",
+      "name": "XML Sitemap Inspection",
+      "description": "Fetch and summarize a public XML sitemap or sitemap index. Use for URL discovery, crawl planning, site inventory, indexing diagnostics and machine navigation. Public paid endpoint: POST /api/x402/sitemap.",
+      "examples": [
+        "{\"url\":\"https://example.com/sitemap.xml\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "sitemap",
+        "xml",
+        "url-discovery",
+        "crawl",
+        "indexing",
+        "site-inventory",
+        "web",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-snapshot",
+      "name": "Browser Snapshot",
+      "description": "Create a structured browser snapshot of a safe public webpage for automation and downstream agents. Use when an agent needs page structure, rendered state or a compact browser observation. Public paid endpoint: POST /api/x402/snapshot.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "browser",
+        "snapshot",
+        "page-structure",
+        "automation",
+        "rendered-page",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "url-structured-json",
+      "name": "Structured JSON Web Extraction",
+      "description": "Turn a safe public webpage into task-specific structured JSON using a bounded extraction prompt. Use for schema-ready facts, records, attributes and machine-consumable web data. Public paid endpoint: POST /api/x402/structured-json.",
+      "examples": [
+        "{\"url\":\"https://example.com\",\"prompt\":\"Extract the title and main topic as JSON.\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "web",
+        "structured-json",
+        "structured-data",
+        "data-extraction",
+        "web-scraping",
+        "json",
+        "agents",
+        "x402",
+        "paid"
+      ]
+    },
+    {
+      "id": "url-to-markdown",
+      "name": "URL to Markdown",
+      "description": "Convert a safe public webpage URL into clean agent-ready Markdown. Use for web reading, grounding, RAG ingestion, content extraction, article parsing and downstream agent context. Public paid endpoint: POST /api/x402/markdown.",
+      "examples": [
+        "{\"url\":\"https://example.com\"}"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/markdown"
+      ],
+      "tags": [
+        "web",
+        "url-to-markdown",
+        "markdown",
+        "web-reading",
+        "content-extraction",
+        "rag",
+        "grounding",
+        "x402",
+        "paid"
+      ],
+      "securityRequirements": [
+        {
+          "schemes": {
+            "conwayMachineBearer": {
+              "list": []
+            }
+          }
+        }
+      ]
     }
-  ]
+  ],
+  "iconUrl": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/favicon.svg"
 }
