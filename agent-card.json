@@ -37,6 +37,28 @@
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-service-health-monitor"
               }
+            },
+            {
+              "id": "listing-drift-checker",
+              "name": "Listing Drift Checker",
+              "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs.",
+              "state": "trial",
+              "priceCents": 500,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/listing-drift-checker"
+              }
+            },
+            {
+              "id": "web-data-to-structured-a2a-messages",
+              "name": "Web Data to Structured A2A Messages",
+              "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-to-structured-a2a-messages"
+              }
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -231,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 1,
+            "projectedVerifiedDynamicSkills": 3,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -511,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 1,
+            "projectedDynamicSkills": 3,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -748,8 +770,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 18,
-            "publicSkillSetSha256": "22ae0b4d804361683a749a7f88ddc1b260df5caa3bddc522366fbd3645d7e25b",
+            "publicSkillCount": 20,
+            "publicSkillSetSha256": "ef161da12a8ccc3ce0a41668828b59da5f88ebcea98fc297caae387af8d58547",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -920,6 +942,52 @@
       "description": "Monitor the health and performance of A2A service endpoints, providing real-time metrics and alerts to ensure optimal functionality and reliability. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Service Health Monitor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-listing-drift-checker",
+      "name": "Listing Drift Checker",
+      "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Listing Drift Checker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-web-data-to-structured-a2a-messages",
+      "name": "Web Data to Structured A2A Messages",
+      "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Web Data to Structured A2A Messages through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
