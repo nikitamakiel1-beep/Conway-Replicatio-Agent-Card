@@ -37,17 +37,6 @@
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-service-health-monitor"
               }
-            },
-            {
-              "id": "web-data-to-structured-a2a-agent",
-              "name": "Web Data to Structured A2A Agent",
-              "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
-              "state": "trial",
-              "priceCents": 800,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-to-structured-a2a-agent"
-              }
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -242,7 +231,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 2,
+            "projectedVerifiedDynamicSkills": 1,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -522,7 +511,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 2,
+            "projectedDynamicSkills": 1,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -759,8 +748,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 19,
-            "publicSkillSetSha256": "7a3c912da08d5e374af880a02fc99b67f86fc92bccf8f457fdc50e007a74e1d8",
+            "publicSkillCount": 18,
+            "publicSkillSetSha256": "22ae0b4d804361683a749a7f88ddc1b260df5caa3bddc522366fbd3645d7e25b",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -931,29 +920,6 @@
       "description": "Monitor the health and performance of A2A service endpoints, providing real-time metrics and alerts to ensure optimal functionality and reliability. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Service Health Monitor through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-web-data-to-structured-a2a-agent",
-      "name": "Web Data to Structured A2A Agent",
-      "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Web Data to Structured A2A Agent through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
