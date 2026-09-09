@@ -26,7 +26,30 @@
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-          "featuredRuntimeCapabilities": [],
+          "featuredRuntimeCapabilities": [
+            {
+              "id": "a2a-mail-router",
+              "name": "A2A Agent Mail Router",
+              "description": "A service that securely routes A2A Agent messages between specified inboxes and threads using the AgentMail API, with built-in retry mechanisms and rate limiting.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-mail-router"
+              }
+            },
+            {
+              "id": "web-data-to-structured-a2a-agent",
+              "name": "Web Data to Structured A2A Agent",
+              "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-to-structured-a2a-agent"
+              }
+            }
+          ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
@@ -219,7 +242,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 0,
+            "projectedVerifiedDynamicSkills": 2,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -499,7 +522,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 0,
+            "projectedDynamicSkills": 2,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -736,8 +759,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 17,
-            "publicSkillSetSha256": "4881ebf00cfd45f5529ac38974adeb5c9cbf4c7ce8eee0f967bfe37800c5fba6",
+            "publicSkillCount": 19,
+            "publicSkillSetSha256": "49c7622a0ebca285a2e163a6da05234cbfc3eb46e3cf571933d3b3d7b038fa72",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -900,6 +923,52 @@
         "market-genome",
         "discovery",
         "machine-commerce"
+      ]
+    },
+    {
+      "id": "dynamic-a2a-mail-router",
+      "name": "A2A Agent Mail Router",
+      "description": "A service that securely routes A2A Agent messages between specified inboxes and threads using the AgentMail API, with built-in retry mechanisms and rate limiting. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use A2A Agent Mail Router through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-web-data-to-structured-a2a-agent",
+      "name": "Web Data to Structured A2A Agent",
+      "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Web Data to Structured A2A Agent through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
       ]
     },
     {
