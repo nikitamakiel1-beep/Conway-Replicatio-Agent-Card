@@ -50,6 +50,17 @@
               }
             },
             {
+              "id": "network-health-monitor",
+              "name": "Network Health Monitor",
+              "description": "A Cloudflare Browser Run service that checks Ethereum mainnet health and returns a 0-100 score based on network metrics.",
+              "state": "trial",
+              "priceCents": 500,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/network-health-monitor"
+              }
+            },
+            {
               "id": "web-data-to-structured-a2a-messages",
               "name": "Web Data to Structured A2A Messages",
               "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
@@ -253,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 3,
+            "projectedVerifiedDynamicSkills": 4,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -533,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 3,
+            "projectedDynamicSkills": 4,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -770,8 +781,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 20,
-            "publicSkillSetSha256": "ef161da12a8ccc3ce0a41668828b59da5f88ebcea98fc297caae387af8d58547",
+            "publicSkillCount": 21,
+            "publicSkillSetSha256": "800f38c69af3c0d1b9ea8435ddd7fb2eacc2fd5adf30d697707dfd0a172dab81",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -965,6 +976,29 @@
       "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Listing Drift Checker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-network-health-monitor",
+      "name": "Network Health Monitor",
+      "description": "A Cloudflare Browser Run service that checks Ethereum mainnet health and returns a 0-100 score based on network metrics. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Network Health Monitor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
