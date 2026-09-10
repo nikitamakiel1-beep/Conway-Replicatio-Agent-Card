@@ -61,6 +61,17 @@
               }
             },
             {
+              "id": "schema-drift-intelligence",
+              "name": "Schema Drift Intelligence",
+              "description": "Compare public API/docs surfaces and identify contract/schema changes that can break agents.",
+              "state": "trial",
+              "priceCents": 8,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/schema-drift-intelligence"
+              }
+            },
+            {
               "id": "solana-token-price-liquidity-monitor",
               "name": "Solana Token Price & Liquidity Monitor",
               "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score.",
@@ -69,6 +80,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/solana-token-price-liquidity-monitor"
+              }
+            },
+            {
+              "id": "vendor-due-diligence-insights",
+              "name": "Vendor Due Diligence Insights",
+              "description": "A service that compares two public vendor surfaces, explains material differences, and provides a structured commercial and operational due-diligence report for purchasing agents.",
+              "state": "trial",
+              "priceCents": 900,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/vendor-due-diligence-insights"
               }
             },
             {
@@ -286,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 6,
+            "projectedVerifiedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -566,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 6,
+            "projectedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -804,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 23,
-            "publicSkillSetSha256": "5d10398d03e764758eb0f815d3f0bd02e8cbc9e379e20eb0f8cb4c2f9f4550b5",
+            "publicSkillCount": 25,
+            "publicSkillSetSha256": "6427def9c23fb87fac85a51350da654290e03a334fd0a6906cdd75b15394a2ef",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1061,11 +1083,57 @@
       ]
     },
     {
+      "id": "dynamic-schema-drift-intelligence",
+      "name": "Schema Drift Intelligence",
+      "description": "Compare public API/docs surfaces and identify contract/schema changes that can break agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Schema Drift Intelligence through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-solana-token-price-liquidity-monitor",
       "name": "Solana Token Price & Liquidity Monitor",
       "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Solana Token Price & Liquidity Monitor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-vendor-due-diligence-insights",
+      "name": "Vendor Due Diligence Insights",
+      "description": "A service that compares two public vendor surfaces, explains material differences, and provides a structured commercial and operational due-diligence report for purchasing agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Vendor Due Diligence Insights through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
