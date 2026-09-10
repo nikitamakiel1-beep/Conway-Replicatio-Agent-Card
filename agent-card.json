@@ -39,6 +39,17 @@
               }
             },
             {
+              "id": "defi-tvl-yield-tracker",
+              "name": "DeFi TVL & Yield Tracker",
+              "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
+              "state": "trial",
+              "priceCents": 1000,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-tvl-yield-tracker"
+              }
+            },
+            {
               "id": "listing-drift-checker",
               "name": "Listing Drift Checker",
               "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs.",
@@ -69,6 +80,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-to-structured-a2a-messages"
+              }
+            },
+            {
+              "id": "website-trust-analyzer",
+              "name": "Website Trust Analyzer",
+              "description": "A Cloudflare Browser Run service that fetches a website and returns a structured report on HTTPS, HSTS, CSP, clickjacking protection, SSL certificate validity, and domain risk based on DNS signals.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/website-trust-analyzer"
               }
             }
           ],
@@ -264,7 +286,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 4,
+            "projectedVerifiedDynamicSkills": 6,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +566,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 4,
+            "projectedDynamicSkills": 6,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -782,8 +804,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 21,
-            "publicSkillSetSha256": "800f38c69af3c0d1b9ea8435ddd7fb2eacc2fd5adf30d697707dfd0a172dab81",
+            "publicSkillCount": 23,
+            "publicSkillSetSha256": "423c4d3d287fe60153f639393d66b66d4a14191348372cde206154289aa2422f",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -993,6 +1015,29 @@
       ]
     },
     {
+      "id": "dynamic-defi-tvl-yield-tracker",
+      "name": "DeFi TVL & Yield Tracker",
+      "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use DeFi TVL & Yield Tracker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-listing-drift-checker",
       "name": "Listing Drift Checker",
       "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1044,6 +1089,29 @@
       "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Web Data to Structured A2A Messages through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-website-trust-analyzer",
+      "name": "Website Trust Analyzer",
+      "description": "A Cloudflare Browser Run service that fetches a website and returns a structured report on HTTPS, HSTS, CSP, clickjacking protection, SSL certificate validity, and domain risk based on DNS signals. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Website Trust Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
