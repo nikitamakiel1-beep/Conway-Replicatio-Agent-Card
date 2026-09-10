@@ -777,7 +777,8 @@
             "ladHttps": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/lad/agents",
             "openapi": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/openapi.json",
             "apiCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/api-catalog",
-            "x402": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402"
+            "x402": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/x402",
+            "observability": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/r125-observability"
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
@@ -810,6 +811,27 @@
             "fullInventoryRemainsAtRuntimeCapabilityCatalog": true,
             "contentHashSkipOwnedByInheritedR109AtomicMirrorWriter": true,
             "bothMirrorPathsRemainAtomicAndByteIdentical": true
+          },
+          "x402Settlement": {
+            "closure": "r125-observability-commerce-hardening",
+            "scheme": "exact",
+            "network": "eip155:8453",
+            "assetSymbol": "USDC",
+            "assetIdentifierAuthority": "runtime-402-PaymentRequirements",
+            "payTo": "0xFFdb9D445685482785029e7BB71312e48685d12d",
+            "recipientSource": "runtime-agentWalletAddress",
+            "runtime402AuthoritativeForAmountAssetAndSettlement": true,
+            "publicAddressOnlyNoSigningMaterial": true
+          },
+          "observabilityHardening": {
+            "closure": "r125-observability-commerce-hardening",
+            "safeStaticFallbackSuppressesDynamicExecutableClaims": true,
+            "safeFallbackNeverCreatesRevenueTruth": true,
+            "dynamicPublicationStillRequiresFreshVerifiedCanary": true,
+            "canaryFreshnessTtlHours": 48,
+            "safeFallbackMaxAgeHours": 6,
+            "mirrorRemainsDownstreamOfRuntime": true,
+            "formalRuntimeReleaseUnchanged": true
           }
         }
       }
