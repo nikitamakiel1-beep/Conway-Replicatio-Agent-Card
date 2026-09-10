@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 11,
+            "projectedVerifiedDynamicSkills": 12,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 11,
+            "projectedDynamicSkills": 12,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 28,
-            "publicSkillSetSha256": "a61980c276da9b964f42bf5e14631767d3787f18db71976b4b5e158d2f31ef69",
+            "publicSkillCount": 29,
+            "publicSkillSetSha256": "019216eb9ae7432a76d456ec76867a0f7a3a5f5e2f015000dcc19d3d195e03cb",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1019,6 +1019,29 @@
       "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Compliance Checker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-competitor-a2a-funnel-analyzer",
+      "name": "Competitor A2A Funnel Analyzer",
+      "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor A2A Funnel Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
