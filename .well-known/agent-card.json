@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 25,
-            "publicSkillSetSha256": "6427def9c23fb87fac85a51350da654290e03a334fd0a6906cdd75b15394a2ef",
+            "publicSkillCount": 27,
+            "publicSkillSetSha256": "d7a7f601be04b3351cfdddb64a9046659cd400f2940e2349e0ab1a2084272969",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1011,6 +1011,52 @@
         "market-genome",
         "discovery",
         "machine-commerce"
+      ]
+    },
+    {
+      "id": "dynamic-a2a-compliance-checker",
+      "name": "A2A Compliance Checker",
+      "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use A2A Compliance Checker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-competitor-seo-analyzer",
+      "name": "Competitor SEO Analyzer",
+      "description": "A service that analyzes competitor websites to identify SEO opportunities, such as keyword gaps, backlink profiles, and on-page optimization suggestions. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor SEO Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
       ]
     },
     {
