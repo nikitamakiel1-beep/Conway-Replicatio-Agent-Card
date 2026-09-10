@@ -72,6 +72,17 @@
               }
             },
             {
+              "id": "solana-token-price-liquidity-monitor",
+              "name": "Solana Token Price & Liquidity Monitor",
+              "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/solana-token-price-liquidity-monitor"
+              }
+            },
+            {
               "id": "web-data-to-structured-a2a-messages",
               "name": "Web Data to Structured A2A Messages",
               "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
@@ -286,7 +297,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 6,
+            "projectedVerifiedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -566,7 +577,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 6,
+            "projectedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -804,8 +815,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 23,
-            "publicSkillSetSha256": "423c4d3d287fe60153f639393d66b66d4a14191348372cde206154289aa2422f",
+            "publicSkillCount": 24,
+            "publicSkillSetSha256": "7cdad182e37325f28e730e30b8feb8f5b96a78c06aa4960c60c8a50d1a0f2813",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1066,6 +1077,29 @@
       "description": "A Cloudflare Browser Run service that checks Ethereum mainnet health and returns a 0-100 score based on network metrics. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Network Health Monitor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-solana-token-price-liquidity-monitor",
+      "name": "Solana Token Price & Liquidity Monitor",
+      "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Solana Token Price & Liquidity Monitor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
