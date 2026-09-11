@@ -28,6 +28,17 @@
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "featuredRuntimeCapabilities": [
             {
+              "id": "a2a-compliance-checker",
+              "name": "A2A Compliance Checker",
+              "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations.",
+              "state": "trial",
+              "priceCents": 700,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-compliance-checker"
+              }
+            },
+            {
               "id": "defi-tvl-yield-tracker",
               "name": "DeFi TVL & Yield Tracker",
               "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
@@ -36,17 +47,6 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-tvl-yield-tracker"
-              }
-            },
-            {
-              "id": "listing-drift-checker",
-              "name": "Listing Drift Checker",
-              "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs.",
-              "state": "trial",
-              "priceCents": 500,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/listing-drift-checker"
               }
             },
             {
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 14,
+            "projectedVerifiedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 14,
+            "projectedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 31,
-            "publicSkillSetSha256": "5ef8ad497933c0fe49f629723735e5643b1a9068c34423b758d275bab36e0b71",
+            "publicSkillCount": 30,
+            "publicSkillSetSha256": "867ed883c11c94c6eacec386c2f78ceb80577e461f225436b6b0e331173b92e2",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1134,29 +1134,6 @@
       "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use DeFi TVL & Yield Tracker through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-listing-drift-checker",
-      "name": "Listing Drift Checker",
-      "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Listing Drift Checker through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
