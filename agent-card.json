@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 12,
+            "projectedVerifiedDynamicSkills": 14,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 12,
+            "projectedDynamicSkills": 14,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 29,
-            "publicSkillSetSha256": "019216eb9ae7432a76d456ec76867a0f7a3a5f5e2f015000dcc19d3d195e03cb",
+            "publicSkillCount": 31,
+            "publicSkillSetSha256": "5ef8ad497933c0fe49f629723735e5643b1a9068c34423b758d275bab36e0b71",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1060,6 +1060,29 @@
       ]
     },
     {
+      "id": "dynamic-competitor-a2a-service-comparer",
+      "name": "Competitor A2A Service Comparer",
+      "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor A2A Service Comparer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-competitor-pricing-tracker",
       "name": "Competitor Pricing Tracker",
       "description": "A service that monitors competitor websites to identify pricing opportunities, such as price gaps, promotional offers, and dynamic pricing strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1134,6 +1157,29 @@
       "description": "A service that verifies if a catalogue listing matches the actual products available at the origin URL, checking prices, network details, and payTo addresses without incurring payment costs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Listing Drift Checker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-machine-service-integration-orchestrator",
+      "name": "Machine Service Integration Orchestrator",
+      "description": "A service that orchestrates the integration of multiple machine services, handling authentication, data transformation, and workflow management. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Machine Service Integration Orchestrator through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
