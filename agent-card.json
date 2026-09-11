@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 15,
+            "projectedVerifiedDynamicSkills": 16,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 15,
+            "projectedDynamicSkills": 16,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 32,
-            "publicSkillSetSha256": "85ef68f7e7807528e5bfd9cb0a4c89f006b72422a34f49e5e87c642d79a51347",
+            "publicSkillCount": 33,
+            "publicSkillSetSha256": "32079ce295703134873448418c4c0383dce435e65a614a91a866551843c82eac",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1042,6 +1042,29 @@
       "description": "A Cloudflare Browser Run service that continuously monitors A2A service implementations for compliance with relevant regulations, industry standards, and security best practices. It uses Cloudflare Workers AI to analyze code, configuration, and runtime behavior, generating detailed compliance reports and risk assessments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Compliance & Risk Auditor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-autonomous-seller-trust-preflight",
+      "name": "Autonomous Seller Trust Preflight",
+      "description": "Preflight public seller surfaces before another agent spends, without claiming cryptographic trust not observed. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Autonomous Seller Trust Preflight through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
