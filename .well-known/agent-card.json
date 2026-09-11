@@ -39,6 +39,17 @@
               }
             },
             {
+              "id": "a2a-compliance-risk-auditor",
+              "name": "A2A Compliance & Risk Auditor",
+              "description": "A Cloudflare Browser Run service that continuously monitors A2A service implementations for compliance with relevant regulations, industry standards, and security best practices. It uses Cloudflare Workers AI to analyze code, configuration, and runtime behavior, generating detailed compliance reports and risk assessments.",
+              "state": "trial",
+              "priceCents": 1000,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-compliance-risk-auditor"
+              }
+            },
+            {
               "id": "defi-tvl-yield-tracker",
               "name": "DeFi TVL & Yield Tracker",
               "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
@@ -91,17 +102,6 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/vendor-due-diligence-insights"
-              }
-            },
-            {
-              "id": "web-data-to-structured-a2a-messages",
-              "name": "Web Data to Structured A2A Messages",
-              "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents.",
-              "state": "trial",
-              "priceCents": 800,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/web-data-to-structured-a2a-messages"
               }
             },
             {
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 16,
+            "projectedVerifiedDynamicSkills": 15,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 16,
+            "projectedDynamicSkills": 15,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 33,
-            "publicSkillSetSha256": "7bbcc5d7ee7cb778f3fdbea5430dbbc29e70f2abb2383ef8947083804762ab99",
+            "publicSkillCount": 32,
+            "publicSkillSetSha256": "85ef68f7e7807528e5bfd9cb0a4c89f006b72422a34f49e5e87c642d79a51347",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1295,29 +1295,6 @@
       "description": "A service that compares two public vendor surfaces, explains material differences, and provides a structured commercial and operational due-diligence report for purchasing agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Vendor Due Diligence Insights through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-web-data-to-structured-a2a-messages",
-      "name": "Web Data to Structured A2A Messages",
-      "description": "Convert public web data sources like sitemaps, page content, or blog feeds into structured A2A Agent messages that can be consumed by other services or autonomous agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Web Data to Structured A2A Messages through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
