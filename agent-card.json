@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 15,
+            "projectedVerifiedDynamicSkills": 16,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 15,
+            "projectedDynamicSkills": 16,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 32,
-            "publicSkillSetSha256": "69bddffb5143b050760b6d64d30cadf5b2995e2d4af016d15be4b49696997a27",
+            "publicSkillCount": 33,
+            "publicSkillSetSha256": "7bbcc5d7ee7cb778f3fdbea5430dbbc29e70f2abb2383ef8947083804762ab99",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1088,6 +1088,29 @@
       "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Competitor A2A Service Comparer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-competitor-paid-messaging-analyzer",
+      "name": "Competitor Paid Messaging Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor Paid Messaging Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
