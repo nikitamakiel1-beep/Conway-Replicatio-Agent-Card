@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 16,
+            "projectedVerifiedDynamicSkills": 18,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 16,
+            "projectedDynamicSkills": 18,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 33,
-            "publicSkillSetSha256": "6f39042cdacd280efd6b520d40da8c4d5d2a2302150323bdc602e2a0439f976a",
+            "publicSkillCount": 35,
+            "publicSkillSetSha256": "abac33a9f02cb3ac45bf316f6fb5820612f561de3efb689910686f2fb8d7c0c3",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1060,6 +1060,29 @@
       ]
     },
     {
+      "id": "dynamic-a2a-compliance-risk-manager",
+      "name": "A2A Compliance & Risk Manager",
+      "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use A2A Compliance & Risk Manager through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-a2a-payment-gateway-optimizer",
       "name": "A2A Payment Gateway Optimizer",
       "description": "A service that optimizes A2A payment gateways by identifying pricing gaps, promotional offers, and dynamic pricing strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1272,6 +1295,29 @@
       "description": "Compare public API/docs surfaces and identify contract/schema changes that can break agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Schema Drift Intelligence through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-solana-a2a-service-finder",
+      "name": "Solana A2A Service Finder",
+      "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Solana A2A Service Finder through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
