@@ -72,6 +72,17 @@
               }
             },
             {
+              "id": "a2a-payment-gateway-optimizer",
+              "name": "A2A Payment Gateway Optimizer",
+              "description": "A service that optimizes A2A payment gateways by identifying pricing gaps, promotional offers, and dynamic pricing strategies.",
+              "state": "trial",
+              "priceCents": 850,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-gateway-optimizer"
+              }
+            },
+            {
               "id": "autonomous-seller-trust-preflight",
               "name": "Autonomous Seller Trust Preflight",
               "description": "Preflight public seller surfaces before another agent spends, without claiming cryptographic trust not observed.",
@@ -91,17 +102,6 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/schema-drift-intelligence"
-              }
-            },
-            {
-              "id": "solana-token-price-liquidity-monitor",
-              "name": "Solana Token Price & Liquidity Monitor",
-              "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score.",
-              "state": "trial",
-              "priceCents": 800,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/solana-token-price-liquidity-monitor"
               }
             },
             {
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 21,
+            "projectedVerifiedDynamicSkills": 20,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 21,
+            "projectedDynamicSkills": 20,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "4f564b034c38d7516df3072aac9487b93f29e72cb0c02dfdb0a79f3f4bacfe2a",
+            "publicSkillCount": 37,
+            "publicSkillSetSha256": "88bc3177a2d8853ce33e43ac349ad0eb0ad97307842a5ba9b0fb5e798fa2c830",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1410,29 +1410,6 @@
       "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Solana A2A Service Finder through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-solana-token-price-liquidity-monitor",
-      "name": "Solana Token Price & Liquidity Monitor",
-      "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Solana Token Price & Liquidity Monitor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
