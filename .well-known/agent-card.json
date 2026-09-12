@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 20,
+            "projectedVerifiedDynamicSkills": 22,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 20,
+            "projectedDynamicSkills": 22,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 37,
-            "publicSkillSetSha256": "9bb5c8ebdf777bb60946413182c05216f6c3d2615cb612df55e47f85deaf04b7",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "b7d4c8a5f8241b1eedd3033a33063f7e6373befda042faed177cbe822bae4623",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1267,6 +1267,29 @@
       ]
     },
     {
+      "id": "dynamic-defi-portfolio-dashboard",
+      "name": "DeFi Portfolio Dashboard",
+      "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use DeFi Portfolio Dashboard through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-defi-tvl-yield-tracker",
       "name": "DeFi TVL & Yield Tracker",
       "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1318,6 +1341,29 @@
       "description": "A service that orchestrates the integration of multiple machine services, handling authentication, data transformation, and workflow management. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Machine Service Integration Orchestrator through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-nft-floor-price-risk-analyzer",
+      "name": "NFT Floor Price & Risk Analyzer",
+      "description": "A Cloudflare Browser Run service that fetches NFT floor price and risk data from the provided URL, returning a structured report with floor price, risk score, and NFT metadata. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use NFT Floor Price & Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
