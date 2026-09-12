@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 22,
+            "projectedVerifiedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 22,
+            "projectedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "e681dea9535ebd90990b96d7765717428c19ccf34fe24c41d0499673b852ce95",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "d3a5631428801f8a4be9366e8241b65d2e442f032b3480dd63e8dd3cc638dd9b",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1272,29 +1272,6 @@
       "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use DeFi Portfolio Dashboard through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-defi-tvl-yield-tracker",
-      "name": "DeFi TVL & Yield Tracker",
-      "description": "A Cloudflare Browser Run service that fetches DeFi TVL and yield data from the provided URL, returning a structured report with TVL rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use DeFi TVL & Yield Tracker through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
