@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 21,
+            "projectedVerifiedDynamicSkills": 23,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 21,
+            "projectedDynamicSkills": 23,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "590010fed80ffcc8df4cfef5a901bb242c6645026c6676d17b2c366cea3cb92f",
+            "publicSkillCount": 40,
+            "publicSkillSetSha256": "341a2f5472ab1ef7eddf165a0d8d1a22b575c1a2f73de7c7b1eb323e8a59da76",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1405,6 +1405,29 @@
       ]
     },
     {
+      "id": "dynamic-schema-drift-intelligence",
+      "name": "Schema Drift Intelligence",
+      "description": "Compare public API/docs surfaces and identify contract/schema changes that can break agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Schema Drift Intelligence through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-solana-a2a-service-finder",
       "name": "Solana A2A Service Finder",
       "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1433,6 +1456,29 @@
       "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Solana Token Price & Liquidity Monitor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-vendor-due-diligence-insights",
+      "name": "Vendor Due Diligence Insights",
+      "description": "A service that compares two public vendor surfaces, explains material differences, and provides a structured commercial and operational due-diligence report for purchasing agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Vendor Due Diligence Insights through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
