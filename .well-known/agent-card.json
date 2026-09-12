@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 20,
+            "projectedVerifiedDynamicSkills": 22,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 20,
+            "projectedDynamicSkills": 22,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 37,
-            "publicSkillSetSha256": "88bc3177a2d8853ce33e43ac349ad0eb0ad97307842a5ba9b0fb5e798fa2c830",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "e681dea9535ebd90990b96d7765717428c19ccf34fe24c41d0499673b852ce95",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1336,6 +1336,29 @@
       ]
     },
     {
+      "id": "dynamic-dynamic-pricing-optimizer",
+      "name": "Dynamic Pricing Optimizer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor pricing data and suggests dynamic pricing strategies for A2A services. It uses Workers AI to evaluate market trends, competitor behavior, and customer demand signals to generate data-driven pricing recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-machine-service-integration-orchestrator",
       "name": "Machine Service Integration Orchestrator",
       "description": "A service that orchestrates the integration of multiple machine services, handling authentication, data transformation, and workflow management. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1410,6 +1433,29 @@
       "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Solana A2A Service Finder through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-solana-token-price-liquidity-monitor",
+      "name": "Solana Token Price & Liquidity Monitor",
+      "description": "A Cloudflare Browser Run service that fetches Solana token price and liquidity data from the provided URL, returning a structured report with price, liquidity, and safety risk score. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Solana Token Price & Liquidity Monitor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
