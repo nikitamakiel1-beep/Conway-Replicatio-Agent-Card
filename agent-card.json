@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 25,
+            "projectedVerifiedDynamicSkills": 24,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 25,
+            "projectedDynamicSkills": 24,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 42,
-            "publicSkillSetSha256": "146f58b769f0f0b2b8e2af609a019b0a42901d9028bf754e729be1343cb9565f",
+            "publicSkillCount": 41,
+            "publicSkillSetSha256": "223142e45c3b979c187875f2d265afdfc411b5a2724795536fd797e886f53bab",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1479,29 +1479,6 @@
       "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Solana A2A Service Finder through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-vendor-due-diligence-insights",
-      "name": "Vendor Due Diligence Insights",
-      "description": "A service that compares two public vendor surfaces, explains material differences, and provides a structured commercial and operational due-diligence report for purchasing agents. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Vendor Due Diligence Insights through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
