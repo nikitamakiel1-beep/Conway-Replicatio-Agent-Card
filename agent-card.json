@@ -39,17 +39,6 @@
               }
             },
             {
-              "id": "a2a-compliance-risk-auditor",
-              "name": "A2A Compliance & Risk Auditor",
-              "description": "A Cloudflare Browser Run service that continuously monitors A2A service implementations for compliance with relevant regulations, industry standards, and security best practices. It uses Cloudflare Workers AI to analyze code, configuration, and runtime behavior, generating detailed compliance reports and risk assessments.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-compliance-risk-auditor"
-              }
-            },
-            {
               "id": "a2a-compliance-risk-manager",
               "name": "A2A Compliance & Risk Manager",
               "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations.",
@@ -102,6 +91,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-funnel-analyzer"
+              }
+            },
+            {
+              "id": "competitor-a2a-service-comparer",
+              "name": "Competitor A2A Service Comparer",
+              "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-service-comparer"
               }
             },
             {
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 22,
+            "projectedVerifiedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 22,
+            "projectedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "5e3d72246c5cd99ee9b24e4967ad60318b31674953b5d166afb68be3e2447911",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "7e74915560025c3a5c971859bde75d39c6eb6ddd1ab784999c62cb2890a2b5ca",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1019,29 +1019,6 @@
       "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Compliance Checker through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-compliance-risk-auditor",
-      "name": "A2A Compliance & Risk Auditor",
-      "description": "A Cloudflare Browser Run service that continuously monitors A2A service implementations for compliance with relevant regulations, industry standards, and security best practices. It uses Cloudflare Workers AI to analyze code, configuration, and runtime behavior, generating detailed compliance reports and risk assessments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Compliance & Risk Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
