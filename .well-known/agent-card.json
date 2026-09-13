@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 23,
+            "projectedVerifiedDynamicSkills": 25,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 23,
+            "projectedDynamicSkills": 25,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "6c9dae56e12327a4e765c14132fe93834aa68b768eeacbb47eaf358098f567ea",
+            "publicSkillCount": 42,
+            "publicSkillSetSha256": "29c4f78f4b8dc304ef3fcd66ecc529d14cd9d1a0020ff213d51b24477427a868",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1129,6 +1129,29 @@
       ]
     },
     {
+      "id": "dynamic-autonomous-seller-trust-preflight",
+      "name": "Autonomous Seller Trust Preflight",
+      "description": "Preflight public seller surfaces before another agent spends, without claiming cryptographic trust not observed. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Autonomous Seller Trust Preflight through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-competitor-a2a-funnel-analyzer",
       "name": "Competitor A2A Funnel Analyzer",
       "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1364,6 +1387,29 @@
       "description": "A service that checks GitHub repository health using the relay402 endpoint, evaluating factors such as archived status, recency, license, stars, forks, and issues to help developers assess repository quality and risk. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use GitHub Repository Health Auditor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-machine-service-comparison-hub",
+      "name": "Machine Service Comparison Hub",
+      "description": "A platform that aggregates various machine services, allowing users to discover, compare, and purchase services based on their specific needs, streamlining the procurement process for businesses. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Machine Service Comparison Hub through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
