@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 22,
+            "projectedVerifiedDynamicSkills": 24,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 22,
+            "projectedDynamicSkills": 24,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "5c11ee807cbe4b28d529fbd490fbd646a3e310dd8b395b714432f29a49664641",
+            "publicSkillCount": 41,
+            "publicSkillSetSha256": "eb50f4a663617a7e1fbd86ef771a93343fbee0fbb914d1f501d0bac82a5ccfd0",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1198,6 +1198,29 @@
       ]
     },
     {
+      "id": "dynamic-competitor-paid-messaging-analyzer",
+      "name": "Competitor Paid Messaging Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor Paid Messaging Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-competitor-pricing-tracker",
       "name": "Competitor Pricing Tracker",
       "description": "A service that monitors competitor websites to identify pricing opportunities, such as price gaps, promotional offers, and dynamic pricing strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1295,6 +1318,29 @@
       "description": "A Cloudflare Browser Run service that fetches DeFi portfolio data from multiple platforms, calculates optimal yield strategies based on risk tolerance, and returns a structured report with recommended asset allocations and expected returns. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use DeFi Yield Optimizer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-domain-risk-assessment",
+      "name": "Domain Risk Assessment Service",
+      "description": "A service that evaluates domain risk by analyzing DNS records, including MX, SPF, DMARC, and abuse TLD heuristics using Workers AI, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Domain Risk Assessment Service through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
