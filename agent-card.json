@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 24,
+            "projectedVerifiedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 24,
+            "projectedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "c58c6ff3ee252718a991f0c06d408c6ce12fd7ba75505e1ac7b658b6cd2e7fb8",
+            "publicSkillCount": 43,
+            "publicSkillSetSha256": "0c54459ffd2235052a89d45e7bd77127b6227eae9bab2931113563dfe2515952",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1313,6 +1313,29 @@
       ]
     },
     {
+      "id": "dynamic-defi-risk-auditor",
+      "name": "DeFi Portfolio Risk Auditor",
+      "description": "A Cloudflare Browser Run service that evaluates DeFi portfolio risk by analyzing historical performance, volatility, and smart contract audits, providing users with risk insights to make informed decisions about DeFi investments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use DeFi Portfolio Risk Auditor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-defi-yield-optimizer",
       "name": "DeFi Yield Optimizer",
       "description": "A Cloudflare Browser Run service that fetches DeFi portfolio data from multiple platforms, calculates optimal yield strategies based on risk tolerance, and returns a structured report with recommended asset allocations and expected returns. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1341,6 +1364,29 @@
       "description": "A service that evaluates domain risk by analyzing DNS records, including MX, SPF, DMARC, and abuse TLD heuristics using Workers AI, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Domain Risk Assessment Service through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-dynamic-pricing-optimizer",
+      "name": "Dynamic Pricing Optimizer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor pricing data and suggests dynamic pricing strategies for A2A services. It uses Workers AI to evaluate market trends, competitor behavior, and customer demand signals to generate data-driven pricing recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
