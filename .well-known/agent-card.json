@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 24,
+            "projectedVerifiedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 24,
+            "projectedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "2d151417d994b758c70b0cdeaee3ebf101532f73f922aceb2f93a4f53231c9eb",
+            "publicSkillCount": 43,
+            "publicSkillSetSha256": "b1ab7485f69ae04f070f63014196ca9dfc9b690a60f62193d7aa72100f36df12",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1011,6 +1011,29 @@
         "market-genome",
         "discovery",
         "machine-commerce"
+      ]
+    },
+    {
+      "id": "dynamic-a2a-campaign-performance-analyzer",
+      "name": "A2A Campaign Performance Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use A2A Campaign Performance Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
       ]
     },
     {
@@ -1479,6 +1502,29 @@
       "description": "A service that compares two public vendor surfaces and explains material differences, helping autonomous buyers interpret public commercial terms before committing resources. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Vendor Due Diligence Intelligence through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-web-page-structured-json-extractor",
+      "name": "Web Page Structured JSON Extractor",
+      "description": "A Cloudflare Browser Run service that converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Web Page Structured JSON Extractor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
