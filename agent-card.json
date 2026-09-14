@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 25,
+            "projectedVerifiedDynamicSkills": 27,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 25,
+            "projectedDynamicSkills": 27,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 42,
-            "publicSkillSetSha256": "b7279105d9aaea4f4185bec5efc3766dda4a47ba300bdc12a40a67fc460b22f3",
+            "publicSkillCount": 44,
+            "publicSkillSetSha256": "d7526bfb740e6fcda5e655dc790f671a2e5fd0b4f82823edf9688b5a690267fd",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1244,6 +1244,29 @@
       ]
     },
     {
+      "id": "dynamic-competitor-pricing-tracker",
+      "name": "Competitor Pricing Tracker",
+      "description": "A service that monitors competitor websites to identify pricing opportunities, such as price gaps, promotional offers, and dynamic pricing strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor Pricing Tracker through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-defi-portfolio-dashboard",
       "name": "DeFi Portfolio Dashboard",
       "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1502,6 +1525,29 @@
       "description": "A Cloudflare Browser Run service that converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Web Page Structured JSON Extractor through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-web-page-structured-json-extractor-pro",
+      "name": "Web Page Structured JSON Extractor Pro",
+      "description": "Converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Includes advanced error handling, retry logic, and customizable extraction rules. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Web Page Structured JSON Extractor Pro through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
