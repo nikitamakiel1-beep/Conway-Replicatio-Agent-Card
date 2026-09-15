@@ -105,14 +105,14 @@
               }
             },
             {
-              "id": "competitor-a2a-funnel-analyzer",
-              "name": "Competitor A2A Funnel Analyzer",
+              "id": "competitor-a2a-service-comparer",
+              "name": "Competitor A2A Service Comparer",
               "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies.",
               "state": "trial",
-              "priceCents": 900,
+              "priceCents": 800,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-funnel-analyzer"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-service-comparer"
               }
             }
           ],
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 26,
+            "projectedVerifiedDynamicSkills": 25,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 26,
+            "projectedDynamicSkills": 25,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 43,
-            "publicSkillSetSha256": "51667cf6b2e8ab8c69191d1acc67fd481cfb3854605f6ca08344339594d781cf",
+            "publicSkillCount": 42,
+            "publicSkillSetSha256": "be708d474e7b45d486494a4b4d751e0877a6b02006dc6d6edaa627d4f37ba68b",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1157,29 +1157,6 @@
       "description": "Preflight public seller surfaces before another agent spends, without claiming cryptographic trust not observed. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Autonomous Seller Trust Preflight through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-competitor-a2a-funnel-analyzer",
-      "name": "Competitor A2A Funnel Analyzer",
-      "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Competitor A2A Funnel Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
