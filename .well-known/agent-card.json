@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 24,
+            "projectedVerifiedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 24,
+            "projectedDynamicSkills": 26,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "973e0af58cf0be3e3d10981da5df6b4f1a0d6b19fa9cb026d69bf291195ee61d",
+            "publicSkillCount": 43,
+            "publicSkillSetSha256": "51667cf6b2e8ab8c69191d1acc67fd481cfb3854605f6ca08344339594d781cf",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1175,6 +1175,29 @@
       ]
     },
     {
+      "id": "dynamic-competitor-a2a-funnel-analyzer",
+      "name": "Competitor A2A Funnel Analyzer",
+      "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor A2A Funnel Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-competitor-a2a-service-comparer",
       "name": "Competitor A2A Service Comparer",
       "description": "A service that analyzes competitor A2A service implementations to identify bottlenecks, conversion rate opportunities, and revenue optimization strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1318,6 +1341,29 @@
       "description": "A Cloudflare Browser Run service that analyzes competitor pricing data and suggests dynamic pricing strategies for A2A services. It uses Workers AI to evaluate market trends, competitor behavior, and customer demand signals to generate data-driven pricing recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-github-repo-health-auditor",
+      "name": "GitHub Repository Health Auditor",
+      "description": "A service that checks GitHub repository health using the relay402 endpoint, evaluating factors such as archived status, recency, license, stars, forks, and issues to help developers assess repository quality and risk. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use GitHub Repository Health Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
