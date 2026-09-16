@@ -28,17 +28,6 @@
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "featuredRuntimeCapabilities": [
             {
-              "id": "a2a-campaign-performance-analyzer",
-              "name": "A2A Campaign Performance Analyzer",
-              "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements.",
-              "state": "trial",
-              "priceCents": 900,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-campaign-performance-analyzer"
-              }
-            },
-            {
               "id": "a2a-compliance-risk-manager",
               "name": "A2A Compliance & Risk Manager",
               "description": "A Workers AI service that continuously monitors and audits A2A service implementations for compliance with relevant regulations, providing detailed reports and remediation recommendations.",
@@ -113,6 +102,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-paid-messaging-analyzer"
+              }
+            },
+            {
+              "id": "defi-portfolio-dashboard",
+              "name": "DeFi Portfolio Dashboard",
+              "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
+              "state": "trial",
+              "priceCents": 900,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-portfolio-dashboard"
               }
             }
           ],
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 21,
+            "projectedVerifiedDynamicSkills": 20,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 21,
+            "projectedDynamicSkills": 20,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "4bd02e53f8055db84adf09346fabd8ce45b7c17bdda76c472c2801006b7278f9",
+            "publicSkillCount": 37,
+            "publicSkillSetSha256": "25d591751da557799359c7122e4a1cf7e0fd5226235305105e505e485ee30a33",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1011,29 +1011,6 @@
         "market-genome",
         "discovery",
         "machine-commerce"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-campaign-performance-analyzer",
-      "name": "A2A Campaign Performance Analyzer",
-      "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Campaign Performance Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
       ]
     },
     {
