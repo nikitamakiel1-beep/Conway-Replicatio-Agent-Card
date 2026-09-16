@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 22,
+            "projectedVerifiedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 22,
+            "projectedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -826,8 +826,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "275ef8e20a03347a30849c5f16c15f24f0e53930c2382e41239f50aaee468751",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "907728a4f97266739fdead33dad4ea7505667a02d6bbe62e903b747200639a75",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1433,29 +1433,6 @@
       "description": "A Cloudflare Browser Run service that converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Web Page Structured JSON Extractor through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-web-page-structured-json-extractor-pro",
-      "name": "Web Page Structured JSON Extractor Pro",
-      "description": "Converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Includes advanced error handling, retry logic, and customizable extraction rules. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Web Page Structured JSON Extractor Pro through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
