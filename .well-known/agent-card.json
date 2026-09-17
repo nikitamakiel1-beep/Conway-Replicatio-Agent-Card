@@ -297,7 +297,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 18,
+            "projectedVerifiedDynamicSkills": 17,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -577,7 +577,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 18,
+            "projectedDynamicSkills": 17,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -821,8 +821,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "8c2bf1c208ec990dceb3016ba3443dae27a787acef4c6a63c126bd6e02876561",
+            "publicSkillCount": 37,
+            "publicSkillSetSha256": "00373e1b28266a8c7fffc10fc5728784c0124753e94a166feed92c6a6d408321",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1404,29 +1404,6 @@
       "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use X402 Paid Messaging Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-x402-paid-messaging-optimizer-gcosw4",
-      "name": "X402 Paid Messaging Optimizer",
-      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use X402 Paid Messaging Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
