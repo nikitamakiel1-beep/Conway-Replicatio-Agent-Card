@@ -94,17 +94,6 @@
               }
             },
             {
-              "id": "competitor-a2a-messaging-optimizer",
-              "name": "Competitor A2A Messaging Optimizer",
-              "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-optimizer"
-              }
-            },
-            {
               "id": "defi-portfolio-dashboard",
               "name": "DeFi Portfolio Dashboard",
               "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
@@ -113,6 +102,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-portfolio-dashboard"
+              }
+            },
+            {
+              "id": "defi-yield-optimizer",
+              "name": "DeFi Yield Optimizer",
+              "description": "A Cloudflare Browser Run service that fetches DeFi portfolio data from multiple platforms, calculates optimal yield strategies based on risk tolerance, and returns a structured report with recommended asset allocations and expected returns.",
+              "state": "trial",
+              "priceCents": 900,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-yield-optimizer"
               }
             }
           ],
@@ -308,7 +308,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 23,
+            "projectedVerifiedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -588,7 +588,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 23,
+            "projectedDynamicSkills": 21,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -832,8 +832,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "703cf659ded7df6d2370f2a9b7f1dcf3c4de471d6f9765bb8e9073fad2d8657e",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "84c56840475c8e39f4451b584284c6955e4b6634f16967cce279c0cfb1a70b2a",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1180,29 +1180,6 @@
       ]
     },
     {
-      "id": "dynamic-competitor-a2a-messaging-optimizer",
-      "name": "Competitor A2A Messaging Optimizer",
-      "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Competitor A2A Messaging Optimizer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
       "id": "dynamic-defi-portfolio-dashboard",
       "name": "DeFi Portfolio Dashboard",
       "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1298,29 +1275,6 @@
       "id": "dynamic-dynamic-pricing-optimizer",
       "name": "Dynamic Pricing Optimizer",
       "description": "A Cloudflare Browser Run service that analyzes competitor pricing data and suggests dynamic pricing strategies for A2A services. It uses Workers AI to evaluate market trends, competitor behavior, and customer demand signals to generate data-driven pricing recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-dynamic-pricing-optimizer-1lsgz5w",
-      "name": "Dynamic Pricing Optimizer",
-      "description": "Analyzes competitor pricing data and suggests dynamic pricing strategies for paid A2A services using Workers AI and structured JSON analysis. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
