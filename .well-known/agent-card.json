@@ -72,17 +72,6 @@
               }
             },
             {
-              "id": "a2a-payment-gateway-optimizer",
-              "name": "A2A Payment Gateway Optimizer",
-              "description": "A service that optimizes A2A payment gateways by identifying pricing gaps, promotional offers, and dynamic pricing strategies.",
-              "state": "trial",
-              "priceCents": 850,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-gateway-optimizer"
-              }
-            },
-            {
               "id": "defi-portfolio-dashboard",
               "name": "DeFi Portfolio Dashboard",
               "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
@@ -102,6 +91,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-yield-optimizer"
+              }
+            },
+            {
+              "id": "domain-risk-assessment",
+              "name": "Domain Risk Assessment Service",
+              "description": "A service that evaluates domain risk by analyzing DNS records, including MX, SPF, DMARC, and abuse TLD heuristics using Workers AI, providing businesses with risk insights to make informed decisions about domain registrations and partnerships.",
+              "state": "trial",
+              "priceCents": 750,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/domain-risk-assessment"
               }
             }
           ],
@@ -297,7 +297,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 19,
+            "projectedVerifiedDynamicSkills": 18,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -577,7 +577,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 19,
+            "projectedDynamicSkills": 18,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -821,8 +821,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "23c6f4b4abed63d44394275c19480478d8f54f3fa6473925307c299be3945181",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "8c2bf1c208ec990dceb3016ba3443dae27a787acef4c6a63c126bd6e02876561",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1105,29 +1105,6 @@
       "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Paid Messaging Optimization Advisor through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-payment-gateway-optimizer",
-      "name": "A2A Payment Gateway Optimizer",
-      "description": "A service that optimizes A2A payment gateways by identifying pricing gaps, promotional offers, and dynamic pricing strategies. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Payment Gateway Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
