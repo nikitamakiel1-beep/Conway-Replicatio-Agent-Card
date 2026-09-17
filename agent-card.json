@@ -594,7 +594,13 @@
             "maxReplacementsPerResidencyWindow": 4,
             "staleOrArchivedCapabilityRemovedImmediately": true,
             "boundedProjectionIsNotFullInventory": true,
-            "exactCanonicalLiveRowsOnly": true
+            "exactCanonicalLiveRowsOnly": true,
+            "admissionMaturityClosure": "conway-r148-agent-card-admission-maturity-1.0.1",
+            "newDynamicSkillsRequireContinuousLiveResidency": true,
+            "admissionMaturityHours": 24,
+            "reappearingCapabilityMustRemature": true,
+            "runtimeCapabilityCatalogRemainsImmediateExecutionAuthority": true,
+            "bootstrapGrandfathersOnlyAlreadyProjectedLiveSkills": true
           },
           "capabilityMembershipAuthority": "canary-filtered-data.live-exact-canonical-rows",
           "failClosedTruth": {
@@ -854,7 +860,15 @@
             "omittedFromUpstreamFeaturedSliceDoesNotMeanIneligible": true,
             "fullInventoryRemainsAtRuntimeCapabilityCatalog": true,
             "contentHashSkipOwnedByInheritedR109AtomicMirrorWriter": true,
-            "bothMirrorPathsRemainAtomicAndByteIdentical": true
+            "bothMirrorPathsRemainAtomicAndByteIdentical": true,
+            "supplementalClosure": "conway-r148-agent-card-admission-maturity-1.0.1",
+            "newSkillAdmissionMode": "continuous-live-maturity",
+            "admissionMaturityHours": 24,
+            "liveCatalogMayEvolveBeforeAgentCardAdmission": true,
+            "reappearanceResetsAdmissionClock": true,
+            "immatureCapabilityTelemetryExcludedFromPublicProjection": true,
+            "featuredRuntimeCapabilitiesCannotBypassAdmissionMaturity": true,
+            "externalRegistryChurnCannotCreateEconomicTruth": true
           },
           "x402Settlement": {
             "closure": "r125-observability-commerce-hardening",
@@ -876,6 +890,20 @@
             "safeFallbackMaxAgeHours": 6,
             "mirrorRemainsDownstreamOfRuntime": true,
             "formalRuntimeReleaseUnchanged": true
+          },
+          "agentCardAdmissionMaturity": {
+            "version": "conway-r148-agent-card-admission-maturity-1.0.1",
+            "stateSchema": 1,
+            "maturityHours": 24,
+            "scope": "agent-card-public-projection-only",
+            "newDynamicSkillsRequireContinuousLiveResidency": true,
+            "existingProjectionGrandfatheredOnce": true,
+            "staleOrArchivedCapabilityRemovedImmediately": true,
+            "reappearingCapabilityMustRemature": true,
+            "corruptedPriorStateFailsClosedOnNewAdmission": true,
+            "runtimeCapabilityCatalogRemainsImmediateExecutionAuthority": true,
+            "volatileAdmissionDiagnosticsPublishedInAgentCard": false,
+            "noAccountingOrExecutionAuthority": true
           }
         }
       }
