@@ -50,17 +50,6 @@
               }
             },
             {
-              "id": "defi-portfolio-dashboard",
-              "name": "DeFi Portfolio Dashboard",
-              "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
-              "state": "trial",
-              "priceCents": 900,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-portfolio-dashboard"
-              }
-            },
-            {
               "id": "domain-risk-assessment",
               "name": "Domain Risk Assessment Service",
               "description": "A service that evaluates domain risk by analyzing DNS records, including MX, SPF, DMARC, and abuse TLD heuristics using Workers AI, providing businesses with risk insights to make informed decisions about domain registrations and partnerships.",
@@ -275,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 12,
+            "projectedVerifiedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 12,
+            "projectedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +788,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "fc2baf21c1a7612ac6a36b37c3f698fe6e6bb7628900d535158ee3b1c04107f7",
+            "publicSkillCount": 37,
+            "publicSkillSetSha256": "5524a77c87e10114b6d08e1259b5794555e02062c85c5a2632a08c8a114d1bfa",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1037,29 +1026,6 @@
       "description": "A Cloudflare Browser Run service that analyzes domain risk by examining DNS records, including MX, SPF, DMARC, and abuse TLD heuristics, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Domain Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-defi-portfolio-dashboard",
-      "name": "DeFi Portfolio Dashboard",
-      "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use DeFi Portfolio Dashboard through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
