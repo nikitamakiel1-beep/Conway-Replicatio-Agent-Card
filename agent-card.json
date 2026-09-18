@@ -50,17 +50,6 @@
               }
             },
             {
-              "id": "a2a-paid-messaging-optimizer",
-              "name": "A2A Paid Messaging Optimization Advisor",
-              "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-paid-messaging-optimizer"
-              }
-            },
-            {
               "id": "defi-portfolio-dashboard",
               "name": "DeFi Portfolio Dashboard",
               "description": "A service that fetches portfolio data from multiple DeFi platforms, normalizes the data, and presents it in a single dashboard with real-time rankings, 24-hour and 7-day change, and AI-generated insights into yield environments.",
@@ -80,6 +69,17 @@
               "directX402": {
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/domain-risk-assessment"
+              }
+            },
+            {
+              "id": "dynamic-pricing-advisor",
+              "name": "Dynamic Pricing Advisor",
+              "description": "A service that leverages real-time market data from x402 APIs to provide dynamic pricing recommendations for e-commerce businesses, helping them optimize revenue and stay competitive.",
+              "state": "trial",
+              "priceCents": 750,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-advisor"
               }
             }
           ],
@@ -275,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 14,
+            "projectedVerifiedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 14,
+            "projectedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +799,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "d0e02e4d252629884146e3cbe19c04456bda313773bf2a079bd8d8be96442603",
+            "publicSkillCount": 37,
+            "publicSkillSetSha256": "53a970d2596e5adbcb06e4487c777124d644117e4378ecae74c20318c0be53bc",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1037,29 +1037,6 @@
       "description": "A Cloudflare Browser Run service that analyzes domain risk by examining DNS records, including MX, SPF, DMARC, and abuse TLD heuristics, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Domain Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-paid-messaging-optimizer",
-      "name": "A2A Paid Messaging Optimization Advisor",
-      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Paid Messaging Optimization Advisor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
