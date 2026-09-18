@@ -253,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 9,
+            "projectedVerifiedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -533,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 9,
+            "projectedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -777,8 +777,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "8c421317fb15e8f35393e22009c73ae8e8fd78b2db03593ef92b46b3a991c845",
+            "publicSkillCount": 40,
+            "publicSkillSetSha256": "789322b8b88bf11614272c377b8bb546c13e4c102ee8e13d141b229a93f57c5b",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1107,29 +1107,6 @@
       "description": "A platform that aggregates various machine services, allowing users to discover, compare, and purchase services based on their specific needs, streamlining the procurement process for businesses. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Machine Service Comparison Hub through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-solana-a2a-service-finder",
-      "name": "Solana A2A Service Finder",
-      "description": "A service that discovers and ranks Solana-based A2A services based on performance, reliability, and pricing, helping users find the best solutions for their needs. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Solana A2A Service Finder through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
