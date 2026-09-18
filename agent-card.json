@@ -28,17 +28,6 @@
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "featuredRuntimeCapabilities": [
             {
-              "id": "a2a-campaign-performance-analyzer",
-              "name": "A2A Campaign Performance Analyzer",
-              "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements.",
-              "state": "trial",
-              "priceCents": 900,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-campaign-performance-analyzer"
-              }
-            },
-            {
               "id": "competitor-a2a-messaging-optimizer",
               "name": "Competitor A2A Messaging Optimizer",
               "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization.",
@@ -264,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -788,8 +777,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "f44497549625146573dea4ea4a4a675ad6661d46907a3b5bac533d3e8c0c78fb",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "f86d88d9ecfee870500e3c37bb5db7ad6a4852632442de65b2fefd083b701cd6",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -995,29 +984,6 @@
         "market-genome",
         "discovery",
         "machine-commerce"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-campaign-performance-analyzer",
-      "name": "A2A Campaign Performance Analyzer",
-      "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Campaign Performance Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
       ]
     },
     {
