@@ -39,17 +39,6 @@
               }
             },
             {
-              "id": "a2a-paid-messaging-optimizer",
-              "name": "A2A Paid Messaging Optimization Advisor",
-              "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-paid-messaging-optimizer"
-              }
-            },
-            {
               "id": "competitor-a2a-messaging-optimizer",
               "name": "Competitor A2A Messaging Optimizer",
               "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization.",
@@ -264,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 11,
+            "projectedVerifiedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 11,
+            "projectedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -788,8 +777,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "5e129352d34fb0f6bff4db2d8479ce5c70a076a6924583750da5b1dad57866db",
+            "publicSkillCount": 40,
+            "publicSkillSetSha256": "b129d40199ab7b33d6ebfdfa6a5ecc8de5620a22236c53d6f36d860b72a7ef41",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1003,29 +992,6 @@
       "description": "A Cloudflare Browser Run service that analyzes domain risk by examining DNS records, including MX, SPF, DMARC, and abuse TLD heuristics, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Domain Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-paid-messaging-optimizer",
-      "name": "A2A Paid Messaging Optimization Advisor",
-      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Paid Messaging Optimization Advisor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
