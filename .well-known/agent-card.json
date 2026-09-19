@@ -28,6 +28,17 @@
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "featuredRuntimeCapabilities": [
             {
+              "id": "a2a-domain-risk-analyzer",
+              "name": "A2A Domain Risk Analyzer",
+              "description": "A Cloudflare Browser Run service that analyzes domain risk by examining DNS records, including MX, SPF, DMARC, and abuse TLD heuristics, providing businesses with risk insights to make informed decisions about domain registrations and partnerships.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-domain-risk-analyzer"
+              }
+            },
+            {
               "id": "a2a-paid-messaging-optimizer",
               "name": "A2A Paid Messaging Optimization Advisor",
               "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements.",
@@ -264,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -998,6 +1009,29 @@
       ]
     },
     {
+      "id": "dynamic-a2a-domain-risk-analyzer",
+      "name": "A2A Domain Risk Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes domain risk by examining DNS records, including MX, SPF, DMARC, and abuse TLD heuristics, providing businesses with risk insights to make informed decisions about domain registrations and partnerships. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use A2A Domain Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-a2a-paid-messaging-optimizer",
       "name": "A2A Paid Messaging Optimization Advisor",
       "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1141,6 +1175,29 @@
       "description": "A Cloudflare Browser Run service that fetches NFT floor price and risk data from the provided URL, returning a structured report with floor price, risk score, and NFT metadata. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use NFT Floor Price & Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-x402-paid-messaging-campaign-optimizer",
+      "name": "X402 Paid Messaging Campaign Optimizer",
+      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use X402 Paid Messaging Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
