@@ -264,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 9,
+            "projectedVerifiedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 9,
+            "projectedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -788,8 +788,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "ef6af256ec021e63f8c13302beeaee176daa2879137d8159132a04acda08ba62",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "b28d022ce1b3fe5686e7a78a11c9af402f8ae2594f055376a68d0c9282ddb288",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1141,29 +1141,6 @@
       "description": "A Cloudflare Browser Run service that fetches NFT floor price and risk data from the provided URL, returning a structured report with floor price, risk score, and NFT metadata. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use NFT Floor Price & Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-x402-market-trend-analyzer",
-      "name": "X402 Market Trend Analyzer",
-      "description": "Analyze market trends and sentiment across various x402 services, providing actionable insights for strategic decision-making and opportunity identification. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use X402 Market Trend Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
