@@ -253,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -533,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 7,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -777,8 +777,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "789322b8b88bf11614272c377b8bb546c13e4c102ee8e13d141b229a93f57c5b",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "0876fbbf819183a5d71a410257b2692c0321370fb8ec247fa072ebb915228e16",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1061,29 +1061,6 @@
       "description": "Analyzes competitor pricing data and suggests dynamic pricing strategies for paid A2A services using Workers AI and structured JSON analysis. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-github-repo-health-auditor",
-      "name": "GitHub Repository Health Auditor",
-      "description": "A service that checks GitHub repository health using the relay402 endpoint, evaluating factors such as archived status, recency, license, stars, forks, and issues to help developers assess repository quality and risk. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use GitHub Repository Health Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
