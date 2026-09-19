@@ -242,7 +242,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -522,7 +522,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 10,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1091,11 +1091,57 @@
       ]
     },
     {
+      "id": "dynamic-market-data-validator",
+      "name": "Market Data Validator",
+      "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Market Data Validator through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-nft-floor-price-risk-analyzer",
       "name": "NFT Floor Price & Risk Analyzer",
       "description": "A Cloudflare Browser Run service that fetches NFT floor price and risk data from the provided URL, returning a structured report with floor price, risk score, and NFT metadata. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use NFT Floor Price & Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-vendor-due-diligence-intelligence",
+      "name": "Vendor Due Diligence Intelligence",
+      "description": "A service that compares two public vendor surfaces and explains material differences, helping autonomous buyers interpret public commercial terms before committing resources. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Vendor Due Diligence Intelligence through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
