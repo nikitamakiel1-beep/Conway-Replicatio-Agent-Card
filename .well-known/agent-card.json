@@ -275,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 13,
+            "projectedVerifiedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 13,
+            "projectedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +799,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "b7604224a4f86046abda2baeb51b24eda439d4b68fb75f003885e00156dc7932",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "142f3cb597636923258d270e1d2abf7bd629906a79a26915442d6f048683021f",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1175,52 +1175,6 @@
       "description": "Detect version changes, deprecations, migration actions and breaking examples in developer documentation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use SDK Migration Intelligence through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-structured-data-insight-hub",
-      "name": "Structured Data Insight Hub",
-      "description": "A Cloudflare Browser Run service that extracts structured JSON from public webpages, providing machine-readable insights for AI agents and automation systems. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Structured Data Insight Hub through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-web-page-structured-json-extractor-pro",
-      "name": "Web Page Structured JSON Extractor Pro",
-      "description": "Converts public webpages into clean, structured JSON for easy consumption by AI agents and automation systems. Includes advanced error handling, retry logic, and customizable extraction rules. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Web Page Structured JSON Extractor Pro through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
