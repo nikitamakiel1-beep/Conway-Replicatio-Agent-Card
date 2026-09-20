@@ -286,7 +286,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 13,
+            "projectedVerifiedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -566,7 +566,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 13,
+            "projectedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -810,8 +810,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 41,
-            "publicSkillSetSha256": "5a955f9df364f91e15a173911ae30ecb415213c46938b3355fd23e08e1019791",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "9dc74e4f939801536d2c356830a9d502d9055d437be44d1c89d4d78aae91f7e7",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1181,57 +1181,11 @@
       ]
     },
     {
-      "id": "dynamic-market-data-validator",
-      "name": "Market Data Validator",
-      "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Market Data Validator through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
       "id": "dynamic-structured-data-insight-hub",
       "name": "Structured Data Insight Hub",
       "description": "A Cloudflare Browser Run service that extracts structured JSON from public webpages, providing machine-readable insights for AI agents and automation systems. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Structured Data Insight Hub through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-vendor-due-diligence-intelligence",
-      "name": "Vendor Due Diligence Intelligence",
-      "description": "A service that compares two public vendor surfaces and explains material differences, helping autonomous buyers interpret public commercial terms before committing resources. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Vendor Due Diligence Intelligence through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
