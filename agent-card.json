@@ -59,6 +59,17 @@
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-sentiment-analyzer"
               }
+            },
+            {
+              "id": "dynamic-a2a-campaign-optimizer",
+              "name": "Dynamic A2A Campaign Optimizer",
+              "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-a2a-campaign-optimizer"
+              }
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -253,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 11,
+            "projectedVerifiedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -533,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 11,
+            "projectedDynamicSkills": 13,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1056,6 +1067,29 @@
       ]
     },
     {
+      "id": "dynamic-dynamic-a2a-campaign-optimizer",
+      "name": "Dynamic A2A Campaign Optimizer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Dynamic A2A Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
       "id": "dynamic-dynamic-pricing-intelligence-hub",
       "name": "Dynamic Pricing Intelligence Hub",
       "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
@@ -1084,6 +1118,29 @@
       "description": "A Cloudflare Browser Run service that analyzes competitor pricing data and suggests dynamic pricing strategies for A2A services. It uses Workers AI to evaluate market trends, competitor behavior, and customer demand signals to generate data-driven pricing recommendations. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Optimizer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-github-repo-health-auditor",
+      "name": "GitHub Repository Health Auditor",
+      "description": "A service that checks GitHub repository health using the relay402 endpoint, evaluating factors such as archived status, recency, license, stars, forks, and issues to help developers assess repository quality and risk. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use GitHub Repository Health Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
