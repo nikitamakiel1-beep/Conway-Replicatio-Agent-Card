@@ -810,8 +810,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "9c2aba61fa8b91e6db46ccad89f2672cd2b82baead27852f521aaacd17c03935",
+            "publicSkillCount": 42,
+            "publicSkillSetSha256": "473d1c3a16e0c0c608c55e0aee0ff71c41bbe793b5ee8288fbcaa5e809eb18a5",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
