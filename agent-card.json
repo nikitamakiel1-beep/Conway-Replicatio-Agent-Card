@@ -50,17 +50,6 @@
               }
             },
             {
-              "id": "competitor-a2a-messaging-sentiment-analyzer",
-              "name": "Competitor A2A Messaging Sentiment Analyzer",
-              "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage.",
-              "state": "trial",
-              "priceCents": 700,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-sentiment-analyzer"
-              }
-            },
-            {
               "id": "domain-risk-assessment",
               "name": "Domain Risk Assessment Service",
               "description": "A service that evaluates domain risk by analyzing DNS records, including MX, SPF, DMARC, and abuse TLD heuristics using Workers AI, providing businesses with risk insights to make informed decisions about domain registrations and partnerships.",
@@ -286,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 12,
+            "projectedVerifiedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -566,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 12,
+            "projectedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -810,8 +799,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "b7604224a4f86046abda2baeb51b24eda439d4b68fb75f003885e00156dc7932",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "31ead29cba403cd9e5444a7ebaaf57573af65578c581a97f9703bc9c12202442",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1048,29 +1037,6 @@
       "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Competitor A2A Messaging Optimizer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-competitor-a2a-messaging-sentiment-analyzer",
-      "name": "Competitor A2A Messaging Sentiment Analyzer",
-      "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Competitor A2A Messaging Sentiment Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
