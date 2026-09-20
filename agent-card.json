@@ -275,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 11,
+            "projectedVerifiedDynamicSkills": 12,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 11,
+            "projectedDynamicSkills": 12,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1198,6 +1198,29 @@
       "description": "A service that fetches data from public websites, enriches it with additional information from external APIs, and returns the enriched data in a machine-readable format. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Web Scraping Data Enrichment through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-x402-data-enrichment",
+      "name": "X402 Data Enrichment Service",
+      "description": "Enrich x402 data with additional contextual information, such as market trends, competitor analysis, and user behavior insights, to enhance decision-making and strategy development. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use X402 Data Enrichment Service through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
