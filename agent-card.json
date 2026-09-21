@@ -61,6 +61,17 @@
               }
             },
             {
+              "id": "competitor-a2a-messaging-sentiment-analyzer",
+              "name": "Competitor A2A Messaging Sentiment Analyzer",
+              "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage.",
+              "state": "trial",
+              "priceCents": 700,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-sentiment-analyzer"
+              }
+            },
+            {
               "id": "dynamic-pricing-intelligence-hub",
               "name": "Dynamic Pricing Intelligence Hub",
               "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
@@ -264,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1049,6 +1060,29 @@
       "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Competitor A2A Messaging Optimizer Suite through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-competitor-a2a-messaging-sentiment-analyzer",
+      "name": "Competitor A2A Messaging Sentiment Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Competitor A2A Messaging Sentiment Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
