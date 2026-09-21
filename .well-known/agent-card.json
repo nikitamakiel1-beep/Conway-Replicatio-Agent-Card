@@ -275,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 10,
+            "projectedVerifiedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 10,
+            "projectedDynamicSkills": 11,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1198,6 +1198,29 @@
       "description": "Enrich x402 data with additional contextual information, such as market trends, competitor analysis, and user behavior insights, to enhance decision-making and strategy development. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use X402 Data Enrichment Service through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-x402-paid-messaging-campaign-optimizer",
+      "name": "X402 Paid Messaging Campaign Optimizer",
+      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use X402 Paid Messaging Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
