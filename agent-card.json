@@ -70,17 +70,6 @@
                 "method": "POST",
                 "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-advisor"
               }
-            },
-            {
-              "id": "dynamic-pricing-intelligence-hub",
-              "name": "Dynamic Pricing Intelligence Hub",
-              "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
-              "state": "trial",
-              "priceCents": 600,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-intelligence-hub"
-              }
             }
           ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
@@ -275,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 10,
+            "projectedVerifiedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 10,
+            "projectedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +788,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 40,
-            "publicSkillSetSha256": "7ae19270fb6eb0a36670f9b67502663e2c0d448f4676115a6fc1be2c226b4009",
+            "publicSkillCount": 39,
+            "publicSkillSetSha256": "6e51233d8c23eac34d5240a981f72a14cbb85267865ff25dca11798124ef4c73",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1083,29 +1072,6 @@
       "description": "A service that leverages real-time market data from x402 APIs to provide dynamic pricing recommendations for e-commerce businesses, helping them optimize revenue and stay competitive. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Advisor through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-dynamic-pricing-intelligence-hub",
-      "name": "Dynamic Pricing Intelligence Hub",
-      "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Dynamic Pricing Intelligence Hub through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
