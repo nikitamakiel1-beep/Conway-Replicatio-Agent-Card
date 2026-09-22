@@ -275,7 +275,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 10,
+            "projectedVerifiedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +555,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 10,
+            "projectedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +799,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 39,
-            "publicSkillSetSha256": "294418874fd13a82cfa62fc3a7afd85f9d67ff9f56fd0a351bee03c43b813141",
+            "publicSkillCount": 38,
+            "publicSkillSetSha256": "6dcd3301169aaf67f9637184b084e7502273e7876bad30c722e574dcb8f7034c",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1106,29 +1106,6 @@
       "description": "A service that leverages real-time market data from x402 APIs to provide dynamic pricing recommendations for e-commerce businesses, helping them optimize revenue and stay competitive. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Dynamic Pricing Advisor through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-market-data-validator",
-      "name": "Market Data Validator",
-      "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Market Data Validator through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
