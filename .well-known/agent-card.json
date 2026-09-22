@@ -39,28 +39,6 @@
               }
             },
             {
-              "id": "ai-crawler-policy-intelligence",
-              "name": "AI Crawler Policy Intelligence",
-              "description": "Extract robots.txt and public policy cues relevant to AI crawlers, indexing, and machine consumption.",
-              "state": "trial",
-              "priceCents": 8,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/ai-crawler-policy-intelligence"
-              }
-            },
-            {
-              "id": "competitor-a2a-messaging-optimizer-suite",
-              "name": "Competitor A2A Messaging Optimizer Suite",
-              "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-optimizer-suite"
-              }
-            },
-            {
               "id": "competitor-a2a-messaging-sentiment-analyzer",
               "name": "Competitor A2A Messaging Sentiment Analyzer",
               "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage.",
@@ -275,7 +253,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 10,
+            "projectedVerifiedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +533,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 10,
+            "projectedDynamicSkills": 8,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +777,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 38,
-            "publicSkillSetSha256": "5b89fb97d0f3368778d905584d970d7ed6cc40ef7a90c52f499146052f5c5bb1",
+            "publicSkillCount": 36,
+            "publicSkillSetSha256": "d31752fb8c3e210bc9719638d749a5b6aa1b0a64738e3adf5ea91495b9455572",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1014,52 +992,6 @@
       "description": "A Cloudflare Browser Run service that analyzes paid A2A messaging campaigns by evaluating pricing, targeting, and conversion data. It uses Workers AI to identify optimization opportunities and suggest targeted improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use A2A Campaign Performance Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-ai-crawler-policy-intelligence",
-      "name": "AI Crawler Policy Intelligence",
-      "description": "Extract robots.txt and public policy cues relevant to AI crawlers, indexing, and machine consumption. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use AI Crawler Policy Intelligence through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-competitor-a2a-messaging-optimizer-suite",
-      "name": "Competitor A2A Messaging Optimizer Suite",
-      "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Competitor A2A Messaging Optimizer Suite through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
