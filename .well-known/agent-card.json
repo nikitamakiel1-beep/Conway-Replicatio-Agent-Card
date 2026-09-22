@@ -50,6 +50,17 @@
               }
             },
             {
+              "id": "dynamic-a2a-campaign-optimizer",
+              "name": "Dynamic A2A Campaign Optimizer",
+              "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-a2a-campaign-optimizer"
+              }
+            },
+            {
               "id": "dynamic-pricing-intelligence-hub",
               "name": "Dynamic Pricing Intelligence Hub",
               "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
@@ -253,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 8,
+            "projectedVerifiedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -533,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 8,
+            "projectedDynamicSkills": 9,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -1015,6 +1026,29 @@
       "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, evaluating sentiment, engagement, and conversion rates to provide actionable insights for optimization and competitive advantage. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Competitor A2A Messaging Sentiment Analyzer through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
+      ]
+    },
+    {
+      "id": "dynamic-dynamic-a2a-campaign-optimizer",
+      "name": "Dynamic A2A Campaign Optimizer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Dynamic A2A Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
