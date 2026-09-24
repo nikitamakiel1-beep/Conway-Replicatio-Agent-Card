@@ -28,58 +28,69 @@
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
           "featuredRuntimeCapabilities": [
             {
-              "id": "a2a-data-privacy-anonymization",
-              "name": "A2A Data Privacy & Anonymization Service",
-              "description": "A Cloudflare Browser Run service that automatically anonymizes and protects sensitive user data in A2A service interactions, ensuring compliance with data privacy regulations and building trust with customers.",
+              "id": "a2a-payment-gateway-orchestration",
+              "name": "A2A Payment Gateway Orchestration",
+              "description": "A Cloudflare Browser Run service that orchestrates payments across various A2A payment gateways, providing a unified API for businesses to manage payments seamlessly. Handles currency conversion, fee calculations, and settlement processes.",
               "state": "trial",
-              "priceCents": 750,
+              "priceCents": 900,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-data-privacy-anonymization"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-gateway-orchestration"
               }
             },
             {
-              "id": "aave-risk-analyzer",
-              "name": "Aave Risk Analyzer",
-              "description": "A Browser Run service that evaluates Aave V3 positions for health factor exposure and returns a risk assessment.",
-              "state": "trial",
-              "priceCents": 750,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/aave-risk-analyzer"
-              }
-            },
-            {
-              "id": "competitor-a2a-messaging-optimizer",
-              "name": "Competitor A2A Messaging Optimizer",
-              "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization.",
+              "id": "competitor-a2a-messaging-analyzer",
+              "name": "Competitor A2A Messaging Analyzer",
+              "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth.",
               "state": "trial",
               "priceCents": 1000,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-optimizer"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-analyzer"
               }
             },
             {
-              "id": "dynamic-a2a-campaign-optimizer",
-              "name": "Dynamic A2A Campaign Optimizer",
-              "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential.",
+              "id": "defi-risk-auditor",
+              "name": "DeFi Portfolio Risk Auditor",
+              "description": "A Cloudflare Browser Run service that evaluates DeFi portfolio risk by analyzing historical performance, volatility, and smart contract audits, providing users with risk insights to make informed decisions about DeFi investments.",
               "state": "trial",
-              "priceCents": 800,
+              "priceCents": 850,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-a2a-campaign-optimizer"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-risk-auditor"
               }
             },
             {
-              "id": "dynamic-pricing-advisor",
-              "name": "Dynamic Pricing Advisor",
-              "description": "A service that leverages real-time market data from x402 APIs to provide dynamic pricing recommendations for e-commerce businesses, helping them optimize revenue and stay competitive.",
+              "id": "dynamic-pricing-intelligence-hub",
+              "name": "Dynamic Pricing Intelligence Hub",
+              "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
               "state": "trial",
-              "priceCents": 750,
+              "priceCents": 600,
               "directX402": {
                 "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-advisor"
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-intelligence-hub"
+              }
+            },
+            {
+              "id": "market-data-validator",
+              "name": "Market Data Validator",
+              "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders.",
+              "state": "trial",
+              "priceCents": 500,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/market-data-validator"
+              }
+            },
+            {
+              "id": "x402-paid-messaging-campaign-optimizer",
+              "name": "X402 Paid Messaging Campaign Optimizer",
+              "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements.",
+              "state": "trial",
+              "priceCents": 1000,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/x402-paid-messaging-campaign-optimizer"
               }
             }
           ],
@@ -275,7 +286,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 9,
+            "projectedVerifiedDynamicSkills": 6,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +566,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 9,
+            "projectedDynamicSkills": 6,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +810,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 34,
-            "publicSkillSetSha256": "2d5d11f7235578b348a2944eba34aeb326773400a79b83b47c7c1fb9b5bf0c1b",
+            "publicSkillCount": 23,
+            "publicSkillSetSha256": "3dc7376a8a86feda3318b8ffd6fdd5d68db629be1e9affaf675cbbae6b873419",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1009,11 +1020,11 @@
       ]
     },
     {
-      "id": "dynamic-a2a-data-privacy-anonymization",
-      "name": "A2A Data Privacy & Anonymization Service",
-      "description": "A Cloudflare Browser Run service that automatically anonymizes and protects sensitive user data in A2A service interactions, ensuring compliance with data privacy regulations and building trust with customers. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-a2a-payment-gateway-orchestration",
+      "name": "A2A Payment Gateway Orchestration",
+      "description": "A Cloudflare Browser Run service that orchestrates payments across various A2A payment gateways, providing a unified API for businesses to manage payments seamlessly. Handles currency conversion, fee calculations, and settlement processes. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use A2A Data Privacy & Anonymization Service through Conway's current A2A/x402 discovery surfaces."
+        "Use A2A Payment Gateway Orchestration through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1032,11 +1043,11 @@
       ]
     },
     {
-      "id": "dynamic-aave-risk-analyzer",
-      "name": "Aave Risk Analyzer",
-      "description": "A Browser Run service that evaluates Aave V3 positions for health factor exposure and returns a risk assessment. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-competitor-a2a-messaging-analyzer",
+      "name": "Competitor A2A Messaging Analyzer",
+      "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use Aave Risk Analyzer through Conway's current A2A/x402 discovery surfaces."
+        "Use Competitor A2A Messaging Analyzer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1055,11 +1066,11 @@
       ]
     },
     {
-      "id": "dynamic-competitor-a2a-messaging-optimizer",
-      "name": "Competitor A2A Messaging Optimizer",
-      "description": "Analyzes competitor paid A2A messaging campaigns across multiple platforms, identifying optimization opportunities and revenue growth potential. Uses A2A/x402 composition, Cloudflare Workers AI, and Cloudflare Browser Run for analysis and optimization. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-defi-risk-auditor",
+      "name": "DeFi Portfolio Risk Auditor",
+      "description": "A Cloudflare Browser Run service that evaluates DeFi portfolio risk by analyzing historical performance, volatility, and smart contract audits, providing users with risk insights to make informed decisions about DeFi investments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use Competitor A2A Messaging Optimizer through Conway's current A2A/x402 discovery surfaces."
+        "Use DeFi Portfolio Risk Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1078,11 +1089,11 @@
       ]
     },
     {
-      "id": "dynamic-dynamic-a2a-campaign-optimizer",
-      "name": "Dynamic A2A Campaign Optimizer",
-      "description": "A Cloudflare Browser Run service that analyzes competitor A2A messaging campaigns, identifies optimization opportunities, and estimates revenue growth potential. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-dynamic-pricing-intelligence-hub",
+      "name": "Dynamic Pricing Intelligence Hub",
+      "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use Dynamic A2A Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
+        "Use Dynamic Pricing Intelligence Hub through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1101,11 +1112,11 @@
       ]
     },
     {
-      "id": "dynamic-dynamic-pricing-advisor",
-      "name": "Dynamic Pricing Advisor",
-      "description": "A service that leverages real-time market data from x402 APIs to provide dynamic pricing recommendations for e-commerce businesses, helping them optimize revenue and stay competitive. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-market-data-validator",
+      "name": "Market Data Validator",
+      "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use Dynamic Pricing Advisor through Conway's current A2A/x402 discovery surfaces."
+        "Use Market Data Validator through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
@@ -1124,80 +1135,11 @@
       ]
     },
     {
-      "id": "dynamic-sdk-migration-intelligence",
-      "name": "SDK Migration Intelligence",
-      "description": "Detect version changes, deprecations, migration actions and breaking examples in developer documentation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "id": "dynamic-x402-paid-messaging-campaign-optimizer",
+      "name": "X402 Paid Messaging Campaign Optimizer",
+      "description": "A Cloudflare Browser Run service that optimizes paid A2A messaging campaigns by analyzing pricing, targeting, and conversion data. It uses A2A/x402 composition and Cloudflare Workers AI to evaluate campaign performance, identify opportunities for price optimization, and suggest targeted messaging improvements. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
-        "Use SDK Migration Intelligence through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-web-scraping-data-enrichment",
-      "name": "Web Scraping Data Enrichment",
-      "description": "A service that fetches data from public websites, enriches it with additional information from external APIs, and returns the enriched data in a machine-readable format. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Web Scraping Data Enrichment through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-x402-data-enrichment",
-      "name": "X402 Data Enrichment Service",
-      "description": "Enrich x402 data with additional contextual information, such as market trends, competitor analysis, and user behavior insights, to enhance decision-making and strategy development. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use X402 Data Enrichment Service through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-x402-market-trend-analyzer",
-      "name": "X402 Market Trend Analyzer",
-      "description": "Analyze market trends and sentiment across various x402 services, providing actionable insights for strategic decision-making and opportunity identification. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use X402 Market Trend Analyzer through Conway's current A2A/x402 discovery surfaces."
+        "Use X402 Paid Messaging Campaign Optimizer through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
