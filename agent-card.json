@@ -50,17 +50,6 @@
               }
             },
             {
-              "id": "defi-risk-auditor",
-              "name": "DeFi Portfolio Risk Auditor",
-              "description": "A Cloudflare Browser Run service that evaluates DeFi portfolio risk by analyzing historical performance, volatility, and smart contract audits, providing users with risk insights to make informed decisions about DeFi investments.",
-              "state": "trial",
-              "priceCents": 850,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/defi-risk-auditor"
-              }
-            },
-            {
               "id": "dynamic-pricing-intelligence-hub",
               "name": "Dynamic Pricing Intelligence Hub",
               "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
@@ -275,7 +264,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 5,
+            "projectedVerifiedDynamicSkills": 4,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -555,7 +544,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 5,
+            "projectedDynamicSkills": 4,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -799,8 +788,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 22,
-            "publicSkillSetSha256": "7d093486441cfcc2836c60bee5e541a3a9afeb76b876434e3300ff3fd3215158",
+            "publicSkillCount": 21,
+            "publicSkillSetSha256": "5370a0d43fdcb37a300a1c79cca7994c8a3256df04a0abc2384eb2a700ee946a",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -1037,29 +1026,6 @@
       "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
       "examples": [
         "Use Competitor A2A Messaging Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-defi-risk-auditor",
-      "name": "DeFi Portfolio Risk Auditor",
-      "description": "A Cloudflare Browser Run service that evaluates DeFi portfolio risk by analyzing historical performance, volatility, and smart contract audits, providing users with risk insights to make informed decisions about DeFi investments. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use DeFi Portfolio Risk Auditor through Conway's current A2A/x402 discovery surfaces."
       ],
       "inputModes": [
         "application/json",
