@@ -26,52 +26,7 @@
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-          "featuredRuntimeCapabilities": [
-            {
-              "id": "a2a-payment-gateway-orchestration",
-              "name": "A2A Payment Gateway Orchestration",
-              "description": "A Cloudflare Browser Run service that orchestrates payments across various A2A payment gateways, providing a unified API for businesses to manage payments seamlessly. Handles currency conversion, fee calculations, and settlement processes.",
-              "state": "trial",
-              "priceCents": 900,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-gateway-orchestration"
-              }
-            },
-            {
-              "id": "competitor-a2a-messaging-analyzer",
-              "name": "Competitor A2A Messaging Analyzer",
-              "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/competitor-a2a-messaging-analyzer"
-              }
-            },
-            {
-              "id": "dynamic-pricing-intelligence-hub",
-              "name": "Dynamic Pricing Intelligence Hub",
-              "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation.",
-              "state": "trial",
-              "priceCents": 600,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/dynamic-pricing-intelligence-hub"
-              }
-            },
-            {
-              "id": "market-data-validator",
-              "name": "Market Data Validator",
-              "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders.",
-              "state": "trial",
-              "priceCents": 500,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/market-data-validator"
-              }
-            }
-          ],
+          "featuredRuntimeCapabilities": [],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
@@ -264,7 +219,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 4,
+            "projectedVerifiedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -544,7 +499,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 4,
+            "projectedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -788,8 +743,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 21,
-            "publicSkillSetSha256": "5370a0d43fdcb37a300a1c79cca7994c8a3256df04a0abc2384eb2a700ee946a",
+            "publicSkillCount": 17,
+            "publicSkillSetSha256": "4881ebf00cfd45f5529ac38974adeb5c9cbf4c7ce8eee0f967bfe37800c5fba6",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -995,98 +950,6 @@
         "market-genome",
         "discovery",
         "machine-commerce"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-payment-gateway-orchestration",
-      "name": "A2A Payment Gateway Orchestration",
-      "description": "A Cloudflare Browser Run service that orchestrates payments across various A2A payment gateways, providing a unified API for businesses to manage payments seamlessly. Handles currency conversion, fee calculations, and settlement processes. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Payment Gateway Orchestration through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-competitor-a2a-messaging-analyzer",
-      "name": "Competitor A2A Messaging Analyzer",
-      "description": "A Cloudflare Browser Run service that analyzes competitor paid A2A messaging campaigns, evaluating pricing, targeting, and conversion data to identify opportunities for optimization and revenue growth. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Competitor A2A Messaging Analyzer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-dynamic-pricing-intelligence-hub",
-      "name": "Dynamic Pricing Intelligence Hub",
-      "description": "A Cloudflare Browser Run service that aggregates competitor pricing data, market trends, and demand signals to provide businesses with dynamic pricing recommendations and insights for optimized revenue generation. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Dynamic Pricing Intelligence Hub through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
-      ]
-    },
-    {
-      "id": "dynamic-market-data-validator",
-      "name": "Market Data Validator",
-      "description": "A Cloudflare Browser Run service that validates and verifies data from various x402 market APIs, ensuring the accuracy and reliability of market information for businesses and traders. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use Market Data Validator through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
       ]
     },
     {
