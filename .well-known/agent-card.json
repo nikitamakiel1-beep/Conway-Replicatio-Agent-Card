@@ -26,7 +26,19 @@
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-          "featuredRuntimeCapabilities": [],
+          "featuredRuntimeCapabilities": [
+            {
+              "id": "sentiment-analysis-for-social-media-tokens",
+              "name": "Sentiment Analysis for Social Media Tokens",
+              "description": "A service that detects sentiment spikes for specific tokens on platforms like Farcaster, providing mention counts and delta vs. baseline. This can help investors gauge public sentiment and make informed decisions.",
+              "state": "trial",
+              "priceCents": 800,
+              "directX402": {
+                "method": "POST",
+                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/sentiment-analysis-for-social-media-tokens"
+              }
+            }
+          ],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
@@ -219,7 +231,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 0,
+            "projectedVerifiedDynamicSkills": 1,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -499,7 +511,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 0,
+            "projectedDynamicSkills": 1,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -950,6 +962,29 @@
         "market-genome",
         "discovery",
         "machine-commerce"
+      ]
+    },
+    {
+      "id": "dynamic-sentiment-analysis-for-social-media-tokens",
+      "name": "Sentiment Analysis for Social Media Tokens",
+      "description": "A service that detects sentiment spikes for specific tokens on platforms like Farcaster, providing mention counts and delta vs. baseline. This can help investors gauge public sentiment and make informed decisions. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
+      "examples": [
+        "Use Sentiment Analysis for Social Media Tokens through Conway's current A2A/x402 discovery surfaces."
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json"
+      ],
+      "tags": [
+        "conway",
+        "runtime-evolved",
+        "canary-verified",
+        "organic",
+        "trial",
+        "x402"
       ]
     },
     {
