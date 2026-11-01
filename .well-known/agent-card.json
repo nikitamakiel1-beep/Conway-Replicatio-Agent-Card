@@ -26,19 +26,7 @@
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-          "featuredRuntimeCapabilities": [
-            {
-              "id": "a2a-payment-friction-fixer",
-              "name": "A2A Payment Friction Fixer",
-              "description": "A Cloudflare Browser Run service that identifies and fixes common payment friction points, such as slow load times, broken links, and poor design, to improve user experience and conversion rates for A2A services.",
-              "state": "trial",
-              "priceCents": 900,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-friction-fixer"
-              }
-            }
-          ],
+          "featuredRuntimeCapabilities": [],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
@@ -231,7 +219,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 1,
+            "projectedVerifiedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -511,7 +499,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 1,
+            "projectedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -756,7 +744,7 @@
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
             "publicSkillCount": 18,
-            "publicSkillSetSha256": "9a37795f8b24e866efe28323b496de058c0194474313fa999286c649a855d724",
+            "publicSkillSetSha256": "f1b4c5d28cd9bf6cea262e71ae91126ddf6e13a2932856a922fd0e8697ec2fe6",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -962,29 +950,6 @@
         "market-genome",
         "discovery",
         "machine-commerce"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-payment-friction-fixer",
-      "name": "A2A Payment Friction Fixer",
-      "description": "A Cloudflare Browser Run service that identifies and fixes common payment friction points, such as slow load times, broken links, and poor design, to improve user experience and conversion rates for A2A services. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Payment Friction Fixer through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
       ]
     },
     {
