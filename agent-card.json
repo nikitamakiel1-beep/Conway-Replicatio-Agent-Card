@@ -26,19 +26,7 @@
           "network": "eip155:8453",
           "directX402Manifest": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/conway-services.json",
           "runtimeCapabilityCatalog": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/public/capabilities",
-          "featuredRuntimeCapabilities": [
-            {
-              "id": "a2a-payment-friction-reducer-pro",
-              "name": "A2A Payment Friction Reducer Pro",
-              "description": "An enhanced version of the A2A Payment Friction Finder service that not only identifies payment friction points but also provides automated solutions to fix them, improving user experience and conversion rates for A2A services.",
-              "state": "trial",
-              "priceCents": 1000,
-              "directX402": {
-                "method": "POST",
-                "url": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/api/x402/capability/a2a-payment-friction-reducer-pro"
-              }
-            }
-          ],
+          "featuredRuntimeCapabilities": [],
           "runtimeCapabilitiesAreCanaryVerifiedBeforeFeatured": true,
           "publicA2ARegistryIsDiscoveryNotTrustAuthority": true,
           "paidSalesTriggerRuntimeAlarmNotBuild": true,
@@ -231,7 +219,7 @@
               "url-robots",
               "url-sitemap"
             ],
-            "projectedVerifiedDynamicSkills": 1,
+            "projectedVerifiedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "maxTotalSkills": 96,
             "canonicalRuntimeAgentCard": "https://conway-replicatio-cloudflare.nikitamakiel1.workers.dev/.well-known/agent-card.json",
@@ -511,7 +499,7 @@
             ],
             "exactExecutableRouteRequired": true,
             "marketGenomeMayRankButCannotAuthorizeMembership": true,
-            "projectedDynamicSkills": 1,
+            "projectedDynamicSkills": 0,
             "maxProjectedDynamicSkills": 32,
             "minimumResidencyHoursWhileStillExecutable": 24,
             "maxReplacementsPerResidencyWindow": 4,
@@ -755,8 +743,8 @@
           },
           "publicProjectionStability": {
             "skillProjectionDigestVersion": 1,
-            "publicSkillCount": 19,
-            "publicSkillSetSha256": "c154dbf7fdd8a35f222eb038ae722a68f74ae19cf937ff42f8e0d34ff6560755",
+            "publicSkillCount": 18,
+            "publicSkillSetSha256": "24656abe28abc4571fbed74efe60aea23df1e4b97e8f07c74e4b449bf2504e9d",
             "publicSkillIdsDeterministicallySorted": true,
             "publicSkillIdsUnique": true,
             "release": "conway-production-v1-r119-agent-commerce-discovery-federation",
@@ -962,29 +950,6 @@
         "market-genome",
         "discovery",
         "machine-commerce"
-      ]
-    },
-    {
-      "id": "dynamic-a2a-payment-friction-reducer-pro",
-      "name": "A2A Payment Friction Reducer Pro",
-      "description": "An enhanced version of the A2A Payment Friction Finder service that not only identifies payment friction points but also provides automated solutions to fix them, improving user experience and conversion rates for A2A services. Membership is authorized by the current canary-filtered runtime capability catalog; the market genome may rank candidates but cannot make a non-live capability discoverable.",
-      "examples": [
-        "Use A2A Payment Friction Reducer Pro through Conway's current A2A/x402 discovery surfaces."
-      ],
-      "inputModes": [
-        "application/json",
-        "text/plain"
-      ],
-      "outputModes": [
-        "application/json"
-      ],
-      "tags": [
-        "conway",
-        "runtime-evolved",
-        "canary-verified",
-        "organic",
-        "trial",
-        "x402"
       ]
     },
     {
